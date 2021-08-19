@@ -55,6 +55,7 @@
 </head>
 <body onload="myFunction()" style="margin:0;">
   <h1>You have <span>0</span> clicks.</h1>
+  <img src="button.png">
 <div id="loader"></div>
 
 <div style="display:none;" id="myDiv" class="animate-bottom">
