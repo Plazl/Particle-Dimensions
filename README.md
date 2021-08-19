@@ -80,6 +80,9 @@ function showPage() {
   }
   
   </script>
+  
+  <h1>"You have <span id="myClicks"></span> clicks</h1>
+  
 </body>
 </html>
 
