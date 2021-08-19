@@ -9,7 +9,7 @@
     
     score = score + 1;
     
-    alert(score);
+    alert(clicks);
   </script>
 </body>
 </html>
