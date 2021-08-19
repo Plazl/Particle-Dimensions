@@ -71,7 +71,7 @@
          function save() {
   localStorage.setItem('clicks', JSON.stringify(clicks));
   localStorage.setItem('multiplier', JSON.stringify(multiplier));
-  ocalStorage.setItem('clickers', JSON.stringify(clickers));
+  localStorage.setItem('clickers', JSON.stringify(clickers));
 }
          
       </script>
