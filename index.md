@@ -69,8 +69,8 @@
     }, 1000)  //1000ms is 1 second
  </script>
    <body>
-      <button type="button" onclick="save">Save</button>
-      <button type="button" onclick="load">Load</button>
+      <button type="button" onclick="save()">Save</button>
+      <button type="button" onclick="load()">Load</button>
       
       <script>
          function save() {
