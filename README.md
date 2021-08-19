@@ -58,7 +58,7 @@
 <div id="loader"></div>
 
 <div style="display:none;" id="myDiv" class="animate-bottom">
-  <p>This is where the game would be, if it was ready.</p>
+  <button onclick="myFunction1()">Click me</button>
 </div>
 
 <script>
