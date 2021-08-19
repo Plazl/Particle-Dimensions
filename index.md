@@ -16,7 +16,11 @@
     
     }
     
-  }  
+  }  else {
+    
+    alert(You dont have enough to do this!)
+    
+    {
     
     
     var clicks = 0;
