@@ -10,17 +10,10 @@
     
     
     var multiplier = 1;
-     if (clicks => 15) {
     function addMultiplier(amount) {
       multiplier = multiplier + amount;
     
-    }
-    
-  }  else {
-    
-    alert("You dont have enough to do this!");
-    
-    {
+  {
     
     
     var clicks = 0;
