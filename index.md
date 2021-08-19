@@ -21,7 +21,7 @@
        clickerCost = clickerCost * 1.05;
       
     
-      document.getElementById("clicks").innerHTML = clicks;
+      document.getElementById("clicks").innerHTML = Math.round(clicks);
       document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
       document.getElementById("clickers").innerHTML = clickers;
     }
@@ -30,7 +30,7 @@
     
     function addClicks(amount) {
       clicks = clicks + amount;
-      document.getElementById("clicks").innerHTML = clicks;
+      document.getElementById("clicks").innerHTML = Math.round(clicks);
    }
     
     setInterval(function() {
