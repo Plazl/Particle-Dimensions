@@ -9,7 +9,7 @@
     
     clicks = clicks + 1;
     
-    document.getElementById("").innerHTML = clicks;
+    document.getElementById("clicks").innerHTML = clicks;
   </script>
 </body>
 </html>
