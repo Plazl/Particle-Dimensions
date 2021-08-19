@@ -10,11 +10,13 @@
     
     
     var multiplier = 1;
-     
+     if (clicks => 15) {
     function addMultiplier(amount) {
       multiplier = multiplier + amount;
     
     }
+    
+  }  
     
     
     var clicks = 0;
