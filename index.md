@@ -1,13 +1,12 @@
 <html>
 <head>
-</head>
-<body>
-  <h1>You have <span id="clicks">0</span> clicks.</h1>
+   <h1>You have <span id="clicks">0</span> clicks.</h1>
   <button type="button" onclick="addClicks(1)">Click me!</button>
   <button type="button" onclick="buyClickers(1)">Buy an autoclicker for <span id="clickerCost">150</span> clicks</button>
   <button type="button" onclick="buyMultiplier(1)">Buy a click multiplier for <span id="multiplierCost">100</span> clicks</button>
   <h2>You have <span id=clickers>0</span> clickers.</h2>
   <h3>You get <span id=mult>1</span> clicks per click.</h3>
+</head>
   <script>
 
      var clicks = 0;
