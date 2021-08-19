@@ -11,7 +11,7 @@
     
     var multiplier = 1;
      
-    function addMultiplier(1) {
+    function addMultiplier(amount) {
       multiplier = multiplier + amount;
     
     }
