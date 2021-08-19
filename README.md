@@ -58,8 +58,7 @@
 <div id="loader"></div>
 
 <div style="display:none;" id="myDiv" class="animate-bottom">
-  <h2>Tada!</h2>
-  <p>Some text in my newly loaded page..</p>
+  <p>This is where the game would be, if it was ready.</p>
 </div>
 
 <script>
