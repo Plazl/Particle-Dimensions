@@ -8,7 +8,7 @@
 
      var clicks = 0;
     function addClicks(amount) {
-      clicks = clicks + amount * multiplier;
+      clicks = clicks + amount;
       document.getElementById("clicks").innerHTML = clicks;
    }
   </script>
