@@ -4,7 +4,7 @@
 <body>
   <h1>You have <span id="clicks">0</span> clicks.</h1>
   <button type="button" onclick="addClicks(1)">Click me!</button>
-  <button type="button" onclick="addAutoClicker(1)">Buy an autoclicker!<span id+clickerCost>150</span></button>
+  <button type="button" onclick="buyClickers(1)">Buy an autoclicker!<span id+clickerCost>150</span></button>
   <h2>You have <span id=clickers>0</span> clickers.</h2>
   <script>
 
