@@ -3,7 +3,7 @@
 </head>
 <body>
   <h1>You have <span id="clicks">0</span> clicks.</h1>
-  <img src="button.png" height="256px" width="256px" onclick="addClicks(1)">
+  <button type="bbutton" onclick="addClicks(1)">Click me!</button>
   <script>
     var clicks = 0;
     
