@@ -18,7 +18,7 @@
       if (clicks >= clickerCost) {
        clicks = clicks - clickerCost;
        clickers = clickers + 1
-       clickerCost = clickerCost * 2;
+       clickerCost = clickerCost * 1.05;
       
     
       document.getElementById("clicks").innerHTML = clicks;
