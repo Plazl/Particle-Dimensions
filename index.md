@@ -18,6 +18,12 @@
     var multiplier = 1;
     
     var multiplierCost = 100
+     
+     function load() {
+  clicks = JSON.parse(localStorage.getItem('clicks'));
+  multiplier = JSON.parse(localStorage.getItem('multiplier'));
+   clickers = JSON.parse(localStorage.getItem('clickers'));
+}
     
     function buyClickers(amount) {
       if (clicks >= clickerCost) {
@@ -57,4 +63,18 @@
      document.getElementById("clicks").innerHTML = Math.round(clicks);
     }, 1000)  //1000ms is 1 second
  </script>
+   <body>
+      <button type="button" onclick="saveData">Save</button>
+      <button type="button" onclick="loadData">Load</button>
+      
+      <script>
+         function save() {
+  localStorage.setItem('clicks', JSON.stringify(clicks));
+  localStorage.setItem('multiplier', JSON.stringify(multiplier));
+  ocalStorage.setItem('clickers', JSON.stringify(clickers));
+}
+         
+      </script>
+      
+   </body>
 </html>
