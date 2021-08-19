@@ -22,7 +22,7 @@
       
     
       document.getElementById("clicks").innerHTML = clicks;
-      document.getElementById("clickerCost").innerHTML = clickerCost;
+      document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
       document.getElementById("clickers").innerHTML = clickers;
     }
  
@@ -35,7 +35,7 @@
     
     setInterval(function() {
      clicks = clicks + clickers
-     document.getElementById("clicks").innerHTML = clicks;
+     document.getElementById("clicks").innerHTML = Math.round(clicks);
     }, 1000)  //1000ms is 1 second
  </script>
 </body>
