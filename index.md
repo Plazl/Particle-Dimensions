@@ -57,5 +57,4 @@
      document.getElementById("clicks").innerHTML = Math.round(clicks);
     }, 1000)  //1000ms is 1 second
  </script>
-</body>
 </html>
