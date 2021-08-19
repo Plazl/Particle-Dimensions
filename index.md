@@ -5,7 +5,9 @@
   <h1>You have <span id="clicks">0</span> clicks.</h1>
   <button type="button" onclick="addClicks(1)">Click me!</button>
   <button type="button" onclick="buyClickers(1)">Buy an autoclicker for <span id="clickerCost">150</span> clicks</button>
+  <button type="button" onclick="buyMultiplier(1)">Buy a click multiplier for <span id="multiplierCost">100</span> clicks</button>
   <h2>You have <span id=clickers>0</span> clickers.</h2>
+  <h3>You get <span id=mult>1</span> clicks per click.</h3>
   <script>
 
      var clicks = 0;
@@ -13,6 +15,10 @@
     var clickerCost = 150;
     
     var clickers = 0;
+    
+    var multiplier = 1;
+    
+    var multiplierCost = 100
     
     function buyClickers(amount) {
       if (clicks >= clickerCost) {
@@ -28,13 +34,26 @@
  
  }
     
+     function buyMultiplier(amount) {
+      if (clicks >= multiplierCost) {
+       clicks = clicks - multiplierCost;
+       multiplier = multiplier + 1
+       multiplierCost = multiplierCost * 1.05;
+    
+      document.getElementById("clicks").innerHTML = Math.round(clicks);
+      document.getElementById("multiplierCost").innerHTML = Math.round(multiplierCost);
+      
+    
+    }
+  }  
+    
     function addClicks(amount) {
-      clicks = clicks + amount;
+      clicks = clicks + amount * multiplier;
       document.getElementById("clicks").innerHTML = Math.round(clicks);
    }
     
     setInterval(function() {
-     clicks = clicks + clickers
+     clicks = clicks + clickers * multiplier;
      document.getElementById("clicks").innerHTML = Math.round(clicks);
     }, 1000)  //1000ms is 1 second
  </script>
