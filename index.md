@@ -18,7 +18,7 @@
     
   }  else {
     
-    alert(You dont have enough to do this!)
+    alert("You dont have enough to do this!");
     
     {
     
