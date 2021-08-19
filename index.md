@@ -19,11 +19,11 @@
     
     var multiplierCost = 100
      
-     function load() {
+  
   clicks = JSON.parse(localStorage.getItem('clicks'));
   multiplier = JSON.parse(localStorage.getItem('multiplier'));
    clickers = JSON.parse(localStorage.getItem('clickers'));
-}
+
     
     function buyClickers(amount) {
       if (clicks >= clickerCost) {
