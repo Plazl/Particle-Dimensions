@@ -7,21 +7,17 @@
   <button type="button" onclick="addMultiplier(1)">Buy click multiplier!</button>
   <script>
     
-    
-    
     var multiplier = 1;
+     var clicks = 0;
+    
     function addMultiplier(amount) {
       multiplier = multiplier + amount;
-    
-  {
-    
-    
-    var clicks = 0;
     
     function addClicks(amount) {
       clicks = clicks + amount * multiplier;
       document.getElementById("clicks").innerHTML = clicks;
    }
+  }
     
   </script>
 </body>
