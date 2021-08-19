@@ -7,7 +7,7 @@
   <script>
     var clicks = 0;
     
-    score = score + 1;
+    clicks = clicks + 1;
     
     alert(clicks);
   </script>
