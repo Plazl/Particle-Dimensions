@@ -20,10 +20,10 @@
     var multiplierCost = 100
      
   function load() {
-  clicks = JSON.parse(localStorage.getItem('clicks'));
-  multiplier = JSON.parse(localStorage.getItem('multiplier'));
-   clickers = JSON.parse(localStorage.getItem('clickers'));
-}
+    clicks = JSON.parse(localStorage.getItem('clicks'));
+    multiplier = JSON.parse(localStorage.getItem('multiplier'));
+    clickers = JSON.parse(localStorage.getItem('clickers'));
+   }
     
     function buyClickers(amount) {
       if (clicks >= clickerCost) {
@@ -69,10 +69,10 @@
       
       <script>
          function save() {
-  localStorage.setItem('clicks', JSON.stringify(clicks));
-  localStorage.setItem('multiplier', JSON.stringify(multiplier));
-  localStorage.setItem('clickers', JSON.stringify(clickers));
-}
+            localStorage.setItem('clicks', JSON.stringify(clicks));
+            localStorage.setItem('multiplier', JSON.stringify(multiplier));
+            localStorage.setItem('clickers', JSON.stringify(clickers));
+      }
          
       </script>
       
