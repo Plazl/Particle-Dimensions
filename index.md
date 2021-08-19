@@ -1,6 +1,5 @@
 <html>
 <head>
-  <title>Evo Clicker</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 /* Center the loader */
