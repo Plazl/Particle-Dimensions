@@ -58,7 +58,6 @@
 <div id="loader"></div>
 
 <div style="display:none;" id="myDiv" class="animate-bottom">
-  <button onclick="myFunction1()">Click me</button>
 </div>
 
 <script>
@@ -73,7 +72,14 @@ function showPage() {
   document.getElementById("myDiv").style.display = "block";
 }
 </script>
-
+<button onclick="myFunction1()">Click me</button>
+<script>
+  var myClicks
+  function myFunction1() {
+    myClicks = myClicks+1
+  }
+  
+  </script>
 </body>
 </html>
 
