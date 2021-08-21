@@ -1,15 +1,14 @@
 <html>
 <head>
-   <title> </title>
-   <h1>You have <span id="clicks">0</span> clicks.</h1>
+   <h2>You have <span id="clicks">0</span> clicks.</h2>
   <button type="button" onclick="addClicks(1)">Click me!</button>
   <button type="button" onclick="buyClickers(1)">Buy an autoclicker for <span id="clickerCost">150</span> clicks</button>
   <button type="button" onclick="buyMultiplier(1)">Buy a click multiplier for <span id="multiplierCost">100</span> clicks</button>
-  <h2>You have <span id=clickers>0</span> clickers.</h2>
-  <h3>You get <span id=mult>1</span> clicks per click.</h3>
+  <h3>You have <span id=clickers>0</span> clickers.</h3>
+  <h4>You get <span id=mult>1</span> clicks per click.</h4>
    <style>
       
-      h1 {
+      h2 {
          position: absolute;
   left: 150px;
   top: 100px;     
@@ -19,6 +18,8 @@
    </style>
 </head>
   <script>
+     
+     var interval = 1000;
 
      var clicks = 0;
     
@@ -75,9 +76,10 @@
    }
     
     setInterval(function() {
-     clicks = clicks + clickers * multiplier;
+     clicks = clicks + clickers;
+     interval = interval - 1;
      document.getElementById("clicks").innerHTML = Math.round(clicks);
-    }, 1000)  //1000ms is 1 second
+    }, interval)  //1000ms is 1 second
  </script>
    <body>
       <button type="button" onclick="save()">Save</button>
