@@ -47,6 +47,7 @@
        clicks = clicks - clickerCost;
        clickers = clickers + 1
        clickerCost = clickerCost * 1.05;
+       interval = interval - 1;
       
     
       document.getElementById("clicks").innerHTML = Math.round(clicks);
@@ -74,12 +75,13 @@
       clicks = clicks + amount * multiplier;
       document.getElementById("clicks").innerHTML = Math.round(clicks);
    }
-    
-    setInterval(function() {
-     clicks = clicks + clickers;
-     interval = interval - 1;
+   
+     (function loop() {
+       clicks = clicks + clickers * multiplier;
      document.getElementById("clicks").innerHTML = Math.round(clicks);
-    }, interval)  //1000ms is 1 second
+     //1000ms is 1 second
+  setTimeout(loop, delay);
+})();
  </script>
    <body>
       <button type="button" onclick="save()">Save</button>
