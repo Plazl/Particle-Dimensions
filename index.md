@@ -80,7 +80,7 @@
        clicks = clicks + clickers * multiplier;
      document.getElementById("clicks").innerHTML = Math.round(clicks);
      //1000ms is 1 second
-  setTimeout(loop, delay);
+  setTimeout(loop, interval);
 })();
  </script>
    <body>
