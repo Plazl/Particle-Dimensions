@@ -10,8 +10,8 @@
       
       h1 {
          position: absolute;
-  left: 100px;
-  top: 10px;     
+  left: 150px;
+  top: 100px;     
       }
       
       
