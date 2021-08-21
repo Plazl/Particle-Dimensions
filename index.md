@@ -1,7 +1,7 @@
 <html>
 <head>
    <h2>You have <span id="clicks">0</span> clicks.</h2>
-  <button type="button" onclick="addClicks(1)">Click me!</button>
+  <button type="button" onclick="addClicks(1)" class="buttob button1">Click me!</button>
   <button type="button" onclick="buyClickers(1)">Buy an autoclicker for <span id="clickerCost">150</span> clicks</button>
   <button type="button" onclick="buyMultiplier(1)">Buy a click multiplier for <span id="multiplierCost">100</span> clicks</button>
   <h3>You have <span id=clickers>0</span> clickers.</h3>
@@ -12,6 +12,22 @@
          position: absolute;
   left: 150px;
   top: 100px;     
+      }
+    
+      .button1 {
+               position: absolute;
+   left: 0px;
+   top: 0px; 
+      background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+      
       }
       
       
