@@ -1,5 +1,6 @@
 <html>
 <head>
+   <title> </title>
    <h1>You have <span id="clicks">0</span> clicks.</h1>
   <button type="button" onclick="addClicks(1)">Click me!</button>
   <button type="button" onclick="buyClickers(1)">Buy an autoclicker for <span id="clickerCost">150</span> clicks</button>
