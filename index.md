@@ -15,7 +15,7 @@
       .button1 {
                position: absolute;
    left: 500px;
-   top: 500px; 
+   top: 450px; 
       background-color: #04AA6D;
   border: none;
   color: white;
