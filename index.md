@@ -104,7 +104,8 @@
       document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
       document.getElementById("clickers").innerHTML = clickers;
    }
-    
+               if (Number.isFinite(clicks))
+     {
     function buyClickers(amount) {
       if (clicks >= clickerCost) {
        clicks = clicks - clickerCost;
@@ -138,6 +139,8 @@
       clicks = clicks + amount * multiplier;
       document.getElementById("clicks").innerHTML = Math.round(clicks);
    }
+    
+  
    
      (function loop() {
        clicks = clicks + clickers * multiplier;
@@ -145,6 +148,7 @@
      //1000ms is 1 second
   setTimeout(loop, interval);
 })();
+     }
  </script>
    <body>
       <button type="button" onclick="save()" class="button button4">Save</button>
