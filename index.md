@@ -1,9 +1,6 @@
 <html>
 <head>
    <h2>You have <span id="clicks">0</span> clicks.</h2>
-  <button type="button" onclick="addClicks(1)" class="button button1">Click me!</button>
-  <button type="button" onclick="buyClickers(1)" class="button button2">Buy an autoclicker for <span id="clickerCost">150</span> clicks</button>
-  <button type="button" onclick="buyMultiplier(1)" class="button button3">Buy a click multiplier for <span id="multiplierCost">100</span> clicks</button>
   <h3>You have <span id=clickers>0</span> clickers.</h3>
   <h4>You get <span id=mult>1</span> clicks per click.</h4>
    <style>
@@ -28,10 +25,7 @@
     border-radius: 100%;  
       }
       
-       .button2 {
-               position: absolute;
-   left: 200px;
-   top: 300px; 
+       .button2 { 
       background-color: #04AA6D;
   border: none;
   color: white;
@@ -45,9 +39,6 @@
       }
       
         .button3 {
-               position: absolute;
-   left: 200px;
-   top: 350px; 
       background-color: #04AA6D;
   border: none;
   color: white;
@@ -158,7 +149,9 @@
    <body>
       <button type="button" onclick="save()" class="button button4">Save</button>
       <button type="button" onclick="load()" class="button button5">Load</button>
-      
+      <button type="button" onclick="addClicks(1)" class="button button1">Click me!</button>
+      <button type="button" onclick="buyClickers(1)" class="button button2">Buy an autoclicker for <span id="clickerCost">150</span> clicks</button>
+      <button type="button" onclick="buyMultiplier(1)" class="button button3">Buy a click multiplier for <span id="multiplierCost">100</span> clicks</button>
       <script>
          function save() {
             localStorage.setItem('clicks', JSON.stringify(clicks));
