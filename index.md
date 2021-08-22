@@ -30,8 +30,8 @@
       
        .button2 {
                position: absolute;
-   left: 150px;
-   top: 200px; 
+   left: 200px;
+   top: 300px; 
       background-color: #04AA6D;
   border: none;
   color: white;
@@ -39,15 +39,15 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 10px;
+  font-size: 14px;
   margin: 4px 2px;
 
       }
       
         .button3 {
                position: absolute;
-   left: 150px;
-   top: 250px; 
+   left: 200px;
+   top: 350px; 
       background-color: #04AA6D;
   border: none;
   color: white;
@@ -55,7 +55,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 10px;
+  font-size: 14px;
   margin: 4px 2px;
   
       }
@@ -68,7 +68,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 10px;
+  font-size: 14px;
   margin: 4px 2px;
   
       }
@@ -81,7 +81,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 10px;
+  font-size: 14px;
   margin: 4px 2px;
   
       }
