@@ -14,8 +14,8 @@
     
       .button1 {
                position: absolute;
-   left: 500px;
-   top: 450px; 
+   left: 50%;
+   top: 50%; 
       background-color: #04AA6D;
   border: none;
   color: white;
@@ -31,7 +31,7 @@
        .button2 {
                position: absolute;
    left: 150px;
-   top: 100px; 
+   top: 200px; 
       background-color: #04AA6D;
   border: none;
   color: white;
@@ -47,7 +47,7 @@
         .button3 {
                position: absolute;
    left: 150px;
-   top: 50px; 
+   top: 250px; 
       background-color: #04AA6D;
   border: none;
   color: white;
