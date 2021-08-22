@@ -9,9 +9,7 @@
    <style>
       
       h2 {
-         position: absolute;
-  left: 150px;
-  top: 100px;     
+         position: center;    
       }
     
       .button1 {
