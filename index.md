@@ -35,7 +35,7 @@
       background-color: #04AA6D;
   border: none;
   color: white;
-  padding: 10px;
+  padding: 14px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -51,7 +51,7 @@
       background-color: #04AA6D;
   border: none;
   color: white;
-  padding: 10px;
+  padding: 14px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -60,6 +60,31 @@
   
       }
       
+            .button4 { 
+      background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  
+      }
+      
+         .button5 { 
+      background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  
+      }
        
       
    </style>
