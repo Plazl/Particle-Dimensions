@@ -131,8 +131,8 @@
 })();
  </script>
    <body>
-      <button type="button" onclick="save()">Save</button>
-      <button type="button" onclick="load()">Load</button>
+      <button type="button" onclick="save()" class="button button4">Save</button>
+      <button type="button" onclick="load()" class="button button5">Load</button>
       
       <script>
          function save() {
