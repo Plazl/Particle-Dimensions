@@ -150,7 +150,7 @@
 })();
      }
  </script>
-   <body>
+   <body onload="load()">
       <button type="button" onclick="save()" class="button button4">Save</button>
       <button type="button" onclick="load()" class="button button5">Load</button>
       <button type="button" onclick="addClicks(1)" class="button button1">Click me!</button>
