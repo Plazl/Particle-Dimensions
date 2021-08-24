@@ -108,6 +108,23 @@
      
 
    }
+     if (multiplierCost = 0)
+         {
+         var multiplierCost = 100
+         document.getElementById("multiplierCost").innerHTML = Math.round(multiplierCost);
+     }
+     if (clickerCost = 0)
+         {
+          var clickerCost = 150
+          document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
+     }
+      if (multiplier = 0)
+          {
+           var multiplier = 1
+           document.getElementById("mult").innerHTML = multiplier;
+     
+     }
+     
                if (Number.isFinite(clicks))
      {
     function buyClickers(amount) {
@@ -168,7 +185,6 @@
             localStorage.setItem('clicks', JSON.stringify(clicks));
             localStorage.setItem('multiplier', JSON.stringify(multiplier));
             localStorage.setItem('clickers', JSON.stringify(clickers));
-         
             localStorage.setItem('clickerCost', JSON.stringify(clickerCost));
             localStorage.setItem('multiplierCost', JSON.stringify(multiplierCost));
 
