@@ -103,8 +103,7 @@
      document.getElementById("multiplierCost").innerHTML = Math.round(multiplierCost);
       document.getElementById("mult").innerHTML = multiplier;
      document.getElementById("clicks").innerHTML = Math.round(clicks);
-      document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
-      document.getElementById("clickers").innerHTML = clickers;
+
    }
                if (Number.isFinite(clicks))
      {
@@ -163,8 +162,7 @@
             localStorage.setItem('clicks', JSON.stringify(clicks));
             localStorage.setItem('multiplier', JSON.stringify(multiplier));
             localStorage.setItem('clickers', JSON.stringify(clickers));
-            localStorage.setItem('clickerCost', JSON.stringify(clickerCost));
-            localStorage.setItem('multiplierCost', JSON.stringify(multiplierCost));
+
       }
          
       </script>
