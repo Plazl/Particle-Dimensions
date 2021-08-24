@@ -151,12 +151,15 @@
 })();
      }
  </script>
-   <body>
-      <button type="button" onclick="save()" class="button button4">Save</button>
-      <button type="button" onclick="load()" class="button button5">Load</button>
+   <body onload="load()">
       <button type="button" onclick="addClicks(1)" class="button button1">Click me!</button>
       <button type="button" onclick="buyClickers(1)" class="button button2">Buy an autoclicker for <span id="clickerCost">150</span> clicks</button>
       <button type="button" onclick="buyMultiplier(1)" class="button button3">Buy a click multiplier for <span id="multiplierCost">100</span> clicks</button>
+
+   </body>
+   
+   <body>
+       <button type="button" onclick="save()" class="button button4">Save</button>
       <script>
          function save() {
             localStorage.setItem('clicks', JSON.stringify(clicks));
@@ -166,6 +169,5 @@
       }
          
       </script>
-      
    </body>
 </html>
