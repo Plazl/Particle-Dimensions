@@ -1,0 +1,5 @@
+            localStorage.setItem('clickerCost', JSON.stringify(clickerCost));
+            localStorage.setItem('multiplierCost', JSON.stringify(multiplierCost));
+            
+            document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
+            document.getElementById("clickers").innerHTML = clickers;
