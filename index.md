@@ -199,7 +199,7 @@
      document.getElementById("clicks").innerHTML = Math.round(clicks);
      document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
      document.getElementById("clickers").innerHTML = clickers;
-         document.getElementById("button5").style.display = "none";
+         document.getElementById("button5").style.display = "hidden";
          }
          
       </script>
