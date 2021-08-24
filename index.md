@@ -122,11 +122,6 @@
      
      }
      
-      document.getElementById("multiplierCost").innerHTML = Math.round(multiplierCost);
-      document.getElementById("mult").innerHTML = multiplier;
-     document.getElementById("clicks").innerHTML = Math.round(clicks);
-     document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
-     document.getElementById("clickers").innerHTML = clickers;
    }
      
   
@@ -186,6 +181,7 @@
    
    <body>
        <button type="button" onclick="save()" class="button button4">Save</button>
+      <button type="button" onclick="update()" class="button button5">Press this if game wont update</button>
       <script>
          function save() {
             localStorage.setItem('clicks', JSON.stringify(clicks));
@@ -195,6 +191,15 @@
             localStorage.setItem('multiplierCost', JSON.stringify(multiplierCost));
 
       }
+         
+         function update() {
+         
+               document.getElementById("multiplierCost").innerHTML = Math.round(multiplierCost);
+      document.getElementById("mult").innerHTML = multiplier;
+     document.getElementById("clicks").innerHTML = Math.round(clicks);
+     document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
+     document.getElementById("clickers").innerHTML = clickers;
+         }
          
       </script>
    </body>
