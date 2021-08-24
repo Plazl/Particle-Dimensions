@@ -106,7 +106,6 @@
      document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
             document.getElementById("clickers").innerHTML = clickers;
      
-
    }
      if (multiplierCost = 0)
          {
@@ -124,6 +123,9 @@
            document.getElementById("mult").innerHTML = multiplier;
      
      }
+     
+     
+  }
      
                if (Number.isFinite(clicks))
      {
