@@ -98,6 +98,8 @@
     clicks = JSON.parse(localStorage.getItem('clicks'));
     multiplier = JSON.parse(localStorage.getItem('multiplier'));
     clickers = JSON.parse(localStorage.getItem('clickers'));
+    clickerCost = JSON.parse(localStorage.getItem('clickerCost'));
+    multiplierCost = JSON.parse(localStorage.getItem('multiplierCost'));
      document.getElementById("multiplierCost").innerHTML = Math.round(multiplierCost);
       document.getElementById("mult").innerHTML = multiplier;
      document.getElementById("clicks").innerHTML = Math.round(clicks);
@@ -161,6 +163,8 @@
             localStorage.setItem('clicks', JSON.stringify(clicks));
             localStorage.setItem('multiplier', JSON.stringify(multiplier));
             localStorage.setItem('clickers', JSON.stringify(clickers));
+            localStorage.setItem('clickerCost', JSON.stringify(clickerCost));
+            localStorage.setItem('multiplierCost', JSON.stringify(multiplierCost));
       }
          
       </script>
