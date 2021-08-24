@@ -181,7 +181,7 @@
    
    <body>
        <button type="button" onclick="save()" class="button button4">Save</button>
-      <a onclick="update()" id="update">Press this if game wont update</button>
+      <a onclick="update()" id="update">Press this if game wont update</a>
       <script>
          function save() {
             localStorage.setItem('clicks', JSON.stringify(clicks));
@@ -199,7 +199,6 @@
      document.getElementById("clicks").innerHTML = Math.round(clicks);
      document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
      document.getElementById("clickers").innerHTML = clickers;
-         document.getElementById("button5").style.display = "hidden";
          }
          
       </script>
