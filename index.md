@@ -64,14 +64,14 @@
   
       }
       
-         .button5 { 
+         #update { 
       background-color: #04AA6D;
   border: none;
   color: white;
   padding: 14px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   font-size: 14px;
   margin: 4px 2px;
   
@@ -181,7 +181,7 @@
    
    <body>
        <button type="button" onclick="save()" class="button button4">Save</button>
-      <button type="button" onclick="update()" class="button button5">Press this if game wont update</button>
+      <a onclick="update()" id="update">Press this if game wont update</button>
       <script>
          function save() {
             localStorage.setItem('clicks', JSON.stringify(clicks));
