@@ -125,7 +125,7 @@
      }
      
      
-  }
+  
      
                if (Number.isFinite(clicks))
      {
