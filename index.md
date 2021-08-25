@@ -183,11 +183,11 @@
    </body>
    
    <body>
-       <button type="button" onclick="save()" class="button button4">Save</button>
-      <a onclick="update()" id="update">Press this if game wont update</a>
+       <button type="button" class="button button4">Save</button>
+      <a id="update">Press this if game wont update</a>
       <script>
 
-      }
+   
         while (hasStarted = true) {
          
                document.getElementById("multiplierCost").innerHTML = Math.round(multiplierCost);
@@ -202,7 +202,7 @@
             localStorage.setItem('clickerCost', JSON.stringify(clickerCost));
             localStorage.setItem('multiplierCost', JSON.stringify(multiplierCost));
          }
-       }
+       
       </script>
    </body>
 </html>
