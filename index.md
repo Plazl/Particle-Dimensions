@@ -82,6 +82,8 @@
 </head>
   <script>
      
+     var hasStarted = false
+     
      var interval = 1000;
 
      var clicks = 0;
@@ -105,6 +107,7 @@
      document.getElementById("clicks").innerHTML = Math.round(clicks);
      document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
      document.getElementById("clickers").innerHTML = clickers;
+     var hasStarted  = true
      if (multiplierCost = 0)
          {
          var multiplierCost = 100
@@ -183,16 +186,9 @@
        <button type="button" onclick="save()" class="button button4">Save</button>
       <a onclick="update()" id="update">Press this if game wont update</a>
       <script>
-         function save() {
-            localStorage.setItem('clicks', JSON.stringify(clicks));
-            localStorage.setItem('multiplier', JSON.stringify(multiplier));
-            localStorage.setItem('clickers', JSON.stringify(clickers));
-            localStorage.setItem('clickerCost', JSON.stringify(clickerCost));
-            localStorage.setItem('multiplierCost', JSON.stringify(multiplierCost));
 
       }
-         
-         function update() {
+        while (hasStarted = true) {
          
                document.getElementById("multiplierCost").innerHTML = Math.round(multiplierCost);
       document.getElementById("mult").innerHTML = multiplier;
@@ -200,8 +196,13 @@
      document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
      document.getElementById("clickers").innerHTML = clickers;
       document.getElementById("update").style.display = "none";
+          localStorage.setItem('clicks', JSON.stringify(clicks));
+            localStorage.setItem('multiplier', JSON.stringify(multiplier));
+            localStorage.setItem('clickers', JSON.stringify(clickers));
+            localStorage.setItem('clickerCost', JSON.stringify(clickerCost));
+            localStorage.setItem('multiplierCost', JSON.stringify(multiplierCost));
          }
-         
+       }
       </script>
    </body>
 </html>
