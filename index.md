@@ -175,7 +175,7 @@
 })();
      }
  </script>
-   <body onload="load()" onbeforeUnLoad="return unLoadStuff">
+   <body onload="load()" onbeforeUnLoad="return unLoadStuff()">
       <button type="button" onclick="addClicks(1)" class="button button1">Click me!</button>
       <button type="button" onclick="buyClickers(1)" class="button button2">Buy an autoclicker for <span id="clickerCost">150</span> clicks</button>
       <button type="button" onclick="buyMultiplier(1)" class="button button3">Buy a click multiplier for <span id="multiplierCost">100</span> clicks</button>
@@ -202,13 +202,13 @@
             localStorage.setItem('clickerCost', JSON.stringify(clickerCost));
             localStorage.setItem('multiplierCost', JSON.stringify(multiplierCost));
          }
-         function unLoadStuff 
+         function unLoadStuff() {
             localStorage.setItem('clicks', JSON.stringify(clicks));
             localStorage.setItem('multiplier', JSON.stringify(multiplier));
             localStorage.setItem('clickers', JSON.stringify(clickers));
             localStorage.setItem('clickerCost', JSON.stringify(clickerCost));
             localStorage.setItem('multiplierCost', JSON.stringify(multiplierCost));
-         
+         }
            
        
       </script>
