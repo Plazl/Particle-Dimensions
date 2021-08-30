@@ -202,13 +202,13 @@
             localStorage.setItem('clickerCost', JSON.stringify(clickerCost));
             localStorage.setItem('multiplierCost', JSON.stringify(multiplierCost));
          }
-         function unLoadStuff {
+         function unLoadStuff 
             localStorage.setItem('clicks', JSON.stringify(clicks));
             localStorage.setItem('multiplier', JSON.stringify(multiplier));
             localStorage.setItem('clickers', JSON.stringify(clickers));
             localStorage.setItem('clickerCost', JSON.stringify(clickerCost));
             localStorage.setItem('multiplierCost', JSON.stringify(multiplierCost));
-         }
+         
            
        
       </script>
