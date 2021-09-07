@@ -1,6 +1,4 @@
- <script>
-     
-     var hasStarted = false
+var hasStarted = false;
      
      var interval = 1000;
 
@@ -12,7 +10,7 @@
     
     var multiplier = 1;
     
-    var multiplierCost = 100
+    var multiplierCost = 100;
      
   function load() {
     clicks = JSON.parse(localStorage.getItem('clicks'));
@@ -117,8 +115,3 @@
            document.getElementById("mult").innerHTML = multiplier;
      
      }
-         
-           
-       
-      </script>
-   </body>
