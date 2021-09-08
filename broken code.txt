@@ -23,7 +23,7 @@ var hasStarted = false;
      document.getElementById("clicks").innerHTML = Math.round(clicks);
      document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
      document.getElementById("clickers").innerHTML = clickers;
-     var hasStarted = true
+     var hasStarted = true;
      
    }
      
@@ -34,7 +34,7 @@ var hasStarted = false;
     function buyClickers(amount) {
       if (clicks >= clickerCost) {
        clicks = clicks - clickerCost;
-       clickers = clickers + 1
+       clickers = clickers + 1;
        clickerCost = clickerCost * 1.05;
        interval = interval - 1;
       
@@ -73,20 +73,9 @@ var hasStarted = false;
      //1000ms is 1 second
   setTimeout(loop, interval);
 })();
-     }
- </script>
-   <body onload="load()">
-      <button type="button" onclick="addClicks(1)" class="button button1">Click me!</button>
-      <button type="button" onclick="buyClickers(1)" class="button button2">Buy an autoclicker for <span id="clickerCost">150</span> clicks</button>
-      <button type="button" onclick="buyMultiplier(1)" class="button button3">Buy a click multiplier for <span id="multiplierCost">100</span> clicks</button>
-
-   </body>
-   
-   <body>
-       <button type="button" class="button button4">Save</button>
-      <script>
-
-   
+     
+     
+    
         while (hasStarted = true) {
          
                document.getElementById("multiplierCost").innerHTML = Math.round(multiplierCost);
@@ -115,3 +104,16 @@ var hasStarted = false;
            document.getElementById("mult").innerHTML = multiplier;
      
      }
+    
+     }
+ </script>
+   <body onload="load()">
+      <button type="button" onclick="addClicks(1)" class="button button1">Click me!</button>
+      <button type="button" onclick="buyClickers(1)" class="button button2">Buy an autoclicker for <span id="clickerCost">150</span> clicks</button>
+      <button type="button" onclick="buyMultiplier(1)" class="button button3">Buy a click multiplier for <span id="multiplierCost">100</span> clicks</button>
+
+   </body>
+   
+   <body>
+       <button type="button" class="button button4">Save</button>
+
