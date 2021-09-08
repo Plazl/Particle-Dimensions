@@ -1,4 +1,4 @@
-
+     var x = 0;
      
      var interval = 1000;
 
@@ -25,9 +25,10 @@ function addClicks(ammount) {
       document.getElementById("clicks").innerHTML = clicks;
   }
      function upgradeMenu() {
-
-          document.getElementById('button1').style.display = "block";
-           document.getElementById('button2').style.display = "block";
-           document.getElementById('p1').style.display = "block";
-           document.getElementById('body').style.display = "block";
-     }
+  var x = document.getElementById("main");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
