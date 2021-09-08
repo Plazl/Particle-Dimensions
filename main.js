@@ -30,6 +30,6 @@
 function addClicks(ammount) {
 
  clicks = clicks + ammount * multiplier
-      document.getElementById("clickers").innerHTML = clickers;
+      document.getElementById("clickers").innerHTML = clicks;
   }
      
