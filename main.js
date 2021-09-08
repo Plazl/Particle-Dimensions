@@ -24,4 +24,10 @@ function addClicks(ammount) {
  clicks = clicks + ammount * multiplier
       document.getElementById("clicks").innerHTML = clicks;
   }
-     
+     function upgradeMenu() {
+
+          document.getElementById('button1').style.display = "block";
+           document.getElementById('button2').style.display = "block";
+           document.getElementById('p1').style.display = "block";
+           document.getElementById('body').style.display = "block";
+     }
