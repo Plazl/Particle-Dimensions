@@ -1,5 +1,4 @@
- 
-var hasStarted = false;
+
      
      var interval = 1000;
 
@@ -24,7 +23,13 @@ var hasStarted = false;
      document.getElementById("clicks").innerHTML = Math.round(clicks);
      document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
      document.getElementById("clickers").innerHTML = clickers;
-     var hasStarted = true;
+     
      
    }
+
+function addClicks(ammount) {
+
+ clicks = clicks + ammount * multiplier
+      document.getElementById("clickers").innerHTML = clickers;
+  }
      
