@@ -71,7 +71,7 @@
 </head>
  <body onLoad="load()">
 
-    <button class:"button button1" onClick="addClicks(1)">Click Me!</button>
+    <button class="button button1" onClick="addClicks(1)">Click Me!</button>
     <script src="main.js"></script>
    </body>
 </html>
