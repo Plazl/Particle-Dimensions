@@ -37,7 +37,7 @@ function addClicks(ammount) {
   }
            var y = document.getElementById("main1");
   if (y.style.display === "none") {
-    y.style.display = "block";
+    y.style.display = "block";     
   } else {
     y.style.display = "none";
 
@@ -49,5 +49,18 @@ function addClicks(ammount) {
     z.style.display = "block";
 
   }  
+}
+
+function buyMult {
+
+if (clicks >= clickerCost) {
+
+
+    var clicks = clicks - clickerCost;
+    var clickers = clickers + 1; 
+    document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
+    document.getElementById("clickers").innerHTML = clickers;
+  }
+
 }
 
