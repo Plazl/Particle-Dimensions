@@ -38,4 +38,6 @@ function addClicks(ammount) {
     y.style.display = "block";
   } else {
     y.style.display = "none";
+
+  }
 }
