@@ -1,6 +1,8 @@
      var x = 0;
 
      var y = 0;
+
+     var z = 0;
      
      var interval = 1000;
 
@@ -40,4 +42,12 @@ function addClicks(ammount) {
     y.style.display = "none";
 
   }
+          var z = document.getElementById("upgradestab");
+  if (z.style.display === "block") {
+    z.style.display = "none";
+  } else {
+    z.style.display = "block";
+
+  }  
 }
+
