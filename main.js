@@ -1,4 +1,6 @@
      var x = 0;
+
+     var y = 0;
      
      var interval = 1000;
 
@@ -31,4 +33,9 @@ function addClicks(ammount) {
   } else {
     x.style.display = "none";
   }
+           var y = document.getElementById("main1");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
 }
