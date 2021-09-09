@@ -43,10 +43,10 @@ function addClicks(ammount) {
 
   }
           var z = document.getElementById("upgradestab");
-  if (z.style.display === "none") {
-    z.style.display = "block";
-  } else {
+  if (z.style.display === "block") {
     z.style.display = "none";
+  } else {
+    z.style.display = "block";
 
   }  
 }
