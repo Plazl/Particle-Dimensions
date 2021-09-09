@@ -51,7 +51,7 @@ function addClicks(ammount) {
   }  
 }
 
-function buyMult {
+function buyMult() {
 
 if (clicks >= clickerCost) {
 
