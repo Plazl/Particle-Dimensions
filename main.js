@@ -1,3 +1,7 @@
+     var hasClickers = false;
+
+     var interval = 1000;
+
      var x = 0;
 
      var y = 0;
@@ -66,4 +70,30 @@ if (clicks >= multiplierCost) {
   }
 
 }
+
+function buyClicker() {
+
+if (clicks = clickerCost) {
+
+
+    var clicks = clicks - clickerCost;
+    var clickerCost = clickerCost * 1.5;
+    var multiplier = multiplier + 1; 
+    document.getElementById("clickerCost").innerHTML = Math.round(multiplierCost);
+    document.getElementById("clickers").innerHTML = multiplier
+    document.getElementById("clicks").innerHTML = Math.round(clicks);
+    var hasClickers = true;
+     
+  }
+
+}
+
+
+while (hasClickers = true) {
+
+     
+
+     }
+
+
 
