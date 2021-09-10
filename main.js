@@ -25,7 +25,7 @@
 
 function addClicks(ammount) {
 
- clicks = clicks + ammount * multiplier
+ clicks = clicks + ammount * multiplier;
       document.getElementById("clicks").innerHTML = clicks;
   }
      function upgradeMenu() {
@@ -57,7 +57,7 @@ if (clicks >= multiplierCost) {
 
 
     var clicks = clicks - multiplierCost;
-    var multiplierCost = multiplierCost * 1.5
+    var multiplierCost = multiplierCost * 1.5;
     var multiplier = multiplier + 1; 
     document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
     document.getElementById("multiplier").innerHTML = multiplier
