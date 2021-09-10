@@ -16,7 +16,7 @@
     
     var multiplierCost = 100;
 
-     clicks = JSON.parse(localStorage.getItem('clicks'));;
+     
       document.getElementById("mult").innerHTML = multiplier;
      document.getElementById("clicks").innerHTML = Math.round(clicks);
      
@@ -60,7 +60,8 @@ if (clicks >= multiplierCost) {
     var multiplierCost = multiplierCost * 1.5
     var multiplier = multiplier + 1; 
     document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
-    document.getElementById("multiplier").innerHTML = clickers;
+    document.getElementById("multiplier").innerHTML = mult
+     
   }
 
 }
