@@ -60,7 +60,8 @@ if (clicks >= multiplierCost) {
     var multiplierCost = multiplierCost * 1.5
     var multiplier = multiplier + 1; 
     document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
-    document.getElementById("multiplier").innerHTML = mult
+    document.getElementById("multiplier").innerHTML = multiplier
+    document.getElementById("clicks").innerHTML = Math.round(clicks);
      
   }
 
