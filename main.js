@@ -53,13 +53,13 @@ function addClicks(ammount) {
 
 function buyMult() {
 
-if (clicks >= clickerCost) {
+if (clicks >= multiplierCost) {
 
 
-    var clicks = clicks - clickerCost;
-    var clickers = clickers + 1; 
-    document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
-    document.getElementById("clickers").innerHTML = clickers;
+    var clicks = clicks - multiplierCost;
+    var multiplier = multiplier + 1; 
+    document.getElementById("multiplierCost").innerHTML = Math.round(multiplierCost);
+    document.getElementById("multiplier").innerHTML = clickers;
   }
 
 }
