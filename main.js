@@ -1,6 +1,4 @@
-     var hasClickers = false;
 
-     var interval = 1000;
 
      var x = 0;
 
@@ -82,7 +80,7 @@ if (clicks = clickerCost) {
     document.getElementById("clickerCost").innerHTML = Math.round(multiplierCost);
     document.getElementById("clickers").innerHTML = multiplier
     document.getElementById("clicks").innerHTML = Math.round(clicks);
-    var hasClickers = true;
+ 
       var t = t - 0.05 * 2;
      
   }
@@ -90,7 +88,6 @@ if (clicks = clickerCost) {
 }
 
 
-while (hasClickers = true) {
 
            // Timer
         var t = 200;
@@ -111,5 +108,5 @@ while (hasClickers = true) {
         }
 
 
-}
+
 
