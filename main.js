@@ -82,10 +82,10 @@ if (clicks = clickerCost) {
     document.getElementById("clicks").innerHTML = Math.round(clicks);
  
       var t = t - 0.05 * 2;
-    if (hasClickers = false)  {
+
     
           var hasClickers = true;
-        } 
+        
   }
 
 }
