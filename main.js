@@ -1,4 +1,4 @@
-
+     var hasClicker = false;
 
      var x = 0;
 
@@ -82,12 +82,15 @@ if (clicks = clickerCost) {
     document.getElementById("clicks").innerHTML = Math.round(clicks);
  
       var t = t - 0.05 * 2;
-     
+    if (hasClickers = false)  {
+    
+          var hasClickers = true;
+        } 
   }
 
 }
 
-
+     if (hasClickers = true)  {
 
            // Timer
         var t = 200;
@@ -105,8 +108,9 @@ if (clicks = clickerCost) {
        
             addClicks();
             setTimeout(f1, t);
+             document.getElementById("clicks").innerHTML = Math.round(clicks);
         }
 
-
+     }
 
 
