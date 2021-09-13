@@ -5,9 +5,7 @@
      var y = 0;
 
      var z = 0;
-     
-     var interval = 1000;
-
+    
      var clicks = 0;
     
     var clickerCost = 150;
@@ -71,7 +69,7 @@ if (clicks >= multiplierCost) {
 
 function buyClicker() {
 
-if (clicks = clickerCost) {
+if (clicks >= clickerCost) {
 
 
     var clicks = clicks - clickerCost;
@@ -81,7 +79,7 @@ if (clicks = clickerCost) {
     document.getElementById("clickers").innerHTML = multiplier
     document.getElementById("clicks").innerHTML = Math.round(clicks);
  
-      var t = t - 0.05 * 2;
+      var t = t - 0.5;
 
     
           var hasClickers = true;
@@ -93,7 +91,7 @@ if (clicks = clickerCost) {
      if (hasClickers = true)  {
 
            // Timer
-        var t = 200;
+        var t = 1000;
  
         f1();
          
