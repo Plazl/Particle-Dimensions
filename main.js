@@ -1,4 +1,4 @@
-     var hasClicker = false;
+     var hasClickers = false;
 
      var x = 0;
 
@@ -25,9 +25,9 @@
      
    
 
-function addClicks(ammount) {
+function addClicks(amount) {
 
- clicks = clicks + ammount * multiplier;
+ clicks = clicks + amount * multiplier;
       document.getElementById("clicks").innerHTML = clicks;
   }
      function upgradeMenu() {
