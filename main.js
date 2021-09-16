@@ -107,7 +107,7 @@ if (clicks >= clickerCost) {
 
         function f1() {
           if (hasClickers = true) {
-            addClicks(1);
+            addClicks();
             setTimeout(f1, t);
           
         }
