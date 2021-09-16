@@ -112,16 +112,4 @@ if (clicks >= clickerCost) {
           
         }
           }
-//Updater
-function onLoad() {
-while (playing = true) {
-     
-     function updater() {
-     setTimeout(updater, 100);
-      var formattedClicks = clicks.toExponential(2);
-      document.getElementById("clicks").innerHTML = formattedClicks;
-     }
-  }
-    
-}
 
