@@ -26,7 +26,8 @@
 function addClicks(amount) {
 
  clicks = clicks + amount * multiplier;
-      document.getElementById("clicks").innerHTML = clicks;
+      var formattedClicks = clicks.toExponential(2);
+      document.getElementById("clicks").innerHTML = formattedClicks;
   }
      function upgradeMenu() {
   var x = document.getElementById("main");
@@ -51,7 +52,7 @@ function addClicks(amount) {
   }  
 }
 
-function buyMult() {
+function buyMult(amount) {
 
 if (clicks >= multiplierCost) {
 
@@ -67,7 +68,7 @@ if (clicks >= multiplierCost) {
 
 }
 
-function buyClicker() {
+function buyClicker(amount) {
 
 if (clicks >= clickerCost) {
 
@@ -89,7 +90,6 @@ if (clicks >= clickerCost) {
 
 }
 
-     if (hasClickers = true)  {
 
            // Timer
         var t = 1000;
@@ -104,13 +104,13 @@ if (clicks >= clickerCost) {
          
 
         function f1() {
-       
+          if (hasClicker = true)
             addClicks();
             setTimeout(f1, t);
              document.getElementById("clicks").innerHTML = Math.round(clicks);
         }
 
-     }
+    
 
  else {
  console.log("no")
