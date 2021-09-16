@@ -29,3 +29,30 @@ for (let [input, expected] of clicks) {
   console.log('\n%s\n%s', fixedWidth(input, 25), fixedWidth(expected, 25));
   console.log('%s', fixedWidth(actual, 25));
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Updater
+function onLoad() {
+while (playing = true) {
+     
+     function updater() {
+     setTimeout(updater, 100);
+      var formattedClicks = clicks.toExponential(2);
+      document.getElementById("clicks").innerHTML = formattedClicks;
+     }
+  }
+    
+}
+
