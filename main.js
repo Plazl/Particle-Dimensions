@@ -93,23 +93,4 @@ if (clicks >= clickerCost) {
 }
 
 
-           // Timer
-        var t = 1000;
- 
-        f1();
-         
-    
-        function addClicks(){
-         
-             clicks = clicks + 1 * multiplier;
-        }
-         
-
-        function f1() {
-          if (hasClickers = true) {
-            addClicks();
-            setTimeout(f1, t);
-          
-        }
-          }
 
