@@ -24,12 +24,13 @@
      
      
    
-
+ //click adder
 function addClicks(amount) {
 
  clicks = clicks + amount * multiplier;
      
   }
+//upgrade menu
      function upgradeMenu() {
   var x = document.getElementById("main");
   if (x.style.display === "none") {
@@ -52,7 +53,7 @@ function addClicks(amount) {
 
   }  
 }
-
+//multiplier
 function buyMult(amount) {
 
 if (clicks >= multiplierCost) {
@@ -68,7 +69,7 @@ if (clicks >= multiplierCost) {
   }
 
 }
-
+//clicker
 function buyClicker(amount) {
 
 if (clicks >= clickerCost) {
@@ -111,7 +112,7 @@ if (clicks >= clickerCost) {
           
         }
           }
-
+//Updater
 while (playing = true) {
      
      function updater() {
