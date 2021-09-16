@@ -104,11 +104,11 @@ if (clicks >= clickerCost) {
          
 
         function f1() {
-          if (hasClicker = true)
+          if (hasClicker = true) {
             addClicks();
             setTimeout(f1, t);
              document.getElementById("clicks").innerHTML = Math.round(clicks);
         }
-
+          }
     
 
