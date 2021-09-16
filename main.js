@@ -112,8 +112,3 @@ if (clicks >= clickerCost) {
 
     
 
- else {
- console.log("no")
-  }
-  
-
