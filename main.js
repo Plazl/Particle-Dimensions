@@ -16,6 +16,8 @@
     
     var multiplierCost = 100;
 
+     var playing = true;
+
      
       document.getElementById("mult").innerHTML = multiplier;
      document.getElementById("clicks").innerHTML = Math.round(clicks);
@@ -26,8 +28,7 @@
 function addClicks(amount) {
 
  clicks = clicks + amount * multiplier;
-      var formattedClicks = clicks.toExponential(2);
-      document.getElementById("clicks").innerHTML = formattedClicks;
+     
   }
      function upgradeMenu() {
   var x = document.getElementById("main");
@@ -62,7 +63,7 @@ if (clicks >= multiplierCost) {
     var multiplier = multiplier + 1; 
     document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
     document.getElementById("multiplier").innerHTML = multiplier
-    document.getElementById("clicks").innerHTML = Math.round(clicks);
+ 
      
   }
 
@@ -80,7 +81,7 @@ if (clicks >= clickerCost) {
     var t = t - 0.5;
     document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
     document.getElementById("clickers").innerHTML = clickers;
-    document.getElementById("clicks").innerHTML = Math.round(clicks);
+  
  
           
     
@@ -104,11 +105,20 @@ if (clicks >= clickerCost) {
          
 
         function f1() {
-          if (hasClicker = true) {
-            addClicks();
+          if (hasClickers = true) {
+            addClicks(1);
             setTimeout(f1, t);
-             document.getElementById("clicks").innerHTML = Math.round(clicks);
+          
         }
           }
+
+while (playing = true) {
+     
+     function updater() {
+     setTimeout(updater, 50);
+      var formattedClicks = clicks.toExponential(2);
+      document.getElementById("clicks").innerHTML = formattedClicks;
+     }
+}
     
 
