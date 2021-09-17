@@ -94,7 +94,7 @@ if (clicks >= clickerCost) {
 
 
 //Updater
-function onLoad() {
+ {
 while (playing = true) {
      
      function updater() {
