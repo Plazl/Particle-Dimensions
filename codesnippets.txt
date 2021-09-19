@@ -1,10 +1,10 @@
 const americanNames = [
-  'one', 'thousand', 'million', 'billion', 'trillion', 'quadrillion', 'quintillion', 'sextillion', 'septillion', 'octillion', 'nonillion',
+   'K', 'M', 'B', 'T', 'Qa', 'Qi', 'Sx', 'Sp', 'O', 'N'
  
 ];
 
-function formatBigPositiveNumber(n) {
-  const str = BigInt(n).toString();
+function formatBigPositiveNumber(clicks) {
+  const str = BigInt(clicks).toString();
   const len = str.length;
   if (len <= 3) {
     return str;
@@ -15,7 +15,7 @@ function formatBigPositiveNumber(n) {
     const place = 1 + (len + 2) % 3;
     const sig = str.slice(0, 4);
     const name = americanNames[magnitude];
-    if (!name) throw new Error('I cannot format that number');
+    if (!name)  var formattedClicks = clicks.toExponential(2);;
     return sig.substring(0, place) + '.' + sig.substring(place) + ' ' + name
   }
 }
