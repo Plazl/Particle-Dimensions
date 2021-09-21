@@ -92,23 +92,7 @@ if (clicks >= clickerCost) {
 
 }
 
-function loaded() {
- 
-     var playing = true;
-     
-}
-//Updater
- {
-while (playing = true) {
-     
-     function updater() {
-     setTimeout(updater, 100);
-      var formattedClicks = clicks.toExponential(2);
-      document.getElementById("clicks").innerHTML = formattedClicks;
-     }
-  }
-    
-}
+
 
 
 
