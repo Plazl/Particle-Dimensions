@@ -16,7 +16,7 @@
     
     var multiplierCost = 100;
 
-     var playing = true;
+     var playing = false;
 
      
       document.getElementById("mult").innerHTML = multiplier;
@@ -92,7 +92,11 @@ if (clicks >= clickerCost) {
 
 }
 
-
+function loaded() {
+ 
+     var playing = true;
+     
+}
 //Updater
  {
 while (playing = true) {
