@@ -93,6 +93,19 @@ if (clicks >= clickerCost) {
 }
 
 
+function urMom() {
+     setInterval(updater, 100);
+while (playing = true) {
+     
+     function updater() {
+      var formattedClicks = clicks.toExponential(2);
+      document.getElementById("clicks").innerHTML = formattedClicks;
+     }
+  }
+    
+}
+
+
 
 
 
