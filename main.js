@@ -96,7 +96,10 @@ if (clicks >= clickerCost) {
 
      setInterval(updater, 100);
      function updater() {
+      if (clicks => 1e34) { 
+           
       var formattedClicks = clicks.toExponential(2);
+         }
       document.getElementById("clicks").innerHTML = formattedClicks;
      }
   }
