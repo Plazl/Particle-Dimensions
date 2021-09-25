@@ -102,7 +102,7 @@ if (clicks >= clickerCost) {
          }
       document.getElementById("clicks").innerHTML = formattedClicks;
      }
-  }
+  
    
 
 
