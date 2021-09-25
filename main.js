@@ -54,7 +54,7 @@ function addClicks(amount) {
   }  
 }
 //multiplier
-function buyMult(amount) {
+function buyMult() {
 
 if (clicks >= multiplierCost) {
 
@@ -70,7 +70,7 @@ if (clicks >= multiplierCost) {
 
 }
 //clicker
-function buyClicker(amount) {
+function buyClicker() {
 
 if (clicks >= clickerCost) {
 
@@ -96,7 +96,7 @@ if (clicks >= clickerCost) {
 
      setInterval(updater, 100);
      function updater() {
-      if (clicks => 1e34) { 
+      if (clicks >= 1e34) { 
            
       var formattedClicks = clicks.toExponential(2);
          }
