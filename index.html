@@ -80,6 +80,23 @@
    <button class="button multup" onClick="buyMult()">Buy a click multiplier for <span id="multPrice">100</span> clicks!</button>
     <button class="button buyClicker" onClick="buyClicker()">Buy a clicker for <span id="clickerPrice">150</span> clicks!</button>
   </div>
+  <script>
+function openTab(tab,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(tab).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+document.getElementById("defaultOpen").click();
+</script>
      <style>
       
       .multup {
