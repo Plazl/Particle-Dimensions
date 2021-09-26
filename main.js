@@ -6,7 +6,7 @@
 
      var z = 0;
     
-     var clicks = 0;
+     var clicks = 10;
     
     var clickerCost = 150;
     
@@ -96,7 +96,7 @@ if (clicks >= clickerCost) {
 
      setInterval(updater, 100);
      function updater() {
-      document.getElementById("clicks").innerHTML = Clicks;
+      document.getElementById("clicks").innerHTML = clicks;
      }
   
    
