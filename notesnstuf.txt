@@ -1,0 +1,1 @@
+Variables: Clicks, Clickers, clickerCost, Multiplier, multiplierCost, hasClickers
