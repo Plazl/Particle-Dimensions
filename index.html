@@ -68,14 +68,14 @@
       }
    
   </style>
-   <div class="tab">
+
   <button class="tablink" onClick="openTab('clickmenu', this, 'darkgrey')">C</button>
   <button class="tablink" onClick="openTab('upgrades', this, 'darkgrey')">U</button>
   <button class="tablink" onClick="openTab('automation', this, 'darkgrey')">A</button>
   <button class="tablink" onClick="openTab('options', this, 'darkgrey')">O</button>
   <button class="tablink" onClick="openTab('achivements', this, 'darkgrey')">A</button>
   <button class="tablink" onClick="htp()">H</button>
-    </div>
+    
   <div id="upgradestab" style="display:none">
    <button class="button multup" onClick="buyMult()">Buy a click multiplier for <span id="multPrice">100</span> clicks!</button>
     <button class="button buyClicker" onClick="buyClicker()">Buy a clicker for <span id="clickerPrice">150</span> clicks!</button>
@@ -117,6 +117,19 @@
       
       
       }
+      
+ .tablink {
+    background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 1px;
+  font-size: 15px;
+  width: 25%;
+  top: 150%;
+}
       
      </style>
   </div>
