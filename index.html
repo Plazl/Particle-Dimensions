@@ -76,7 +76,7 @@
   <button class="tablink" onClick="openTab('achivements', this, 'darkgrey')">A</button>
   <button class="tablink" onClick="htp()">H</button>
     
-  <div id="upgradestab" style="display:none">
+  <div id="upgrades" style="display:block">
    <button class="button multup" onClick="buyMult()">Buy a click multiplier for <span id="multPrice">100</span> clicks!</button>
     <button class="button buyClicker" onClick="buyClicker()">Buy a clicker for <span id="clickerPrice">150</span> clicks!</button>
   </div>
@@ -95,7 +95,7 @@ function openTab(tab,elmnt,color) {
   elmnt.style.backgroundColor = color;
 
 }
-document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen").clickmenu();
    
    function htp() {
 
