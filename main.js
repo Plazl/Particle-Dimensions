@@ -31,28 +31,7 @@ function addClicks(amount) {
      
   }
 //upgrade menu
-     function upgradeMenu() {
-  var x = document.getElementById("main");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-           var y = document.getElementById("main1");
-  if (y.style.display === "none") {
-    y.style.display = "block";     
-  } else {
-    y.style.display = "none";
-
-  }
-          var z = document.getElementById("upgradestab");
-  if (z.style.display === "block") {
-    z.style.display = "none";
-  } else {
-    z.style.display = "block";
-
-  }  
-}
+     
 //multiplier
 function buyMult() {
 
