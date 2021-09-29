@@ -69,7 +69,7 @@
    
   </style>
 
-  <button class="tablink" onClick="openTab('clickmenu', this, 'darkgrey')">C</button>
+  <button class="tablink" onClick="openTab('clickmenu', this, 'darkgrey')" id="defaultOpen">C</button>
   <button class="tablink" onClick="openTab('upgrades', this, 'darkgrey')">U</button>
   <button class="tablink" onClick="openTab('automation', this, 'darkgrey')">A</button>
   <button class="tablink" onClick="openTab('options', this, 'darkgrey')">O</button>
@@ -95,7 +95,7 @@ function openTab(tab,elmnt,color) {
   elmnt.style.backgroundColor = color;
 
 }
-document.getElementById("defaultOpen").tablink.(clickmenu);
+document.getElementById("defaultOpen");
    
    function htp() {
 
