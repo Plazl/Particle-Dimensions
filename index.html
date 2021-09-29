@@ -49,11 +49,7 @@
    </style>
 </head>
  <body>
-  <div id="clickmenu" style="display:block">
-     <p class="p p1">You have <span id="clicks">0</span> clicks.</p>
-    <button class="button button1" onClick="addClicks(1)">Click Me!</button>
-  </div>
-    <script src="main.js"></script>
+
   <style>
     
    .p1 {
@@ -70,16 +66,21 @@
   </style>
 
   <button class="tablink" onClick="openTab('clickmenu', this, 'darkgrey')" id="defaultOpen">C</button>
-  <button class="tablink" onClick="openTab('upgrades', this, 'darkgrey')">U</button>
+      <div id="clickmenu" style="display:block">
+        <p class="p p1">You have <span id="clicks">0</span> clicks.</p>
+        <button class="button button1" onClick="addClicks(1)">Click Me!</button>
+     </div>
+    <script src="main.js"></script>
+  <button class="tablink" onClick="openTab('upgrades', this, 'darkgrey')">U</button> 
+     <div id="upgrades" style="display:hidden">
+       <button class="button multup" onClick="buyMult()">Buy a click multiplier for <span id="multPrice">100</span> clicks!</button>
+       <button class="button buyClicker" onClick="buyClicker()">Buy a clicker for <span id="clickerPrice">150</span> clicks!</button>
+     </div>
   <button class="tablink" onClick="openTab('automation', this, 'darkgrey')">A</button>
   <button class="tablink" onClick="openTab('options', this, 'darkgrey')">O</button>
   <button class="tablink" onClick="openTab('achivements', this, 'darkgrey')">A</button>
   <button class="tablink" onClick="htp()">H</button>
-    
-  <div id="upgrades" style="display:hidden">
-   <button class="button multup" onClick="buyMult()">Buy a click multiplier for <span id="multPrice">100</span> clicks!</button>
-    <button class="button buyClicker" onClick="buyClicker()">Buy a clicker for <span id="clickerPrice">150</span> clicks!</button>
-  </div>
+   
   <script>
 function openTab(tab,elmnt,color) {
   var i, tabcontent, tablinks;
