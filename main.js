@@ -35,9 +35,10 @@ function addClicks(amount) {
 //multiplier
 
 
-if (clicks >= multiplierCost) {
-    function buyMult() {
 
+    function buyMult() {
+          if (clicks >= multiplierCost) {
+               
     clicks = clicks - multiplierCost;
      multiplierCost = multiplierCost * 1.5;
      multiplier = multiplier + 1; 
@@ -51,9 +52,10 @@ if (clicks >= multiplierCost) {
 //clicker
 
 
-if (clicks >= clickerCost) {
-    function buyClicker() {
 
+    function buyClicker() {
+         if (clicks >= clickerCost) {
+         
      clicks = clicks - clickerCost;
      clickerCost = clickerCost * 1.5;
      clickers = clickers + 1; 
