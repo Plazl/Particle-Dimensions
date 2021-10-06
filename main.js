@@ -33,10 +33,10 @@ function addClicks(amount) {
 //upgrade menu
      
 //multiplier
-function buyMult() {
+
 
 if (clicks >= multiplierCost) {
-
+    function buyMult() {
 
     var clicks = clicks - multiplierCost;
     var multiplierCost = multiplierCost * 1.5;
@@ -49,10 +49,10 @@ if (clicks >= multiplierCost) {
 
 }
 //clicker
-function buyClicker() {
+
 
 if (clicks >= clickerCost) {
-
+    function buyClicker() {
 
     var clicks = clicks - clickerCost;
     var clickerCost = clickerCost * 1.5;
