@@ -38,9 +38,9 @@ function addClicks(amount) {
 if (clicks >= multiplierCost) {
     function buyMult() {
 
-    var clicks = clicks - multiplierCost;
-    var multiplierCost = multiplierCost * 1.5;
-    var multiplier = multiplier + 1; 
+    clicks = clicks - multiplierCost;
+     multiplierCost = multiplierCost * 1.5;
+     multiplier = multiplier + 1; 
     document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
     document.getElementById("multiplier").innerHTML = multiplier
  
@@ -54,11 +54,11 @@ if (clicks >= multiplierCost) {
 if (clicks >= clickerCost) {
     function buyClicker() {
 
-    var clicks = clicks - clickerCost;
-    var clickerCost = clickerCost * 1.5;
-    var clickers = clickers + 1; 
-    var hasClickers = true;
-    var t = t - 0.5;
+     clicks = clicks - clickerCost;
+     clickerCost = clickerCost * 1.5;
+     clickers = clickers + 1; 
+     hasClickers = true;
+     t = t - 0.5;
     document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
     document.getElementById("clickers").innerHTML = clickers;
   
