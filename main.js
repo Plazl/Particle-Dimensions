@@ -77,7 +77,7 @@ function addClicks(amount) {
 
      setInterval(updater, 100);
      function updater() {
-      document.getElementById("clicks").innerHTML = clicks;
+      document.getElementById("clicks").innerHTML = Math.round(clicks);
      }
   
    
