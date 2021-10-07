@@ -28,21 +28,7 @@
       body {
   background-color: grey;
 }
-         .button2 {
-               position: absolute;
-   left: 50%;
-   top: 75%; 
-      background-color: #04AA6D;
-  border: none;
-  color: white;
-  padding: 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-    border-radius: 5px;  
-      }
+
        
        
       
@@ -51,6 +37,15 @@
  <body>
 
   <style>
+   .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
     
    .p1 {
                position: absolute;
@@ -64,7 +59,7 @@
       }
    
   </style>
-
+<div class="footer">
   <button class="tablink" onClick="openTab('clickmenu', this, 'darkgrey')" id="defaultOpen">C</button>
       <div id="clickmenu" style="display:block" class="tabcontent">
         <p class="p p1">You have <span id="clicks">0</span> clicks.</p>
@@ -80,6 +75,7 @@
   <button class="tablink" onClick="openTab('options', this, 'darkgrey')">O</button>
   <button class="tablink" onClick="openTab('achivements', this, 'darkgrey')">A</button>
   <button class="tablink" onClick="htp()">H</button>
+ </div>
    
   <script>
  openTab('clickmenu');
