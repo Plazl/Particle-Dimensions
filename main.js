@@ -1,4 +1,4 @@
-     var hasClickers = false;
+     var t = 1000;
 
      var x = 0;
 
