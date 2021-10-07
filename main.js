@@ -25,9 +25,9 @@
      
    
  //click adder
-function addClicks(amount) {
+function addClicks() {
 
- clicks = clicks + amount * multiplier;
+ clicks = clicks + 1 * multiplier;
      
   }
 //upgrade menu
@@ -82,7 +82,7 @@ function addClicks(amount) {
   
 
    if (clickers >= 1) {
-        setInterval(addClicks(1), t) 
+        setInterval(addClicks, t) 
    }
 
 
