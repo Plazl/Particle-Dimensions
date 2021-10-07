@@ -81,7 +81,9 @@ function addClicks(amount) {
      }
   
 
-
+   if (clickers >= 1) {
+        setInterval(addClicks(1), t) 
+   }
 
 
 
