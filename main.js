@@ -80,7 +80,14 @@ function addClicks(amount) {
       document.getElementById("clicks").innerHTML = Math.round(clicks);
      }
   
-   
+   if (clickers >= 1) {
+        setInterval(addClicks(1), t) {
+             
+             
+        }
+        
+        
+   }
 
 
 
