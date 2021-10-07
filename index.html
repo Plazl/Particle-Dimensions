@@ -39,11 +39,9 @@
   <style>
    .footer {
   position: fixed;
-  left: 0;
+  left: 25%;
   bottom: 0;
   width: 100%;
-  background-color: red;
-  color: white;
   text-align: center;
 }
     
@@ -59,18 +57,20 @@
       }
    
   </style>
-<div class="footer">
-  <button class="tablink" onClick="openTab('clickmenu', this, 'darkgrey')" id="defaultOpen">C</button>
-      <div id="clickmenu" style="display:block" class="tabcontent">
+    <div id="clickmenu" style="display:block" class="tabcontent">
         <p class="p p1">You have <span id="clicks">0</span> clicks.</p>
         <button class="button button1" onClick="addClicks()">Click Me!</button>
         </div>
-        <script src="main.js"></script>
-  <button class="tablink" onClick="openTab('upgrades', this, 'darkgrey')">U</button> 
      <div id="upgrades" style="display:hidden" class="tabcontent">
        <button class="button multup" onClick="buyMult()">Buy a click multiplier for <span id="multPrice">100</span> clicks!</button>
        <button class="button buyClicker" onClick="buyClicker()">Buy a clicker for <span id="clickerPrice">150</span> clicks!</button>
      </div>
+<div class="footer">
+  <button class="tablink" onClick="openTab('clickmenu', this, 'darkgrey')" id="defaultOpen">C</button>
+    
+        <script src="main.js"></script>
+  <button class="tablink" onClick="openTab('upgrades', this, 'darkgrey')">U</button> 
+  
   <button class="tablink" onClick="openTab('automation', this, 'darkgrey')">A</button>
   <button class="tablink" onClick="openTab('options', this, 'darkgrey')">O</button>
   <button class="tablink" onClick="openTab('achivements', this, 'darkgrey')">A</button>
