@@ -43,7 +43,7 @@ function addClicks(amount) {
      multiplierCost = multiplierCost * 1.5;
      multiplier = multiplier + 1; 
     document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
-    document.getElementById("multiplier").innerHTML = multiplier
+    document.getElementById("mult").innerHTML = multiplier
  
      
   }
@@ -80,14 +80,6 @@ function addClicks(amount) {
       document.getElementById("clicks").innerHTML = Math.round(clicks);
      }
   
-   if (clickers >= 1) {
-        setInterval(addClicks(1), t) {
-             
-             
-        }
-        
-        
-   }
 
 
 
