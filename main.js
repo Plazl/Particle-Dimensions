@@ -84,8 +84,10 @@ function addClicks() {
       document.getElementById("clicks").innerHTML = Math.round(clicks);
             if (typeof(Storage) !== "undefined") {
     if (localStorage.hasStarted = true) {
+         document.getElementById("clicks").innerHTML = localStorage.clicks;
     } else {
       localStorage.clicks = 10;
+     
     }
    
   } else {
