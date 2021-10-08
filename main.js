@@ -100,6 +100,6 @@ slider.oninput = function() {
   output.innerHTML = framerate;
   
 }
-
+     }
 
 
