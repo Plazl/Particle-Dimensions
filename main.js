@@ -81,7 +81,7 @@ function addClicks() {
 
      setInterval(updater, framerate);
      function updater() {
-     localStorage.setItem("clicks", clicks);
+     localStorage.setItem("clicks", JSON.stringify(clicks));
       document.getElementById("clicks").innerHTML = Math.round(clicks);
          localStorage.getItem(clicks)
     
