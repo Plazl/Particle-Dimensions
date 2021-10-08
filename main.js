@@ -95,7 +95,7 @@ function addClicks() {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage so this game will not work for you.";
   }
 }
-     }
+     
   
 
    if (clickers >= 1) {
