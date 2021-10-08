@@ -81,21 +81,10 @@ function addClicks() {
 
      setInterval(updater, framerate);
      function updater() {
-          localStorage.clicks = clicks;
+     localStorage.setItem("clicks", clicks);
       document.getElementById("clicks").innerHTML = Math.round(clicks);
-            if (typeof(Storage) !== "undefined") {
-    if (localStorage.hasStarted = true) {
-         document.getElementById("clicks").innerHTML = localStorage.clicks;
-    } else {
-      localStorage.clicks = 10;
-     
-    }
-   
-  } else {
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage so this game will not work for you.";
-  }
-}
-     
+         localStorage.getItem(clicks)
+    
   
 
    if (clickers >= 1) {
