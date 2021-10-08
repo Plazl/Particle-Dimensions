@@ -7,9 +7,9 @@
      var y = 0;
 
      var z = 0;
-    
+    if (hasStarted = false) {
      var clicks = 10;
-    
+    }
     var clickerCost = 150;
     
     var clickers = 0;
