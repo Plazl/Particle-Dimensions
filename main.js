@@ -1,5 +1,7 @@
      var t = 1000;
 
+     var framerate = 100;
+
      var x = 0;
 
      var y = 0;
@@ -75,7 +77,7 @@ function addClicks() {
 
 
 
-     setInterval(updater, 100);
+     setInterval(updater, framerate);
      function updater() {
       document.getElementById("clicks").innerHTML = Math.round(clicks);
      }
@@ -84,6 +86,16 @@ function addClicks() {
    if (clickers >= 1) {
         setInterval(addClicks, t) 
    }
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+    framerate = this.value;
+  output.innerHTML = framerate;
+  
+}
 
 
 
