@@ -65,7 +65,7 @@ function addClicks() {
      clickers = clickers + 1; 
      hasClickers = true;
      t = t - 0.5;
-    document.getElementById("clickerCost").innerHTML = Math.round(clickerCost);
+    document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
     document.getElementById("clickers").innerHTML = clickers;
   
  
