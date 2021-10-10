@@ -18,11 +18,19 @@
     
     var multiplierCost = 100;
 
-     
+     function loadSave() {
+     var savedGame = JSON.parse(localStorage.getItem("gameSave"))
+     if (typeof savedGame.clicks !== "undefined") clicks = savedGame.clicks;
+	       if (typeof savedGame.multiplier !== "undefined") clicks = savedGame.multiplier;
+	       if (typeof savedGame.multiplierCost !== "undefined") clicks = savedGame.multiplierCost;
+	       if (typeof savedGame.clickers !== "undefined") clicks = savedGame.clickers;
+	       if (typeof savedGame.clickerCost !== "undefined") clicks = savedGame.clickerCost;
+     }
 
      
       document.getElementById("mult").innerHTML = multiplier;
-     document.getElementById("clicks").innerHTML = Math.round(clicks);
+      document.getElementById("clickers").innerHTML = clickers;
+      document.getElementById("clicks").innerHTML = Math.round(clicks);
      
      
    
@@ -130,3 +138,7 @@ function saveGame() {
 setInterval(function() {
 saveGame();
 }, 30000);
+
+window.onLoad = function() {
+loadGame();
+}
