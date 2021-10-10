@@ -100,11 +100,11 @@ slider.oninput = function() {
 }
      }
  var convert = clicks => {
-			if (clicks < 1e3) return clicks;
-			if (clicks >= 1e3 && clicks < 1e6) return +(clicks / 1e3).toFixed(1) + "K";
-			if (clicks >= 1e6 && clicks < 1e9) return +(clicks / 1e6).toFixed(1) + "M";
-			if (clicks >= 1e9 && clicks < 1e12) return +(clicks / 1e9).toFixed(1) + "B";
-			if (clicks >= 1e12 && clicks < 1e15) return +(clicks / 1e12).toFixed(1) + "T";
+	    if (clicks < 1e3) return clicks;
+	    if (clicks >= 1e3 && clicks < 1e6) return +(clicks / 1e3).toFixed(1) + "K";
+	    if (clicks >= 1e6 && clicks < 1e9) return +(clicks / 1e6).toFixed(1) + "M";
+	    if (clicks >= 1e9 && clicks < 1e12) return +(clicks / 1e9).toFixed(1) + "B";
+	    if (clicks >= 1e12 && clicks < 1e15) return +(clicks / 1e12).toFixed(1) + "T";
             if (clicks >= 1e15 && clicks < 1e18) return +(clicks / 1e15).toFixed(1) + "Qa";
             if (clicks >= 1e18 && clicks < 1e21) return +(clicks / 1e18).toFixed(1) + "Qi";
             if (clicks >= 1e21 && clicks < 1e24) return +(clicks / 1e21).toFixed(1) + "Sx";
@@ -115,6 +115,18 @@ slider.oninput = function() {
 		};
 
 
+function saveGame() {
+   var gameSave = {
+     clicks: clicks,
+     clickers: clickers,
+     clickerCost: clickerCost,
+     multiplier: multiplier,
+     multiplierCost: multiplierCost
+   
+   };
+	localStorage.setItem("gameSave", JSON.stringify(gameSave));
+}
 
-
-
+setInterval(function() {
+saveGame();
+}, 30000);
