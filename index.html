@@ -106,12 +106,13 @@
   <button class="tablink" onClick="openTab('options', this, 'darkgrey')">O</button>
  <div id="options" style="display:hidden" class="tabcontent">
  
- <p>Drag the slider to change the frame rate.</p>
+ <p>Drag the slider to change the update rate.</p>
 
 <div class="slidecontainer">
   <input type="range" min="10" max="200" value="100" class="slider" id="myRange">
-  <p>FPS: <span id="demo"></span></p>
+  <label for="myRange"><span id="demo">50</span></label>
 </div>
+  <button onClick="saveGame()" id="quicksave">Quicksave</button>
  
  </div>
   <button class="tablink" onClick="openTab('achivements', this, 'darkgrey')">A</button>
