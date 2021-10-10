@@ -111,7 +111,7 @@ slider.oninput = function() {
             if (clicks >= 1e24 && clicks < 1e27) return +(clicks / 1e24).toFixed(1) + "Sp";
             if (clicks >= 1e27 && clicks < 1e30) return +(clicks / 1e27).toFixed(1) + "Oc";
             if (clicks >= 1e30 && clicks < 1e33) return +(clicks / 1e30).toFixed(1) + "No";
-            if (clicks >= 1e31) return n.toExponential(2);
+            if (clicks >= 1e31) return clicks.toExponential(2);
 		};
 
 
