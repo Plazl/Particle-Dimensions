@@ -140,5 +140,5 @@ saveGame();
 }, 30000);
 
 window.onLoad = function() {
-loadGame();
+loadSave();
 }
