@@ -141,8 +141,7 @@ function openTab(tab,elmnt,color) {
 window.open("https://plazl.github.io/howtoplayec");
    }
    
-   
-   const convert = clicks => {
+   var convert = clicks => {
 			if (clicks < 1e3) return clicks;
 			if (clicks >= 1e3 && clicks < 1e6) return +(clicks / 1e3).toFixed(1) + "K";
 			if (clicks >= 1e6 && clicks < 1e9) return +(clicks / 1e6).toFixed(1) + "M";
@@ -161,6 +160,7 @@ window.open("https://plazl.github.io/howtoplayec");
      function updater() {
 			document.getElementById(clicks) == convert(clicks);
 		}
+
 
 
 
