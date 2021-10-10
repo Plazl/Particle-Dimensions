@@ -82,7 +82,7 @@ function addClicks() {
      setInterval(updater, framerate);
      function updater() {
      localStorage.setItem("clicks", JSON.stringify(clicks));
-      document.getElementById("clicks").innerHTML = Math.round(clicks);
+      document.getElementById("clicks").innerHTML = (convert(clicks));
          localStorage.getItem(clicks)
     
   
@@ -101,5 +101,22 @@ slider.oninput = function() {
   
 }
      }
+ var convert = clicks => {
+			if (clicks < 1e3) return clicks;
+			if (clicks >= 1e3 && clicks < 1e6) return +(clicks / 1e3).toFixed(1) + "K";
+			if (clicks >= 1e6 && clicks < 1e9) return +(clicks / 1e6).toFixed(1) + "M";
+			if (clicks >= 1e9 && clicks < 1e12) return +(clicks / 1e9).toFixed(1) + "B";
+			if (clicks >= 1e12 && clicks < 1e15) return +(clicks / 1e12).toFixed(1) + "T";
+            if (clicks >= 1e15 && clicks < 1e18) return +(clicks / 1e15).toFixed(1) + "Qa";
+            if (clicks >= 1e18 && clicks < 1e21) return +(clicks / 1e18).toFixed(1) + "Qi";
+            if (clicks >= 1e21 && clicks < 1e24) return +(clicks / 1e21).toFixed(1) + "Sx";
+            if (clicks >= 1e24 && clicks < 1e27) return +(clicks / 1e24).toFixed(1) + "Sp";
+            if (clicks >= 1e27 && clicks < 1e30) return +(clicks / 1e27).toFixed(1) + "Oc";
+            if (clicks >= 1e30 && clicks < 1e33) return +(clicks / 1e30).toFixed(1) + "No";
+            if (clicks >= 1e31) return n.toExponential(2);
+		};
+
+
+
 
 
