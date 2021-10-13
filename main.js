@@ -144,7 +144,7 @@ function saveGame() {
 
 setInterval(function() {
 saveGame();
-}, 30000);
+}, 10000);
 
 window.onLoad = function() {
 loadSave();
