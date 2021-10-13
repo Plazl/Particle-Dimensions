@@ -1,4 +1,6 @@
      var t = 1000;
+     
+     var something;
 
      var framerate = 100;
    
@@ -11,6 +13,10 @@
     var multiplier = 1;
     
     var multiplierCost = 100;
+
+function loadPage() {
+  myVar = setTimeout(loadSave, 3000);
+}
 
      function loadSave() {
      var savedGame = JSON.parse(localStorage.getItem("gameSave"))
