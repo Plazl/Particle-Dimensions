@@ -34,7 +34,9 @@ function loadPage() {
 
      
       document.getElementById("mult").innerHTML = multiplier;
+      document.getElementById("multiplierPrice").innerHTML = Math.round(multiplierCost);
       document.getElementById("clickers").innerHTML = clickers;
+      document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
       document.getElementById("clicks").innerHTML = Math.round(clicks);
      
      
@@ -136,7 +138,9 @@ function saveGame() {
      multiplier: multiplier,
      multiplierCost: multiplierCost,
      t: t,
-     framerate: framerate
+     framerate: framerate,
+     slider: slider,
+     output: output
    
    };
 	localStorage.setItem("gameSave", JSON.stringify(gameSave));
