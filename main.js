@@ -1,12 +1,6 @@
      var t = 1000;
 
      var framerate = 100;
-
-     var x = 0;
-
-     var y = 0;
-
-     var z = 0;
    
      var clicks = 10;
     
@@ -21,10 +15,12 @@
      function loadSave() {
      var savedGame = JSON.parse(localStorage.getItem("gameSave"))
      if (typeof savedGame.clicks !== "undefined") clicks = savedGame.clicks;
-	       if (typeof savedGame.multiplier !== "undefined") clicks = savedGame.multiplier;
-	       if (typeof savedGame.multiplierCost !== "undefined") clicks = savedGame.multiplierCost;
-	       if (typeof savedGame.clickers !== "undefined") clicks = savedGame.clickers;
-	       if (typeof savedGame.clickerCost !== "undefined") clicks = savedGame.clickerCost;
+	       if (typeof savedGame.multiplier !== "undefined") multiplier = savedGame.multiplier;
+	       if (typeof savedGame.multiplierCost !== "undefined") multiplierCost = savedGame.multiplierCost;
+	       if (typeof savedGame.clickers !== "undefined") clickers = savedGame.clickers;
+	       if (typeof savedGame.clickerCost !== "undefined") clickerCost = savedGame.clickerCost;
+	       if (typeof savedGame.clickerCost !== "undefined") t = savedGame.t;
+	       if (typeof savedGame.clickerCost !== "undefined") framerate = savedGame.framerate;
      }
 
      
@@ -129,7 +125,9 @@ function saveGame() {
      clickers: clickers,
      clickerCost: clickerCost,
      multiplier: multiplier,
-     multiplierCost: multiplierCost
+     multiplierCost: multiplierCost,
+     t: t,
+     framerate: framerate
    
    };
 	localStorage.setItem("gameSave", JSON.stringify(gameSave));
