@@ -15,7 +15,7 @@
     var multiplierCost = 100;
 
 function loadPage() {
-  myVar = setTimeout(loadSave, 3000);
+  something = setTimeout(loadSave, 3000);
 }
 
      function loadSave() {
