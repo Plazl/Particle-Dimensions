@@ -16,7 +16,8 @@
 
      function loadSave() {
      var savedGame = JSON.parse(localStorage.getItem("gameSave"))
-     if (typeof savedGame.clicks !== "undefined") clicks = savedGame.clicks;
+     if (typeof savedGame.hasStarted !== "undefined") hasStarted = savedGame.hasStarted;
+     	       if (typeof savedGame.clicks !== "undefined") clicks = savedGame.clicks;
 	       if (typeof savedGame.multiplier !== "undefined") multiplier = savedGame.multiplier;
 	       if (typeof savedGame.multiplierCost !== "undefined") multiplierCost = savedGame.multiplierCost;
 	       if (typeof savedGame.clickers !== "undefined") clickers = savedGame.clickers;
@@ -133,10 +134,7 @@ function saveGame() {
      multiplier: multiplier,
      multiplierCost: multiplierCost,
      t: t,
-     framerate: framerate,
-     slider: slider,
-     output: output
-   
+     hasStarted: hasStarted
    };
 	localStorage.setItem("gameSave", JSON.stringify(gameSave));
 }
