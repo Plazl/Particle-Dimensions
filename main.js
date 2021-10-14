@@ -14,10 +14,6 @@
     
     var multiplierCost = 100;
 
-function loadPage() {
-  something = setTimeout(loadSave, 3000);
-}
-
      function loadSave() {
      var savedGame = JSON.parse(localStorage.getItem("gameSave"))
      if (typeof savedGame.clicks !== "undefined") clicks = savedGame.clicks;
