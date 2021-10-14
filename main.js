@@ -28,7 +28,7 @@
 
      
       document.getElementById("mult").innerHTML = multiplier;
-      document.getElementById("multiplierPrice").innerHTML = Math.round(multiplierCost);
+      document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
       document.getElementById("clickers").innerHTML = clickers;
       document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
       document.getElementById("clicks").innerHTML = Math.round(clicks);
