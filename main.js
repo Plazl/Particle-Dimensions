@@ -23,9 +23,7 @@
 	       if (typeof savedGame.clickers !== "undefined") clickers = savedGame.clickers;
 	       if (typeof savedGame.clickerCost !== "undefined") clickerCost = savedGame.clickerCost;
 	       if (typeof savedGame.clickerCost !== "undefined") t = savedGame.t;
-	       if (typeof savedGame.clickerCost !== "undefined") framerate = savedGame.framerate;
               
-
      }
 
      
