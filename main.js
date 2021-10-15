@@ -106,7 +106,7 @@ slider.oninput = function() {
   
 }
      }
-var convert = game.clicks => {
+var convert = (()game.clicks => {
 	    if (game.clicks < 1e3) return game.clicks;
 	    if (game.clicks >= 1e3 && game.clicks < 1e6) return +(game.clicks / 1e3).toFixed(1) + "K";
 	    if (game.clicks >= 1e6 && game.clicks < 1e9) return +(game.clicks / 1e6).toFixed(1) + "M";
@@ -119,7 +119,7 @@ var convert = game.clicks => {
             if (game.clicks >= 1e27 && game.clicks < 1e30) return +(game.clicks / 1e27).toFixed(1) + "Oc";
             if (game.clicks >= 1e30 && game.clicks < 1e33) return +(game.clicks / 1e30).toFixed(1) + "No";
             if (game.clicks >= 1e31) return game.clicks.toExponential(2);
-		};
+		});
 
 
 function saveGame() {
