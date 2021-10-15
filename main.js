@@ -1,45 +1,43 @@
-     var t = 1000;
+ var game = {t: 1000,
      
-     var something;
-
-     var framerate = 100;
+      framerate: 100,
    
-     var clicks = 10;
+      clicks: 10,
     
-    var clickerCost = 150;
+     clickerCost: 150,
     
-    var clickers = 0;
+     clickers: 0,
     
-    var multiplier = 1;
+     multiplier: 1,
     
-    var multiplierCost = 100;
+     multiplierCost: 100}
 
      function loadSave() {
      var savedGame = JSON.parse(localStorage.getItem("gameSave"))
      if (typeof savedGame.hasStarted !== "undefined") {
-     	       if (typeof savedGame.clicks !== "undefined") clicks = savedGame.clicks;
-	       if (typeof savedGame.multiplier !== "undefined") multiplier = savedGame.multiplier;
-	       if (typeof savedGame.multiplierCost !== "undefined") multiplierCost = savedGame.multiplierCost;
-	       if (typeof savedGame.clickers !== "undefined") clickers = savedGame.clickers;
-	       if (typeof savedGame.clickerCost !== "undefined") clickerCost = savedGame.clickerCost;
-	       if (typeof savedGame.clickerCost !== "undefined") t = savedGame.t;
+     	       if (typeof savedGame.clicks !== "undefined") game.clicks = savedGame.clicks;
+	       if (typeof savedGame.multiplier !== "undefined") game.multiplier = savedGame.multiplier;
+	       if (typeof savedGame.multiplierCost !== "undefined") game.multiplierCost = savedGame.multiplierCost;
+	       if (typeof savedGame.clickers !== "undefined") game.clickers = savedGame.clickers;
+	       if (typeof savedGame.clickerCost !== "undefined") game.clickerCost = savedGame.clickerCost;
+	       if (typeof savedGame.clickerCost !== "undefined") game.t = savedGame.t;
         }
               
      }
 
      
-      document.getElementById("mult").innerHTML = multiplier;
-      document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
-      document.getElementById("clickers").innerHTML = clickers;
-      document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
-      document.getElementById("clicks").innerHTML = Math.round(clicks);
+      document.getElementById("mult").innerHTML = game.multiplier;
+      document.getElementById("multPrice").innerHTML = Math.round(game.multiplierCost);
+      document.getElementById("clickers").innerHTML = game.clickers;
+      document.getElementById("clickerPrice").innerHTML = Math.round(game.clickerCost);
+      document.getElementById("clicks").innerHTML = Math.round(game.clicks);
      
      
    
  //click adder
 function addClicks() {
 
- clicks = clicks + 1 * multiplier;
+ game.clicks = game.clicks + 1 * game.multiplier;
      
   }
  const hasStarted = true;
@@ -51,13 +49,13 @@ function addClicks() {
 
 
     function buyMult() {
-          if (clicks >= multiplierCost) {
+          if (game.clicks >= game.multiplierCost) {
                
-    clicks = clicks - multiplierCost;
-     multiplierCost = multiplierCost * 1.5;
-     multiplier = multiplier + 1; 
-    document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
-    document.getElementById("mult").innerHTML = multiplier
+    game.clicks = game.clicks - game.multiplierCost;
+     game.multiplierCost = game.multiplierCost * 1.5;
+     game.multiplier = game.multiplier + 1; 
+    document.getElementById("multPrice").innerHTML = Math.round(game.multiplierCost);
+    document.getElementById("mult").innerHTML = game.multiplier
  
      
   }
@@ -68,15 +66,14 @@ function addClicks() {
 
 
     function buyClicker() {
-         if (clicks >= clickerCost) {
+         if (game.clicks >= game.clickerCost) {
          
-     clicks = clicks - clickerCost;
-     clickerCost = clickerCost * 1.5;
-     clickers = clickers + 1; 
-     hasClickers = true;
-     t = t - 0.5;
-    document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
-    document.getElementById("clickers").innerHTML = clickers;
+     game.clicks = game.clicks - game.clickerCost;
+     game.clickerCost = game.clickerCost * 1.5;
+     game.clickers = game.clickers + 1; 
+     game.t = game.t - 0.5;
+    document.getElementById("clickerPrice").innerHTML = Math.round(game.clickerCost);
+    document.getElementById("clickers").innerHTML = game.clickers;
   
  
           
@@ -91,7 +88,7 @@ function addClicks() {
 
      setInterval(updater, framerate);
      function updater() {
-      document.getElementById("clicks").innerHTML = (convert(clicks));
+      document.getElementById("clicks").innerHTML = (convert(game.clicks));
       
   
 
@@ -109,7 +106,7 @@ slider.oninput = function() {
   
 }
      }
- var convert = clicks => {
+ var game.convert = game.clicks => {
 	    if (clicks < 1e3) return clicks;
 	    if (clicks >= 1e3 && clicks < 1e6) return +(clicks / 1e3).toFixed(1) + "K";
 	    if (clicks >= 1e6 && clicks < 1e9) return +(clicks / 1e6).toFixed(1) + "M";
@@ -127,12 +124,12 @@ slider.oninput = function() {
 
 function saveGame() {
    var gameSave = {
-     clicks: clicks,
-     clickers: clickers,
-     clickerCost: clickerCost,
-     multiplier: multiplier,
-     multiplierCost: multiplierCost,
-     t: t,
+     clicks: game.clicks,
+     clickers: game.clickers,
+     clickerCost: game.clickerCost,
+     multiplier: game.multiplier,
+     multiplierCost: game.multiplierCost,
+     t: game.t,
      hasStarted: hasStarted
    };
 	localStorage.setItem("gameSave", JSON.stringify(gameSave));
