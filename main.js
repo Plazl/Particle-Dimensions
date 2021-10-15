@@ -106,7 +106,7 @@ slider.oninput = function() {
   
 }
      }
-game.convert = game.clicks => {
+var convert = game.clicks => {
 	    if (game.clicks < 1e3) return game.clicks;
 	    if (game.clicks >= 1e3 && game.clicks < 1e6) return +(game.clicks / 1e3).toFixed(1) + "K";
 	    if (game.clicks >= 1e6 && game.clicks < 1e9) return +(game.clicks / 1e6).toFixed(1) + "M";
