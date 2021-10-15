@@ -10,17 +10,17 @@
     
      multiplier: 1,
     
-     multiplierCost: 100}
+     multiplierCost: 100} 
 
      function loadSave() {
-     var savedGame = JSON.parse(localStorage.getItem("gameSave"))
-     if (typeof savedGame.hasStarted !== "undefined") {
-     	       if (typeof savedGame.clicks !== "undefined") game.clicks = savedGame.clicks;
-	       if (typeof savedGame.multiplier !== "undefined") game.multiplier = savedGame.multiplier;
-	       if (typeof savedGame.multiplierCost !== "undefined") game.multiplierCost = savedGame.multiplierCost;
-	       if (typeof savedGame.clickers !== "undefined") game.clickers = savedGame.clickers;
-	       if (typeof savedGame.clickerCost !== "undefined") game.clickerCost = savedGame.clickerCost;
-	       if (typeof savedGame.clickerCost !== "undefined") game.t = savedGame.t;
+     var game = JSON.parse(localStorage.getItem("game"))
+     if (typeof game.hasStarted !== "undefined") {
+     	       if (typeof game.clicks !== "undefined") game.clicks = game.clicks;
+	       if (typeof game.multiplier !== "undefined") game.multiplier = game.multiplier;
+	       if (typeof game.multiplierCost !== "undefined") game.multiplierCost = game.multiplierCost;
+	       if (typeof game.clickers !== "undefined") game.clickers = game.clickers;
+	       if (typeof game.clickerCost !== "undefined") game.clickerCost = game.clickerCost;
+	       if (typeof game.clickerCost !== "undefined") game.t = game.t;
         }
               
      }
@@ -106,33 +106,24 @@ slider.oninput = function() {
   
 }
      }
- var game.convert = game.clicks => {
-	    if (clicks < 1e3) return clicks;
-	    if (clicks >= 1e3 && clicks < 1e6) return +(clicks / 1e3).toFixed(1) + "K";
-	    if (clicks >= 1e6 && clicks < 1e9) return +(clicks / 1e6).toFixed(1) + "M";
-	    if (clicks >= 1e9 && clicks < 1e12) return +(clicks / 1e9).toFixed(1) + "B";
-	    if (clicks >= 1e12 && clicks < 1e15) return +(clicks / 1e12).toFixed(1) + "T";
-            if (clicks >= 1e15 && clicks < 1e18) return +(clicks / 1e15).toFixed(1) + "Qa";
-            if (clicks >= 1e18 && clicks < 1e21) return +(clicks / 1e18).toFixed(1) + "Qi";
-            if (clicks >= 1e21 && clicks < 1e24) return +(clicks / 1e21).toFixed(1) + "Sx";
-            if (clicks >= 1e24 && clicks < 1e27) return +(clicks / 1e24).toFixed(1) + "Sp";
-            if (clicks >= 1e27 && clicks < 1e30) return +(clicks / 1e27).toFixed(1) + "Oc";
-            if (clicks >= 1e30 && clicks < 1e33) return +(clicks / 1e30).toFixed(1) + "No";
-            if (clicks >= 1e31) return clicks.toExponential(2);
+game.convert = game.clicks => {
+	    if (game.clicks < 1e3) return game.clicks;
+	    if (game.clicks >= 1e3 && game.clicks < 1e6) return +(game.clicks / 1e3).toFixed(1) + "K";
+	    if (game.clicks >= 1e6 && game.clicks < 1e9) return +(game.clicks / 1e6).toFixed(1) + "M";
+	    if (game.clicks >= 1e9 && game.clicks < 1e12) return +(game.clicks / 1e9).toFixed(1) + "B";
+	    if (game.clicks >= 1e12 && game.clicks < 1e15) return +(game.clicks / 1e12).toFixed(1) + "T";
+            if (game.clicks >= 1e15 && game.clicks < 1e18) return +(game.clicks / 1e15).toFixed(1) + "Qa";
+            if (game.clicks >= 1e18 && game.clicks < 1e21) return +(game.clicks / 1e18).toFixed(1) + "Qi";
+            if (game.clicks >= 1e21 && game.clicks < 1e24) return +(game.clicks / 1e21).toFixed(1) + "Sx";
+            if (game.clicks >= 1e24 && game.clicks < 1e27) return +(game.clicks / 1e24).toFixed(1) + "Sp";
+            if (game.clicks >= 1e27 && game.clicks < 1e30) return +(game.clicks / 1e27).toFixed(1) + "Oc";
+            if (game.clicks >= 1e30 && game.clicks < 1e33) return +(game.clicks / 1e30).toFixed(1) + "No";
+            if (game.clicks >= 1e31) return game.clicks.toExponential(2);
 		};
 
 
 function saveGame() {
-   var gameSave = {
-     clicks: game.clicks,
-     clickers: game.clickers,
-     clickerCost: game.clickerCost,
-     multiplier: game.multiplier,
-     multiplierCost: game.multiplierCost,
-     t: game.t,
-     hasStarted: hasStarted
-   };
-	localStorage.setItem("gameSave", JSON.stringify(gameSave));
+	localStorage.setItem("game", JSON.stringify(game));
 }
 
 setInterval(function() {
