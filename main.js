@@ -1,43 +1,43 @@
- var game = {t: 1000,
+     var t =  1000:
      
-      framerate: 100,
+     var framerate = 100:
    
-      clicks: 10,
+     var clicks = 10:
     
-     clickerCost: 150,
+     var clickerCost = 5:
     
-     clickers: 0,
+     var clickers = 0;
     
-     multiplier: 1,
+     var multiplier = 1;
     
-     multiplierCost: 100} 
+     var multiplierCost = 5;
 
      function loadSave() {
      var game = JSON.parse(localStorage.getItem("game"))
      if (typeof game.hasStarted !== "undefined") {
-     	       if (typeof game.clicks !== "undefined") game.clicks = game.clicks;
-	       if (typeof game.multiplier !== "undefined") game.multiplier = game.multiplier;
-	       if (typeof game.multiplierCost !== "undefined") game.multiplierCost = game.multiplierCost;
-	       if (typeof game.clickers !== "undefined") game.clickers = game.clickers;
-	       if (typeof game.clickerCost !== "undefined") game.clickerCost = game.clickerCost;
-	       if (typeof game.clickerCost !== "undefined") game.t = game.t;
+     	       if (typeof clicks !== "undefined") clicks = clicks;
+	       if (typeof multiplier !== "undefined") multiplier = multiplier;
+	       if (typeof multiplierCost !== "undefined") multiplierCost = multiplierCost;
+	       if (typeof clickers !== "undefined") clickers = clickers;
+	       if (typeof clickerCost !== "undefined") clickerCost = clickerCost;
+	       if (typeof clickerCost !== "undefined") t = t;
         }
               
      }
 
      
-      document.getElementById("mult").innerHTML = game.multiplier;
-      document.getElementById("multPrice").innerHTML = Math.round(game.multiplierCost);
-      document.getElementById("clickers").innerHTML = game.clickers;
-      document.getElementById("clickerPrice").innerHTML = Math.round(game.clickerCost);
-      document.getElementById("clicks").innerHTML = Math.round(game.clicks);
+      document.getElementById("mult").innerHTML = multiplier;
+      document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
+      document.getElementById("clickers").innerHTML = clickers;
+      document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
+      document.getElementById("clicks").innerHTML = Math.round(clicks);
      
      
    
  //click adder
 function addClicks() {
 
- game.clicks = game.clicks + 1 * game.multiplier;
+ clicks = clicks + 1 * multiplier;
      
   }
  const hasStarted = true;
@@ -49,13 +49,22 @@ function addClicks() {
 
 
     function buyMult() {
-          if (game.clicks >= game.multiplierCost) {
-               
-    game.clicks = game.clicks - game.multiplierCost;
-     game.multiplierCost = game.multiplierCost * 1.5;
-     game.multiplier = game.multiplier + 1; 
-    document.getElementById("multPrice").innerHTML = Math.round(game.multiplierCost);
-    document.getElementById("mult").innerHTML = game.multiplier
+          if (clicks >= multiplierCost) {
+             if (multiplierCost = 5) { 
+
+		 clicks = clicks - multiplierCost;
+     multiplierCost = 100;
+     multiplier = multiplier + 1; 
+    document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
+    document.getElementById("mult").innerHTML = multiplier;
+  
+	 
+	 }    
+    clicks = clicks - multiplierCost;
+     multiplierCost = multiplierCost * 1.5;
+     multiplier = multiplier + 1; 
+    document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
+    document.getElementById("mult").innerHTML = multiplier
  
      
   }
@@ -66,14 +75,23 @@ function addClicks() {
 
 
     function buyClicker() {
-         if (game.clicks >= game.clickerCost) {
-         
-     game.clicks = game.clicks - game.clickerCost;
-     game.clickerCost = game.clickerCost * 1.5;
-     game.clickers = game.clickers + 1; 
-     game.t = game.t - 0.5;
-    document.getElementById("clickerPrice").innerHTML = Math.round(game.clickerCost);
-    document.getElementById("clickers").innerHTML = game.clickers;
+         if (clicks >= clickerCost) {
+         if (clickerCost = 5) { 
+
+		 clicks = clicks - clickerCost;
+     clickerCost = 150;
+     clickers = clickers + 1; 
+    document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
+    document.getElementById("clickers").innerHTML = clickers;
+  
+	 
+	 }
+     clicks = clicks - clickerCost;
+     clickerCost = clickerCost * 1.5;
+     clickers = clickers + 1; 
+     t = t - 0.5;
+    document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
+    document.getElementById("clickers").innerHTML = clickers;
   
  
           
@@ -88,7 +106,7 @@ function addClicks() {
 
      setInterval(updater, framerate);
      function updater() {
-      document.getElementById("clicks").innerHTML = (convert(game.clicks));
+      document.getElementById("clicks").innerHTML = (convert(clicks));
       
   
 
@@ -106,20 +124,21 @@ slider.oninput = function() {
   
 }
      }
-var convert = (()game.clicks => {
-	    if (game.clicks < 1e3) return game.clicks;
-	    if (game.clicks >= 1e3 && game.clicks < 1e6) return +(game.clicks / 1e3).toFixed(1) + "K";
-	    if (game.clicks >= 1e6 && game.clicks < 1e9) return +(game.clicks / 1e6).toFixed(1) + "M";
-	    if (game.clicks >= 1e9 && game.clicks < 1e12) return +(game.clicks / 1e9).toFixed(1) + "B";
-	    if (game.clicks >= 1e12 && game.clicks < 1e15) return +(game.clicks / 1e12).toFixed(1) + "T";
-            if (game.clicks >= 1e15 && game.clicks < 1e18) return +(game.clicks / 1e15).toFixed(1) + "Qa";
-            if (game.clicks >= 1e18 && game.clicks < 1e21) return +(game.clicks / 1e18).toFixed(1) + "Qi";
-            if (game.clicks >= 1e21 && game.clicks < 1e24) return +(game.clicks / 1e21).toFixed(1) + "Sx";
-            if (game.clicks >= 1e24 && game.clicks < 1e27) return +(game.clicks / 1e24).toFixed(1) + "Sp";
-            if (game.clicks >= 1e27 && game.clicks < 1e30) return +(game.clicks / 1e27).toFixed(1) + "Oc";
-            if (game.clicks >= 1e30 && game.clicks < 1e33) return +(game.clicks / 1e30).toFixed(1) + "No";
-            if (game.clicks >= 1e31) return game.clicks.toExponential(2);
-		});
+
+var convert = clicks => {
+	    if (clicks < 1e3) return game.clicks;
+	    if (clicks >= 1e3 && clicks < 1e6) return +(clicks / 1e3).toFixed(1) + "K";
+	    if (clicks >= 1e6 && clicks < 1e9) return +(clicks / 1e6).toFixed(1) + "M";
+	    if (clicks >= 1e9 && clicks < 1e12) return +(clicks / 1e9).toFixed(1) + "B";
+	    if (clicks >= 1e12 && clicks < 1e15) return +(clicks / 1e12).toFixed(1) + "T";
+            if (clicks >= 1e15 && clicks < 1e18) return +(clicks / 1e15).toFixed(1) + "Qa";
+            if (clicks >= 1e18 && clicks < 1e21) return +(clicks / 1e18).toFixed(1) + "Qi";
+            if (clicks >= 1e21 && clicks < 1e24) return +(clicks / 1e21).toFixed(1) + "Sx";
+            if (clicks >= 1e24 && clicks < 1e27) return +(clicks / 1e24).toFixed(1) + "Sp";
+            if (clicks >= 1e27 && clicks < 1e30) return +(clicks / 1e27).toFixed(1) + "Oc";
+            if (clicks >= 1e30 && clicks < 1e33) return +(clicks / 1e30).toFixed(1) + "No";
+            if (clicks >= 1e31) return clicks.toExponential(2);
+		}
 
 
 function saveGame() {
