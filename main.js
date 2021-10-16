@@ -1,10 +1,10 @@
-     var t =  1000:
+      var t =  1000;
      
-     var framerate = 100:
+     var framerate = 100;
    
-     var clicks = 10:
+     var clicks = 10;
     
-     var clickerCost = 5:
+     var clickerCost = 5;
     
      var clickers = 0;
     
