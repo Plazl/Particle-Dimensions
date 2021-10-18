@@ -1,4 +1,17 @@
-      var t =  1000;
+
+
+     function loadSave() {
+     var game = JSON.parse(localStorage.getItem("gameSave"))
+     if (typeof hasStarted !== "undefined") {
+     	       if (typeof clicks !== "undefined") clicks = clicks;
+	       if (typeof multiplier !== "undefined") multiplier = multiplier;
+	       if (typeof multiplierCost !== "undefined") multiplierCost = multiplierCost;
+	       if (typeof clickers !== "undefined") clickers = clickers;
+	       if (typeof clickerCost !== "undefined") clickerCost = clickerCost;
+	       if (typeof clickerCost !== "undefined") t = t;
+        }
+             else {
+	        var t =  1000;
      
      var framerate = 100;
    
@@ -10,19 +23,11 @@
     
      var multiplier = 1;
     
-     var multiplierCost = 5;
-
-     function loadSave() {
-     var game = JSON.parse(localStorage.getItem("game"))
-     if (typeof game.hasStarted !== "undefined") {
-     	       if (typeof clicks !== "undefined") clicks = clicks;
-	       if (typeof multiplier !== "undefined") multiplier = multiplier;
-	       if (typeof multiplierCost !== "undefined") multiplierCost = multiplierCost;
-	       if (typeof clickers !== "undefined") clickers = clickers;
-	       if (typeof clickerCost !== "undefined") clickerCost = clickerCost;
-	       if (typeof clickerCost !== "undefined") t = t;
-        }
-              
+     var multiplierCost = 5;   
+		     
+     var hasStarted = false;
+	     
+	     } 
      }
 
      
@@ -40,8 +45,9 @@ function addClicks() {
  clicks = clicks + 1 * multiplier;
      
   }
- const hasStarted = true;
-
+if (hasStarted = false) {
+  hasStarted = true;
+}
 //upgrade menu
      
 //multiplier
@@ -142,7 +148,17 @@ var convert = clicks => {
 
 
 function saveGame() {
-	localStorage.setItem("game", JSON.stringify(game));
+   var gameSave = {
+	clicks: clicks,
+	clickers: clickers,
+	clickerCost: clickerCost,
+	multiplier: multiplier,
+	multiplierCOst: multiplierCost,
+	t: t,
+        hasStarted: hasStarted
+	   
+	  }
+	localStorage.setItem("gameSave", JSON.stringify(gameSave));
 }
 
 setInterval(function() {
