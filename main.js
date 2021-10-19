@@ -164,3 +164,8 @@ saveGame();
 window.onLoad = function() {
 loadSave();
 }
+var percentage = Math.min((Decimal.log10(clicks.plus(1)) / Decimal.log10(getLimit()) * 100), 100).toFixed(2) + "%"
+	document.getElementById("progressbar").style.width = percentage
+	document.getElementById("progresspercent").textContent = percentage
+	document.getElementById("progresspercent").setAttribute('ach-tooltip',"Percentage to Infinity")
+
