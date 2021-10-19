@@ -189,10 +189,12 @@ document.getElementById("infinity").style.display = "shown";
 	}
    }
 	
-}
-else {
+	else {
 document.getElementById("infinity").style.display = "hidden";
 }
+	
+}
+
 
 window.onLoad = function() {
 loadSave();
