@@ -19,6 +19,11 @@
      var infiniclicks = 0;
   
      var icmultiplier = 1;
+     
+
+     document.getElementById("infinity").style.display = "hidden";
+     
+
 
      function loadSave() {
      var game = JSON.parse(localStorage.getItem("gameSave"))
@@ -168,11 +173,18 @@ setInterval(function() {
 saveGame();
 }, 10000);
 
+var isFinitee = isFinite(clicks);
 
-function infinity() {
-if (isFinite(clicks) = false) {
+setInterval(finiteCheck, 100)
+
+
+function finiteCheck() {
+	
+     isFinitee = isFinite(clicks);
+	if (isFinitee = false) {
 document.getElementById("infinity").style.display = "shown";	
 	canInfinity = true;
+	function infinity() {
 	if(canInfinity = true) {
 	
 		
@@ -194,6 +206,9 @@ document.getElementById("infinity").style.display = "hidden";
 }
 	
 }
+}
+
+
 
 
 window.onLoad = function() {
