@@ -21,7 +21,7 @@
      var icmultiplier = 1;
      
 
-     document.getElementById("infinity").style.display = "hidden";
+     document.getElementById("infinity").style.display = "none";
      
 
 
@@ -201,8 +201,17 @@ function finiteCheck() {
 		infiniclicks = infiniclicks + 1 * icmultiplier;
 		t = 1000;
 		canInfinity = false;
+		isFinitee = isFinite(clicks)
 		
-		
+		  if (isFinitee = false) {
+   var x = document.getElementById("infinity");
+  if (x.style.display === 'block') {
+    x.style.display = 'none';
+  } else {
+    x.style.display = 'block';
+  }
+   }
+
 	   }
      }
 	
@@ -210,7 +219,12 @@ function finiteCheck() {
 	
    }
  	else {
-document.getElementById("infinity").style.display = "hidden";
+   var x = document.getElementById("infinity");
+  if (x.style.display === 'block') {
+    x.style.display = 'none';
+  } else {
+    x.style.display = 'block';
+  }
     }
 }
 
