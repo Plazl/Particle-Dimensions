@@ -66,20 +66,58 @@
   cursor: pointer;
 }
  
-#progressbar {
-    width: 0%;
-    height: 23px;
-    background-color: #127A20;
-    color: black;
-    font-size: 16px;
-    border-radius: 5px;
-    transition-duration: 0.1s;
+  .multup {
+       position: absolute;
+          left: 50%;
+          top: 25%;
+       background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+    border-radius: 5px; 
+    cursor: pointer;
+      
+      
+      }
+      
+      .buyClicker {
+       position: absolute;
+          left: 50%;
+          top: 50%;
+       background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+    border-radius: 5px;  
+        cursor: pointer;
+      
+      
+      }
+      
+ .tablink {
+    background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 1px;
+  font-size: 15px;
+  width: 10%;
+  bottom: 0px;
+  left: 50%;
+ 
 }
-
-#progresspercent {
-    pointer-events: all !important;
-}
-
        
        
       
