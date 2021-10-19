@@ -61,14 +61,14 @@ if (hasStarted = false) {
     document.getElementById("mult").innerHTML = multiplier;
   
 	 
-	 }    
+	 }   else { 
     clicks = clicks - multiplierCost;
      multiplierCost = multiplierCost * 1.5;
      multiplier = multiplier + 1; 
     document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
     document.getElementById("mult").innerHTML = multiplier
  
-     
+	 }
   }
 
 }
@@ -88,6 +88,7 @@ if (hasStarted = false) {
   
 	 
 	 }
+		 else {
      clicks = clicks - clickerCost;
      clickerCost = clickerCost * 1.5;
      clickers = clickers + 1; 
@@ -95,7 +96,7 @@ if (hasStarted = false) {
     document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
     document.getElementById("clickers").innerHTML = clickers;
   
- 
+		 }
           
     
  
@@ -164,8 +165,4 @@ saveGame();
 window.onLoad = function() {
 loadSave();
 }
-var percentage = Math.min((Decimal.log10(clicks.plus(1)) / Decimal.log10(getLimit()) * 100), 100).toFixed(2) + "%"
-	document.getElementById("progressbar").style.width = percentage
-	document.getElementById("progresspercent").textContent = percentage
-	document.getElementById("progresspercent").setAttribute('ach-tooltip',"Percentage to Infinity")
 
