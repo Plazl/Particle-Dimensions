@@ -198,14 +198,15 @@ document.getElementById("infinity").style.display = "shown";
 		canInfinity = false;
 		
 		
-	}
+	   }
+     }
+	
+	
+	
    }
-	
-	else {
+ 	else {
 document.getElementById("infinity").style.display = "hidden";
-}
-	
-}
+    }
 }
 
 
