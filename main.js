@@ -182,7 +182,12 @@ function finiteCheck() {
 	
      isFinitee = isFinite(clicks);
 	if (isFinitee = false) {
-document.getElementById("infinity").style.display = "shown";	
+        var x = document.getElementById('infinity');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }	
 	canInfinity = true;
 	function infinity() {
 	if(canInfinity = true) {
