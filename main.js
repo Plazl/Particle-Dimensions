@@ -200,6 +200,7 @@ function finiteCheck() {
 		t = 1000;
 		canInfinity = false;
 		isFinitee = isFinite(clicks)
+		x.style.display = 'none';
 		
 
 
@@ -209,12 +210,9 @@ function finiteCheck() {
 	
 	
    }
- 	else {
-   var x = document.getElementById("infinity");
-  if (x.style.display === 'block') {
-    x.style.display = 'none';
-  } 
-    }
+ else { 
+	 x.style.display = 'none';
+ }
 }
 
 
