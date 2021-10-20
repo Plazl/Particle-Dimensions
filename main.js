@@ -185,9 +185,7 @@ function finiteCheck() {
         var x = document.getElementById('infinity');
   if (x.style.display === 'none') {
     x.style.display = 'block';
-  } else {
-    x.style.display = 'none';
-  }	
+  } 
 	canInfinity = true;
 	function infinity() {
 	if(canInfinity = true) {
@@ -215,9 +213,7 @@ function finiteCheck() {
    var x = document.getElementById("infinity");
   if (x.style.display === 'block') {
     x.style.display = 'none';
-  } else {
-    x.style.display = 'block';
-  }
+  } 
     }
 }
 
