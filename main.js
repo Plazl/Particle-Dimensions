@@ -26,8 +26,8 @@
 
 
      function loadSave() {
-     var game = JSON.parse(localStorage.getItem("gameSave"))
-     if (typeof hasStarted !== "undefined") {
+        var game = JSON.parse(localStorage.getItem("gameSave"))
+               if (typeof hasStarted !== "undefined") {
      	       if (typeof clicks !== "undefined") clicks = clicks;
 	       if (typeof multiplier !== "undefined") multiplier = multiplier;
 	       if (typeof multiplierCost !== "undefined") multiplierCost = multiplierCost;
@@ -182,9 +182,9 @@ function finiteCheck() {
 	
      isFinitee = isFinite(clicks);
 	if (isFinitee = false) {
-        var x = document.getElementById('infinity');
-  if (x.style.display === 'none') {
-    x.style.display = 'block';
+        var x = document.getElementById("infinity");
+  if (x.style.display === "none") {
+    x.style.display = "block";
   } 
 	canInfinity = true;
 	function infinity() {
@@ -200,7 +200,7 @@ function finiteCheck() {
 		t = 1000;
 		canInfinity = false;
 		isFinitee = isFinite(clicks)
-		x.style.display = 'none';
+		x.style.display = "none";
 		
 
 
@@ -211,7 +211,7 @@ function finiteCheck() {
 	
    }
  else { 
-	 x.style.display = 'none';
+	 x.style.display = "none";
  }
 }
 
