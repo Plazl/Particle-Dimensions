@@ -19,6 +19,8 @@
      var infiniclicks = 0;
   
      var icmultiplier = 1;
+
+     var x = document.getElementById("infinity");
      
 
      
@@ -182,7 +184,7 @@ function finiteCheck() {
 	
      isFinitee = isFinite(clicks);
 	if (isFinitee = false) {
-        var x = document.getElementById("infinity");
+         x = document.getElementById("infinity");
   if (x.style.display === "none") {
     x.style.display = "block";
   } 
