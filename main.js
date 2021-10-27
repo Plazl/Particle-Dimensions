@@ -183,19 +183,20 @@ setInterval(finiteCheck, framerate)
 function finiteCheck() {
 	
      
-	if (isFinitee = false) {
+	if (isFinitee == false) {
 		canInfinity = true;
          x = document.getElementById("infinity");
   if (x.style.display === "none") {
     x.style.display = "block";
   } 
+	}
 	
 	
 	
 	
 	
    }
-if (canInfinity !== true) {
+ else  {
 	x.style.display = "none"
 
 }
