@@ -123,7 +123,7 @@ if (hasStarted = false) {
      setInterval(updater, framerate);
      function updater() {
       document.getElementById("clicks").innerHTML = (convert(clicks));
-      
+      isFinitee = isFinite(clicks);
   
 
    if (clickers >= 1) {
@@ -177,19 +177,36 @@ saveGame();
 
 var isFinitee = isFinite(clicks);
 
-setInterval(finiteCheck, 100)
+setInterval(finiteCheck, framerate)
 
 
 function finiteCheck() {
 	
-     isFinitee = isFinite(clicks);
+     
 	if (isFinitee = false) {
          x = document.getElementById("infinity");
   if (x.style.display === "none") {
     x.style.display = "block";
   } 
 	canInfinity = true;
-	function infinity() {
+	
+	
+	
+	
+   }
+ else { 
+	 x.style.display = "none";
+ }
+}
+
+
+
+
+window.onLoad = function() {
+loadSave();
+}
+
+function infinity() {
 	if(canInfinity = true) {
 	
 		
@@ -208,19 +225,3 @@ function finiteCheck() {
 
 	   }
      }
-	
-	
-	
-   }
- else { 
-	 x.style.display = "none";
- }
-}
-
-
-
-
-window.onLoad = function() {
-loadSave();
-}
-
