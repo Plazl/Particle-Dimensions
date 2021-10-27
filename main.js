@@ -184,11 +184,12 @@ function finiteCheck() {
 	
      
 	if (isFinitee = false) {
+		canInfinity = true;
          x = document.getElementById("infinity");
   if (x.style.display === "none") {
     x.style.display = "block";
   } 
-	canInfinity = true;
+	
 	
 	
 	
