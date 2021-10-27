@@ -194,8 +194,10 @@ function finiteCheck() {
 	
 	
    }
- else { 
-	 x.style.display = "none";
+if (canInfinity !== true) {
+	x.style.display = "none"
+
+}
  }
 }
 
