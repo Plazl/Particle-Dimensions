@@ -195,7 +195,7 @@ function finiteCheck() {
 	
 	
 	
-   }
+   
  else  {
 	x.style.display = "none"
 
