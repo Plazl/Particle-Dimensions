@@ -119,7 +119,7 @@ if (hasStarted = false) {
 
 }
 
-
+     setInterval(addClicks, t);
 
      setInterval(updater, framerate);
      function updater() {
