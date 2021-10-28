@@ -22,7 +22,7 @@
 
      var x = document.getElementById("infinity");
    
-     
+     var y = document.getElementById("clickmenu")
 
      
      
@@ -187,6 +187,8 @@ function finiteCheck() {
     x.style.display = "block";
 	 
   } 
+		if (y.style.display === "block") {
+    y.style.display = "none";
 	}
 	
 	
@@ -196,7 +198,7 @@ function finiteCheck() {
    
  else  {
 	x.style.display = "none"
-
+	y.style.display = "block"
 }
  }
 
@@ -222,6 +224,7 @@ function infinity() {
 		canInfinity = false;
 		isFinitee = isFinite(clicks)
 		x.style.display = "none";
+		y.style.display = "block"
 		
 
 
