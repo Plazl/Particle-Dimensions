@@ -21,6 +21,8 @@
      var icmultiplier = 1;
 
      var x = document.getElementById("infinity");
+   
+     var y = document.getElementById("clickmenu")
      
 
      
@@ -124,7 +126,10 @@ if (hasStarted = false) {
      function updater() {
       document.getElementById("clicks").innerHTML = (convert(clicks));
       isFinitee = isFinite(clicks);
-  
+        if (y.style.display === "block" %% canInfinity = true) {
+	     y.style.display = "none"
+	  
+	  } else { y.style.display = "block"
 
    if (clickers >= 1) {
         setInterval(addClicks, t) 
@@ -188,6 +193,7 @@ function finiteCheck() {
          x = document.getElementById("infinity");
   if (x.style.display === "none") {
     x.style.display = "block";
+	 
   } 
 	}
 	
