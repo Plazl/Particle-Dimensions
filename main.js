@@ -126,7 +126,7 @@ if (hasStarted = false) {
      function updater() {
       document.getElementById("clicks").innerHTML = (convert(clicks));
       isFinitee = isFinite(clicks);
-        if (y.style.display === "block" %% canInfinity = true) {
+        if (y.style.display === "block" % canInfinity = true) {
 	     y.style.display = "none"
 	  
 	  } else { y.style.display = "block"
