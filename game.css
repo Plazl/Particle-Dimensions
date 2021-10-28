@@ -1,6 +1,6 @@
 .button1 {
                position: absolute;
-   left: 45%;
+   left: 49%;
    top: 50%; 
       background-color: #04AA6D;
   border: none;
@@ -95,7 +95,7 @@
       .buyClicker {
         width: 250px;
        position: absolute;
-          left: 50%;
+          left: 45%;
           top: 50%;
        background-color: #04AA6D;
   border: none;
