@@ -1,64 +1,11 @@
-const americanNames = [
-   'K', 'M', 'B', 'T', 'Qa', 'Qi', 'Sx', 'Sp', 'O', 'N'
- 
-];
-
-function formatBigPositiveNumber(clicks) {
-  const str = BigInt(clicks).toString();
-  const len = str.length;
-  if (len <= 3) {
-    return str;
-  } else if (len <= 6) {
-    return str.slice(0, len - 3) + ',' + str.slice(-3);
-  } else {
-    const magnitude = ((len - 1) / 3) | 0;
-    const place = 1 + (len + 2) % 3;
-    const sig = str.slice(0, 4);
-    const name = americanNames[magnitude];
-    if (!name)  var formattedClicks = clicks.toExponential(2);;
-    return sig.substring(0, place) + '.' + sig.substring(place) + ' ' + name
-  }
-}
-
-function fixedWidth(str, n) {
-  return (' '.repeat(n) + str).slice(-n);
-}
-
-for (let [input, expected] of clicks) {
-  const actual = formatBigPositiveNumber(input);
-  console.log('\n%s\n%s', fixedWidth(input, 25), fixedWidth(expected, 25));
-  console.log('%s', fixedWidth(actual, 25));
-}
 
 
 
+if (canInfinity = true) {
+	     y.style.display = "none"
+	  
+	  } else { y.style.display = "block"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Updater
-function onLoad() {
-     setInterval(updater, 100);
-while (playing = true) {
-     
-     function updater() {
-      var formattedClicks = clicks.toExponential(2);
-      document.getElementById("clicks").innerHTML = formattedClicks;
-     }
-  }
-    
-}
-
+   if (clickers >= 1) {
+        setInterval(addClicks, t) 
+   }
