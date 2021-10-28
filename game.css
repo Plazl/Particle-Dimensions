@@ -131,7 +131,8 @@
 position: absolute;
    left: 50%;
    top: 50%; 
-      background-color: #04AA6D;
+  width: 250px;
+  background-color: #04AA6D;
   border: none;
   color: white;
   padding: 30px 50px;
