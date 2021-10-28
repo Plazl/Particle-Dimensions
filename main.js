@@ -126,14 +126,7 @@ if (hasStarted = false) {
      function updater() {
       document.getElementById("clicks").innerHTML = (convert(clicks));
       isFinitee = isFinite(clicks);
-        if (canInfinity = true) {
-	     y.style.display = "none"
-	  
-	  } else { y.style.display = "block"
-
-   if (clickers >= 1) {
-        setInterval(addClicks, t) 
-   }
+      
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
