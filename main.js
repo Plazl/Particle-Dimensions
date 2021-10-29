@@ -78,10 +78,10 @@ if (multplierCost = 10) {
     document.getElementById("mult").innerHTML = multiplier
 		  }
 	 }
-  }
+  
 
 
-//clicker
+
 
 
 
@@ -106,7 +106,7 @@ if (multplierCost = 10) {
         
   }
 
-}
+
      setInterval(TBC, 50)
 
    function TBC() { 
