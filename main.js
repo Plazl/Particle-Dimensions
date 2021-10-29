@@ -23,6 +23,8 @@
      var x = document.getElementById("infinity");
    
      var y = document.getElementById("clickmenu")
+     
+      var clickerIntervalId = setInterval(addClicks, t);
 
      
      
@@ -111,7 +113,7 @@ if (multplierCost = 10) {
 
    function TBC() { 
 	   if (clickers >= 1) {
-     setInterval(addClicks, t, clicker);
+      clickerIntervalId = setInterval(addClicks, t);
 	   } else {
 	   clearInterval(clicker);
          }
