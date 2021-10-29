@@ -4,13 +4,13 @@
    
      var clicks = 10;
     
-     var clickerCost = 5;
+     var clickerCost = 25;
     
      var clickers = 0;
     
      var multiplier = 1;
     
-     var multiplierCost = 5;   
+     var multiplierCost = 10;   
 		     
      var hasStarted = false;
    
@@ -65,22 +65,14 @@ if (hasStarted = false) {
 
 
     function buyMult() {
-	  if (multiplierCost = 5) { 
-          if (clicks >= multiplierCost) {
-             
-
-		 clicks = clicks - multiplierCost;
-     multiplierCost = 100;
-     multiplier = multiplier + 1; 
-    document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
-    document.getElementById("mult").innerHTML = multiplier;
-  
-	 
-	 }
-	  }  else { 
+	  
 		  if (clicks >= multiplierCost) {
     clicks = clicks - multiplierCost;
+if (multplierCost = 10) {
+    multiplierCost = 100; 	
+} else {
      multiplierCost = multiplierCost * 1.5;
+}
      multiplier = multiplier + 1; 
     document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
     document.getElementById("mult").innerHTML = multiplier
@@ -94,23 +86,14 @@ if (hasStarted = false) {
 
 
     function buyClicker() {
-	  if (clickerCost = 5) { 
-         if (clicks >= clickerCost) {
-        
-
-		 clicks = clicks - clickerCost;
-     clickerCost = 150;
-     clickers = clickers + 1; 
-    document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
-    document.getElementById("clickers").innerHTML = clickers;
-  
 	 
-	 }
-      } 
-		 else {
 	  if (clicks >= clickerCost) {
      clicks = clicks - clickerCost;
+ if (clickerCost = 25) { 
+	 clickerCost = 150; 
+ } else {
      clickerCost = clickerCost * 1.5;
+ }
      clickers = clickers + 1; 
      t = t - 0.5;
     document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
