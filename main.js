@@ -118,9 +118,14 @@ if (hasStarted = false) {
   }
 
 }
+     setInterval(TBC, 50)
 
-     setInterval(addClicks, t);
-
+   function TBC() { 
+	   if (clickers >= 1) {
+     var id = setInterval(addClicks, t);
+	   } else {
+	   clearInterval(id);
+	   }
      setInterval(updater, framerate);
      function updater() {
       document.getElementById("clicks").innerHTML = (convert(clicks));
