@@ -115,7 +115,7 @@ if (multplierCost = 10) {
 	   if (clickers >= 1) {
       clickerIntervalId = setInterval(addClicks, t);
 	   } else {
-	   clearInterval(clicker);
+	   clearInterval(clickerIntervalId);
          }
      }
      setInterval(updater, framerate);
