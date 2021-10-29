@@ -202,7 +202,7 @@ function finiteCheck() {
 }
  }
 
-
+}
 
 
 
@@ -230,4 +230,4 @@ function infinity() {
 
 	   }
         }
-    }
+    
