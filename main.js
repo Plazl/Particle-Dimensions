@@ -65,8 +65,9 @@ if (hasStarted = false) {
 
 
     function buyMult() {
+	  if (multiplierCost = 5) { 
           if (clicks >= multiplierCost) {
-             if (multiplierCost = 5) { 
+             
 
 		 clicks = clicks - multiplierCost;
      multiplierCost = 100;
@@ -75,13 +76,15 @@ if (hasStarted = false) {
     document.getElementById("mult").innerHTML = multiplier;
   
 	 
-	 }   else { 
+	 }
+	  }  else { 
+		  if (clicks >= multiplierCost) {
     clicks = clicks - multiplierCost;
      multiplierCost = multiplierCost * 1.5;
      multiplier = multiplier + 1; 
     document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
     document.getElementById("mult").innerHTML = multiplier
- 
+		  }
 	 }
   }
 
@@ -91,8 +94,9 @@ if (hasStarted = false) {
 
 
     function buyClicker() {
+	  if (clickerCost = 5) { 
          if (clicks >= clickerCost) {
-         if (clickerCost = 5) { 
+        
 
 		 clicks = clicks - clickerCost;
      clickerCost = 150;
@@ -102,7 +106,9 @@ if (hasStarted = false) {
   
 	 
 	 }
+      } 
 		 else {
+	  if (clicks >= clickerCost) {
      clicks = clicks - clickerCost;
      clickerCost = clickerCost * 1.5;
      clickers = clickers + 1; 
@@ -125,7 +131,8 @@ if (hasStarted = false) {
      var id = setInterval(addClicks, t);
 	   } else {
 	   clearInterval(id);
-	   }
+         }
+     }
      setInterval(updater, framerate);
      function updater() {
       document.getElementById("clicks").innerHTML = (convert(clicks));
