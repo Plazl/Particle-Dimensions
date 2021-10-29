@@ -88,7 +88,7 @@ if (hasStarted = false) {
 	 }
   }
 
-}
+
 //clicker
 
 
