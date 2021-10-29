@@ -111,9 +111,9 @@ if (multplierCost = 10) {
 
    function TBC() { 
 	   if (clickers >= 1) {
-     var id = setInterval(addClicks, t);
+     setInterval(addClicks, t, clicker);
 	   } else {
-	   clearInterval(id);
+	   clearInterval(clicker);
          }
      }
      setInterval(updater, framerate);
