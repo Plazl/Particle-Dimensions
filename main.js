@@ -108,16 +108,17 @@ if (multplierCost = 10) {
         
   }
 
-
-     setInterval(TBC, 50)
-
-   function TBC() { 
-	   if (clickers >= 1) {
-      var clickerIntervalId = setInterval(addClicks, t);
-	   } else {
+while (1 = 1); {
+   if (clickers >= 1); {
+     var clickerIntervalId = setInterval(clicker, t);
+	   } elseIf (clickers < 1); {
 	   clearInterval(clickerIntervalId);
-         }
-     }
+         } 
+}
+function clicker() {
+  clicks = clicks + 1 * multiplier;
+}
+
      setInterval(updater, framerate);
      function updater() {
       document.getElementById("clicks").innerHTML = (convert(clicks));
