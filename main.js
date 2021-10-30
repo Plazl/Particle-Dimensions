@@ -108,7 +108,7 @@ if (multplierCost = 10) {
         
   }
 
-while (1 = 1); {
+while (1 == 1); {
    if (clickers >= 1); {
      var clickerIntervalId = setInterval(clicker, t);
 	   } elseIf (clickers < 1); {
