@@ -72,11 +72,7 @@ if (hasStarted = false) {
 	  
 		  if (clicks >= multiplierCost) {
     clicks = clicks - multiplierCost;
-if (multplierCost = 10) {
-    multiplierCost = 100; 	
-} else {
      multiplierCost = multiplierCost * 1.5;
-}
      multiplier = multiplier + 1; 
     document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
     document.getElementById("mult").innerHTML = multiplier
@@ -93,13 +89,15 @@ if (multplierCost = 10) {
 	 
 	  if (clicks >= clickerCost) {
      clicks = clicks - clickerCost;
- if (clickerCost = 25) { 
-	 clickerCost = 150; 
- } else {
      clickerCost = clickerCost * 1.5;
- }
      clickers = clickers + 1; 
-     t = t - 0.5;
+      clearInterval(clickerIntervalId);
+      clearIntervalId = 0;
+       if (clickerIntervalId == 0) {
+		       if (clickers == 1) {
+      clickerIntervalId = setInterval(clicker, t);
+		       }
+     t = t - 15;
     document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
     document.getElementById("clickers").innerHTML = clickers;
   
@@ -125,11 +123,7 @@ function clicker() {
      function updater() {
       document.getElementById("clicks").innerHTML = (convert(clicks));
       isFinitee = isFinite(clicks);
-	       if (clickerIntervalId == 0) {
-		       if (clickers == 1) {
-      clickerIntervalId = setInterval(clicker, t);
-	       }
-	       }
+	     
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
