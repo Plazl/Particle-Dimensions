@@ -20,6 +20,8 @@
   
      var icmultiplier = 1;
 
+     var clickerIntervalId = 0;
+
      var x = document.getElementById("infinity");
    
      var y = document.getElementById("clickmenu")
@@ -124,7 +126,9 @@ function clicker() {
       document.getElementById("clicks").innerHTML = (convert(clicks));
       isFinitee = isFinite(clicks);
 	       if (clickers >= 1); {
-     var clickerIntervalId = setInterval(clicker, t);
+      clickerIntervalId = setInterval(clicker, t);
+   } else {
+       clickerIntervalId = 0
    }
       
 
