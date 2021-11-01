@@ -125,7 +125,7 @@ function clicker() {
      function updater() {
       document.getElementById("clicks").innerHTML = (convert(clicks));
       isFinitee = isFinite(clicks);
-	       if (clickers = 1) {
+	       if (clickers == 1) {
       clickerIntervalId = setInterval(clicker, t);
 	       }
 
