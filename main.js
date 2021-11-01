@@ -126,11 +126,12 @@ function clicker() {
       document.getElementById("clicks").innerHTML = (convert(clicks));
       isFinitee = isFinite(clicks);
 	       if (clickers >= 1) {
+		       if (clickerIntervalId !== setInterval(clicker, t)) {
       clickerIntervalId = setInterval(clicker, t);
    } else {
        clickerIntervalId = 0
    }
-      
+	       }
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
