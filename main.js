@@ -4,13 +4,13 @@
    
      var clicks = 10;
     
-     var clickerCost = 25;
+     var clickerCost = 125;
     
      var clickers = 0;
     
      var multiplier = 1;
     
-     var multiplierCost = 10;   
+     var multiplierCost = 45;   
 		     
      var hasStarted = false;
    
@@ -72,7 +72,7 @@ if (hasStarted = false) {
 	  
 		  if (clicks >= multiplierCost) {
     clicks = clicks - multiplierCost;
-     multiplierCost = multiplierCost * 1.5;
+     multiplierCost = multiplierCost * 2;
      multiplier = multiplier + 1; 
     document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
     document.getElementById("mult").innerHTML = multiplier
@@ -94,9 +94,7 @@ if (hasStarted = false) {
       clearInterval(clickerIntervalId);
       clearIntervalId = 0;
        if (clickerIntervalId == 0) {
-		       if (clickers == 1) {
       clickerIntervalId = setInterval(clicker, t);
-		       }
      t = t - 15;
     document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
     document.getElementById("clickers").innerHTML = clickers;
