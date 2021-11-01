@@ -108,21 +108,24 @@ if (multplierCost = 10) {
         
   }
 
-while (1 == 1); {
-   if (clickers >= 1); {
-     var clickerIntervalId = setInterval(clicker, t);
-	   } elseIf (clickers < 1); {
-	   clearInterval(clickerIntervalId);
-         } 
+
+ 
+         
 }
 function clicker() {
   clicks = clicks + 1 * multiplier;
+	If (clickers < 1); {
+	   clearInterval(clickerIntervalId);
+	}
 }
 
      setInterval(updater, framerate);
      function updater() {
       document.getElementById("clicks").innerHTML = (convert(clicks));
       isFinitee = isFinite(clicks);
+	       if (clickers >= 1); {
+     var clickerIntervalId = setInterval(clicker, t);
+   }
       
 
 var slider = document.getElementById("myRange");
