@@ -114,7 +114,7 @@ if (multplierCost = 10) {
 
 function clicker() {
   clicks = clicks + 1 * multiplier;
-	If (clickers < 1); {
+	if (clickers < 1); {
 	   clearInterval(clickerIntervalId);
 	}
 }
