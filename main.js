@@ -109,12 +109,12 @@ if (hasStarted = false) {
  function resetClickerInterval() {
        clearIntervalId = 0;
 	 setTimeout(wait, 500);
- }
+ 
       function  wait() {
 		    clickerIntervalId = setInterval(clicker, t);
-	      break;
+
      }
- 
+}
          
 
 function clicker() {
