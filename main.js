@@ -96,6 +96,7 @@ if (hasStarted = false) {
      t = t - 15;
      document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
      document.getElementById("clickers").innerHTML = clickers;
+     document.getElementById("clicks").innerHTML = Math.round(clicks);
      resetClickerInterval()
   
 		 }
