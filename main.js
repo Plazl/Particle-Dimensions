@@ -73,7 +73,9 @@ if (clicks < 1000) {
      multiplier = multiplier + 1; 
     document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
     document.getElementById("mult").innerHTML = multiplier
-    document.getElementById("clicks").innerHTML = Math.round(clicks);
+    if (clicks < 1000) {
+	document.getElementById("clicks").innerHTML = Math.round(clicks);
+	}
 		  }
 	 }
   
@@ -120,9 +122,7 @@ if (clicks < 1000) {
 
 function clicker() {
   clicks = clicks + 1 * multiplier;
-	if (clicks < 1000) {
 	document.getElementById("clicks").innerHTML = Math.round(clicks);
-	}
 	if (clickers < 1) {
 	   clearInterval(clickerIntervalId);
 		
@@ -131,8 +131,9 @@ function clicker() {
 
      setInterval(updater, framerate);
      function updater() {
-      document.getElementById("clicks").innerHTML = (convert(clicks));
-      isFinitee = isFinite(clicks);
+     document.getElementById("clicks").innerHTML = Math.round(clicks);
+     document.getElementById("clicks").innerHTML = (convert(clicks));
+     isFinitee = isFinite(clicks);
 	     
 
 var slider = document.getElementById("myRange");
