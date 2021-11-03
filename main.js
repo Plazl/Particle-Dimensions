@@ -20,7 +20,7 @@
   
      var icmultiplier = 1;
 
-     var clickerIntervalId = 0;
+     var clickerIntervalId;
 
      var x = document.getElementById("infinity");
    
@@ -91,14 +91,12 @@ if (hasStarted = false) {
      clicks = clicks - clickerCost;
      clickerCost = clickerCost * 1.5;
      clickers = clickers + 1; 
-      clearInterval(clickerIntervalId);
-      clearIntervalId = 0;
-       if (clickerIntervalId == 0) {
-      clickerIntervalId = setInterval(clicker, t);
-       }
+     clearInterval(clickerIntervalId);
+     clicks = clicks + 0.5;
      t = t - 15;
-    document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
-    document.getElementById("clickers").innerHTML = clickers;
+     document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
+     document.getElementById("clickers").innerHTML = clickers;
+     resetClickerInterval()
   
 		 }
           
@@ -108,7 +106,15 @@ if (hasStarted = false) {
   }
     
 
- 
+ function resetClickerInterval() {
+       clearIntervalId = 0;
+	 setTimeout(wait(){
+		    clickerIntervalId = setInterval(clicker, t);
+	      break
+ }, 500);
+       
+      
+ }
          
 
 function clicker() {
