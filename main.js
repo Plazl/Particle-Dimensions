@@ -53,19 +53,15 @@
      
      
    
- //click adder
+ 
 function addClicks() {
 
  clicks = clicks + 1 * multiplier;
- document.getElementById("clicks").innerHTML = Math.round(clicks);
+if (clicks < 1000) {
+	document.getElementById("clicks").innerHTML = Math.round(clicks);
+	}
      
   }
-if (hasStarted = false) {
-  hasStarted = true;
-}
-//upgrade menu
-     
-//multiplier
 
 
 
@@ -98,7 +94,9 @@ if (hasStarted = false) {
      t = t - 15;
      document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
      document.getElementById("clickers").innerHTML = clickers;
-     document.getElementById("clicks").innerHTML = Math.round(clicks);
+     if (clicks < 1000) {
+	document.getElementById("clicks").innerHTML = Math.round(clicks);
+	}
      resetClickerInterval()
   
 		 }
@@ -122,7 +120,9 @@ if (hasStarted = false) {
 
 function clicker() {
   clicks = clicks + 1 * multiplier;
+	if (clicks < 1000) {
 	document.getElementById("clicks").innerHTML = Math.round(clicks);
+	}
 	if (clickers < 1) {
 	   clearInterval(clickerIntervalId);
 		
