@@ -122,8 +122,10 @@ if (hasStarted = false) {
 
 function clicker() {
   clicks = clicks + 1 * multiplier;
+	document.getElementById("clicks").innerHTML = Math.round(clicks);
 	if (clickers < 1) {
 	   clearInterval(clickerIntervalId);
+		
 	}
 }
 
