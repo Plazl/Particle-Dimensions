@@ -131,7 +131,7 @@ function clicker() {
 
      setInterval(updater, framerate);
      function updater() {
-      document.getElementById("clicks").innerHTML = Math.round(convert(clicks));
+      document.getElementById("clicks").innerHTML = (convert(clicks));
       isFinitee = isFinite(clicks);
 	     
 
