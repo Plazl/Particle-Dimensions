@@ -57,6 +57,7 @@
 function addClicks() {
 
  clicks = clicks + 1 * multiplier;
+ document.getElementById("clicks").innerHTML = Math.round(clicks);
      
   }
 if (hasStarted = false) {
@@ -76,6 +77,7 @@ if (hasStarted = false) {
      multiplier = multiplier + 1; 
     document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
     document.getElementById("mult").innerHTML = multiplier
+    document.getElementById("clicks").innerHTML = Math.round(clicks);
 		  }
 	 }
   
@@ -127,7 +129,7 @@ function clicker() {
 
      setInterval(updater, framerate);
      function updater() {
-      document.getElementById("clicks").innerHTML = (convert(clicks));
+      document.getElementById("clicks").innerHTML = Math.round(convert(clicks));
       isFinitee = isFinite(clicks);
 	     
 
