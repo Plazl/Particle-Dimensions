@@ -1,1 +1,1 @@
-https://plazl.github.io/Evo-Clicker
+https://plazl.github.io/htp
