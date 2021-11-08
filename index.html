@@ -39,7 +39,7 @@
  
  </div>
   <button class="tablink" onClick="openTab('achivements', this, 'darkgrey')">A</button>
-    <button class="tablink" onClick="openTab('infinity', this, 'darkgrey')">I</button>
+    <button class="tablink" onClick="openLnTab('infinity', this, 'darkgrey')">I</button>
   <button class="tablink" onClick="htp()">H</button>
   <div id="infinity" style="display:hidden" class="tabcontent">
     <div id="footer2">
@@ -82,6 +82,21 @@ function openInfTab(tab,elmnt,color) {
  
 
 }
+    function openLnTab(tab,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(tab).style.display = "block";
+ 
+
+}
+    
    
    function htp() {
 
