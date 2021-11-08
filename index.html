@@ -1,6 +1,5 @@
 <html>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-  <script src="break_infinity.js"></script>
     <script src="break_eternity.js"></script>
 <head>
  <meta name="veiwport" content="width=device-width, initial-scale=1">
@@ -40,7 +39,16 @@
  
  </div>
   <button class="tablink" onClick="openTab('achivements', this, 'darkgrey')">A</button>
+    <button class="tablink" onClick="openTab('infinity', this, 'darkgrey')">I</button>
   <button class="tablink" onClick="htp()">H</button>
+  <div id="infinity" style="display:hidden" class="tabcontent">
+    <div id="footer2">
+      <button class="itablink" onClick="openInfTab('infugrades', this, 'darkgrey')">Upgrades</button>
+        <div id="infupgrades" class="">
+      <button class="itablink" onClick="openInfTab('breakinfinity', this, 'darkgrey')">Break</button>
+      <button class="itablink" onClick="openInfTab('infmice', this, 'darkgrey')">Infinimice</button>
+      </div>
+    </div>
  </div>
    
      
@@ -60,7 +68,20 @@ function openTab(tab,elmnt,color) {
  
 
 }
+function openInfTab(tab,elmnt,color) {
+  var e, inftabcontent, itablinks;
+  inftabcontent = document.getElementsByClassName("inftabcontent");
+  for (e = 0; e < tabcontent.length; e++) {
+    tabcontent[e].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("itablink");
+  for (e = 0; e < tablinks.length; e++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(tab).style.display = "block";
+ 
 
+}
    
    function htp() {
 
