@@ -42,14 +42,15 @@
 	       if (typeof game.clickerCost !== "undefined") {clickerCost = game.clickerCost};
 	       if (typeof game.clickerCost !== "undefined") {t = game.t};
         } 
-     }
-
-     
-      document.getElementById("mult").innerHTML = multiplier;
+	       document.getElementById("mult").innerHTML = multiplier;
       document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
       document.getElementById("clickers").innerHTML = clickers;
       document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
       document.getElementById("clicks").innerHTML = Math.round(clicks);
+     }
+
+     
+    
      
      
    
@@ -143,7 +144,7 @@ function clicker() {
 	} else {	     
      document.getElementById("clicks").innerHTML = (convert(clicks));
 	}
-	    if (clickers >= 1) {
+	    if (clickers = 1) {
 	     clickerIntervalId = setInterval(clicker, t);
 	  } else {
 	   clearIntervalId = 0;
