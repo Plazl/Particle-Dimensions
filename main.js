@@ -123,17 +123,18 @@ if (clicks < 1000) {
          
 
 function clicker() {
-  clicks = clicks + 1 * multiplier;
-	document.getElementById("clicks").innerHTML = Math.round(clicks);
-	if (clickers < 1) {
+		if (clickers < 1) {
 	   clearInterval(clickerIntervalId);
 		
-	}
+	} else {
+  clicks = clicks + 1 * multiplier;
+	document.getElementById("clicks").innerHTML = Math.round(clicks);
+
 	 if (clicks < 1000) {
 	document.getElementById("clicks").innerHTML = Math.round(clicks);
 	}
+  }
 }
-
      setInterval(updater, framerate);
      function updater() {
      document.getElementById("clicks").innerHTML = Math.round(clicks);
@@ -141,6 +142,11 @@ function clicker() {
 	document.getElementById("clicks").innerHTML = Math.round(clicks);
 	} else {	     
      document.getElementById("clicks").innerHTML = (convert(clicks));
+	}
+	    if (clickers >= 1) {
+	     clickerIntervalId = setInterval(clicker, t);
+	  } else {
+	   clearIntervalId = 0;
 	}
      isFinitee = isFinite(clicks);
 	     
