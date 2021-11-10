@@ -94,7 +94,7 @@ if (clicks < 1000) {
      clicks = clicks - clickerCost;
      clickerCost = clickerCost * 1.5;
      clickers = clickers + 1; 
-     clearInterval(clickerIntervalId);
+     clearInterval(clearIntervalId);
      clicks = clicks + 0.5;
      t = t - 15;
      document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
@@ -138,7 +138,6 @@ function clicker() {
 }
      setInterval(updater, framerate);
      function updater() {
-     document.getElementById("clicks").innerHTML = Math.round(clicks);
       if (clicks < 1000) {
 	document.getElementById("clicks").innerHTML = Math.round(clicks);
 	} else {	     
