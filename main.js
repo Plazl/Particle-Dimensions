@@ -34,13 +34,13 @@
 
      function loadSave() {
         var game = JSON.parse(localStorage.getItem("gameSave"))
-               if (typeof hasStarted !== "undefined") {
-     	       if (typeof clicks !== "undefined") clicks = clicks;
-	       if (typeof multiplier !== "undefined") multiplier = multiplier;
-	       if (typeof multiplierCost !== "undefined") multiplierCost = multiplierCost;
-	       if (typeof clickers !== "undefined") clickers = clickers;
-	       if (typeof clickerCost !== "undefined") clickerCost = clickerCost;
-	       if (typeof clickerCost !== "undefined") t = t;
+               if (typeof game.hasStarted !== "undefined") {
+     	       if (typeof game.clicks !== "undefined") {clicks = game.clicks};
+	       if (typeof game.multiplier !== "undefined") {multiplier = game.multiplier};
+	       if (typeof game.multiplierCost !== "undefined") {multiplierCost = game.multiplierCost};
+	       if (typeof game.clickers !== "undefined") {clickers = game.clickers};
+	       if (typeof game.clickerCost !== "undefined") {clickerCost = game.clickerCost};
+	       if (typeof game.clickerCost !== "undefined") {t = game.t};
         } 
      }
 
