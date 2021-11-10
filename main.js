@@ -217,7 +217,7 @@ function finiteCheck() {
 
 
 
-window.onLoad = function() {
+window.onLoad = 
 loadSave();
 }
 
