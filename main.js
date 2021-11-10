@@ -219,7 +219,7 @@ function finiteCheck() {
 
 window.onLoad = 
 loadSave();
-}
+
 
 function infinity() {
 	if(canInfinity = true) {
