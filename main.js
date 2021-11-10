@@ -20,7 +20,7 @@
   
      var icmultiplier = 1;
 
-     var clickerIntervalId;
+     var clearIntervalId;
 
      var x = document.getElementById("infinity");
    
@@ -117,7 +117,7 @@ if (clicks < 1000) {
 	 setTimeout(wait, 500);
  
       function  wait() {
-		    clickerIntervalId = setInterval(clicker, t);
+		    clearIntervalId = setInterval(clicker, t);
 
      }
 }
@@ -125,7 +125,7 @@ if (clicks < 1000) {
 
 function clicker() {
 		if (clickers < 1) {
-	   clearInterval(clickerIntervalId);
+	   clearInterval(clearIntervalId);
 		
 	} else {
   clicks = clicks + 1 * multiplier;
@@ -145,7 +145,7 @@ function clicker() {
      document.getElementById("clicks").innerHTML = (convert(clicks));
 	}
 	    if (clickers == 1) {
-	     clickerIntervalId = setInterval(clicker, t);
+	     clearIntervalId = setInterval(clicker, t);
 	  } else {
 	   clearIntervalId = 0;
 	}
