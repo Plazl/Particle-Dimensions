@@ -60,7 +60,9 @@ function addClicks() {
 if (clicks < 1000) {
 	document.getElementById("clicks").innerHTML = Math.round(clicks);
 	}
-     
+     if (hasStarted == false) {
+      hasStarted = true;
+     }
   }
 
 
