@@ -144,13 +144,24 @@ function clicker() {
 	} else {	     
      document.getElementById("clicks").innerHTML = (convert(clicks));
 	}
-	    if (clickers = 1) {
+	    if (clickers == 1) {
 	     clickerIntervalId = setInterval(clicker, t);
 	  } else {
 	   clearIntervalId = 0;
 	}
      isFinitee = isFinite(clicks);
-	     
+if (hasStarted == false) {
+            t =  1000;
+     clicks = 10;
+     clickerCost = 125;
+     clickers = 0;
+     multiplier = 1;
+     multiplierCost = 45;   	     
+     hasStarted = false;
+     canInfinity = false;
+     infiniclicks = 0;
+     icmultiplier = 1;
+     }	     
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
