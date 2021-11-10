@@ -129,12 +129,19 @@ function clicker() {
 	   clearInterval(clickerIntervalId);
 		
 	}
+	 if (clicks < 1000) {
+	document.getElementById("clicks").innerHTML = Math.round(clicks);
+	}
 }
 
      setInterval(updater, framerate);
      function updater() {
      document.getElementById("clicks").innerHTML = Math.round(clicks);
+      if (clicks < 1000) {
+	document.getElementById("clicks").innerHTML = Math.round(clicks);
+	} else {	     
      document.getElementById("clicks").innerHTML = (convert(clicks));
+	}
      isFinitee = isFinite(clicks);
 	     
 
