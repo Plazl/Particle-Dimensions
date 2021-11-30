@@ -25,6 +25,13 @@
   width: 100%;
   text-align: center;
 }
+ .footer2 {
+  position: fixed;
+  left: 23%;
+  bottom: 50;
+  width: 100%;
+  text-align: center;
+}
     
    .p1 {
                position: absolute;
@@ -46,8 +53,8 @@
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
-  top: 25%
-  left: 90%
+  top: 50%;
+  left: 90%;
 }
 
 .slider::-webkit-slider-thumb {
@@ -58,8 +65,8 @@
   border-radius: 50%; 
   background: #04AA6D;
   cursor: pointer;
-  top: 25%
-  left: 90%
+  top: 50%;
+  left: 90%;
 }
 
 .slider::-moz-range-thumb {
@@ -68,8 +75,8 @@
   border-radius: 50%;
   background: #04AA6D;
   cursor: pointer;
-  top: 25%
-  left: 90%
+  top: 50%;
+  left: 90%;
 }
  
   .multup {
