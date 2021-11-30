@@ -75,20 +75,19 @@ function openInfTab(itab,ielmnt,icolor) {
   var e, intabcontent, itablinks;
   intabcontent = document.getElementsByClassName("intabcontent");
   for (e = 0; e < intabcontent.length; e++) {
-    intabcontent[e].style.display = "none";
+    tabcontent[e].style.display = "none";
   }
   itablinks = document.getElementsByClassName("itablink");
   for (e = 0; e < itablinks.length; e++) {
     itablinks[i].style.backgroundColor = "";
   }
   document.getElementById(itab).style.display = "block";
- 
-
-}   function openLnTab() {
-      if (f.style.display === "none") {
+        if (f.style.display === "none") {
     f.style.display = "block";
   } 
-}
+ 
+
+}   
     
    
    function htp() {
