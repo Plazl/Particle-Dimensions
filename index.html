@@ -39,7 +39,7 @@
  
  </div>
   <button class="tablink" onClick="openTab('achivements', this, 'darkgrey')">A</button>
-    <button class="itablink" onClick="openInfTab()" style="diplay:none" id="infbutton">I</button>
+    <button class="itablink" onClick="openInfTab('infupgrades', this, 'darkgrey')" style="diplay:none" id="infbutton">I</button>
   <button class="tablink" onClick="htp()">H</button>
   <div id="infinity" style="diplay:none" class="tabcontent">
     <div id="footer2" class="ftr2" style="diplay:none">
@@ -79,7 +79,7 @@ function openInfTab(itab,ielmnt,icolor) {
   }
   itablinks = document.getElementsByClassName("itablink");
   for (e = 0; e < itablinks.length; e++) {
-    itablinks[i].style.backgroundColor = "";
+    itablinks[e].style.backgroundColor = "";
   }
   document.getElementById(itab).style.display = "block";
         if (f.style.display === "none") {
