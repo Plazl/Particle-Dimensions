@@ -26,6 +26,8 @@
 
      var clearIntervalId;
 
+     var devMode = false;
+
      var x = document.getElementById("infinity");
    
      var y = document.getElementById("clickmenu")
