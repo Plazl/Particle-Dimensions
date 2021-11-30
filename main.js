@@ -20,11 +20,17 @@
   
      var icmultiplier = 1;
 
+     var infinities = 0;
+
+     var infinimult = 1;
+
      var clearIntervalId;
 
      var x = document.getElementById("infinity");
    
      var y = document.getElementById("clickmenu")
+     
+     var r = document.getElementById("itablink")
      
      
 
@@ -41,6 +47,8 @@
 	       if (typeof game.clickers !== "undefined") {clickers = game.clickers};
 	       if (typeof game.clickerCost !== "undefined") {clickerCost = game.clickerCost};
 	       if (typeof game.clickerCost !== "undefined") {t = game.t};
+	       if (typeof game.clickerCost !== "undefined") {infinities = game.infinities};
+	       if (typeof game.clickerCost !== "undefined") {infinimukt = game.infinimult};
         } 
 	       document.getElementById("mult").innerHTML = multiplier;
       document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
@@ -148,6 +156,9 @@ function clicker() {
 	  } else {
 	   clearIntervalId = 0;
 	}
+	     if (infinities >= 1) {
+	     document.getElementById("itablink").style.display = "shown"
+	   }
      isFinitee = isFinite(clicks);
 if (hasStarted == false) {
             t =  1000;
@@ -197,7 +208,9 @@ function saveGame() {
 	multiplier: multiplier,
 	multiplierCost: multiplierCost,
 	t: t,
-        hasStarted: hasStarted
+        hasStarted: hasStarted,
+	infinities: infinities,
+	infinimult: infinimult   
 	   
 	  }
 	localStorage.setItem("gameSave", JSON.stringify(gameSave));
@@ -258,11 +271,14 @@ function infinity() {
 		t = 1000;
 		canInfinity = false;
 		isFinitee = isFinite(clicks)
+		infinities = infinities + 1 * infinimult
 		x.style.display = "none";
 		y.style.display = "block"
 		
 
 
 	   }
-        }
+	
+	
+        
     
