@@ -39,22 +39,23 @@
  
  </div>
   <button class="tablink" onClick="openTab('achivements', this, 'darkgrey')">A</button>
-    <button class="itablink" onClick="openInfTab('infupgrades', this, 'darkgrey')" style="diplay:none" id="infbutton">I</button>
+    <button class="itablink" onClick="openInfiniTab('infupgrades', this, 'darkgrey')" style="diplay:none" id="infbutton">I</button>
   <button class="tablink" onClick="htp()">H</button>
   <div id="infinity" style="diplay:none" class="itabcontent">
     <div class="footer2">
       <button class="itablinks" onClick="openInfTab('infugrades', this, 'darkgrey')">Upgrades</button>
-      <div id="infupgrades" class="intabcontent" style="diplay:none"> </div>
       <button class="itablinks" onClick="openInfTab('breakinfinity', this, 'darkgrey')">Break</button>
-      <div id="breakinfinity" class="intabcontent" style="diplay:none"> </div>
       <button class="itablinks" onClick="openInfTab('infmice', this, 'darkgrey')">Infinimice</button>
-      <div id="infinimice" class="intabcontent" style="diplay:none">
       </div>
+      <div id="infupgrades" class="intabcontent" style="diplay:none"> </div>
+      <div id="breakinfinity" class="intabcontent" style="diplay:none"> </div>
+      <div id="infinimice" class="intabcontent" style="diplay:none">
     </div>
  </div>
    
      
   <script>
+    var infTabOpen = false;
     var f = document.getElementById("footer2")
  openTab('clickmenu');
 function openTab(tab,elmnt,color) {
@@ -71,7 +72,17 @@ function openTab(tab,elmnt,color) {
  
 
 }
-function openInfTab(itab,ielmnt,icolor) {
+function openInfiniTab(itab,ielmnt,icolor) {
+  if (infTabOpen == false) {
+    infTabOpen = true;  
+  }
+         if (f.style.display === "none") {
+    f.style.display = "block";
+  } 
+  } 
+   
+   
+    function openInfTab(itab,ielmnt,icolor) {
   var e, intabcontent, itablinks;
   intabcontent = document.getElementsByClassName("intabcontent");
   for (e = 0; e < intabcontent.length; e++) {
@@ -88,7 +99,6 @@ function openInfTab(itab,ielmnt,icolor) {
  
 
 }   
-    
    
    function htp() {
 
