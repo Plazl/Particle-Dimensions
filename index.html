@@ -39,14 +39,16 @@
  
  </div>
   <button class="tablink" onClick="openTab('achivements', this, 'darkgrey')">A</button>
-    <button class="tablink" onClick="openLnTab()">I</button>
-  <button class="tablink" onClick="htp()">H</button>
-  <div id="infinity" style="display:hidden" class="tabcontent">
-    <div id="footer2">
-      <button class="itablink" onClick="openInfTab('infugrades', this, 'darkgrey')">Upgrades</button>
-        <div id="infupgrades" class="">
-      <button class="itablink" onClick="openInfTab('breakinfinity', this, 'darkgrey')">Break</button>
-      <button class="itablink" onClick="openInfTab('infmice', this, 'darkgrey')">Infinimice</button>
+    <button class="tablink" onClick="openLnTab()" style="diplay:none">I</button>
+  <button class="itablinks" onClick="htp()">H</button>
+  <div id="infinity" style="diplay:none" class="tabcontent">
+    <div id="footer2" class="ftr2" style="diplay:none">
+      <button class="itablinks" onClick="openInfTab('infugrades', this, 'darkgrey')">Upgrades</button>
+      <div id="infupgrades" class="intabcontent" style="diplay:none"> </div>
+      <button class="itablinks" onClick="openInfTab('breakinfinity', this, 'darkgrey')">Break</button>
+      <div id="breakinfinity" class="intabcontent" style="diplay:none"> </div>
+      <button class="itablinks" onClick="openInfTab('infmice', this, 'darkgrey')">Infinimice</button>
+      <div id="infinimice" class="intabcontent" style="diplay:none">
       </div>
     </div>
  </div>
@@ -69,17 +71,17 @@ function openTab(tab,elmnt,color) {
  
 
 }
-function openInfTab(tab,elmnt,color) {
-  var e, inftabcontent, itablinks;
-  inftabcontent = document.getElementsByClassName("inftabcontent");
-  for (e = 0; e < tabcontent.length; e++) {
-    tabcontent[e].style.display = "none";
+function openInfTab(itab,ielmnt,icolor) {
+  var e, intabcontent, itablinks;
+  intabcontent = document.getElementsByClassName("intabcontent");
+  for (e = 0; e < intabcontent.length; e++) {
+    intabcontent[e].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("itablink");
-  for (e = 0; e < tablinks.length; e++) {
-    tablinks[i].style.backgroundColor = "";
+  itablinks = document.getElementsByClassName("itablink");
+  for (e = 0; e < itablinks.length; e++) {
+    itablinks[i].style.backgroundColor = "";
   }
-  document.getElementById(tab).style.display = "block";
+  document.getElementById(itab).style.display = "block";
  
 
 }   function openLnTab() {
