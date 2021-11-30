@@ -159,7 +159,7 @@ function clicker() {
 	   clearIntervalId = 0;
 	}
 	     if (infinities >= 1) {
-	     document.getElementById("itablink").style.display = "shown"
+	     document.getElementById("infbutton").style.display = "shown"
 	   }
      isFinitee = isFinite(clicks);
 if (hasStarted == false) {
