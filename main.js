@@ -50,7 +50,7 @@
 	       if (typeof game.clickerCost !== "undefined") {clickerCost = game.clickerCost};
 	       if (typeof game.clickerCost !== "undefined") {t = game.t};
 	       if (typeof game.clickerCost !== "undefined") {infinities = game.infinities};
-	       if (typeof game.clickerCost !== "undefined") {infinimukt = game.infinimult};
+	       if (typeof game.clickerCost !== "undefined") {infinimult = game.infinimult};
         } 
 	       document.getElementById("mult").innerHTML = multiplier;
       document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
