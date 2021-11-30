@@ -42,10 +42,10 @@
     <button class="itablink" onClick="openInfiniTab('infupgrades', this, 'darkgrey')" style="diplay:none" id="infbutton">I</button>
   <button class="tablink" onClick="htp()">H</button>
   <div id="infinity" style="diplay:none" class="itabcontent">
-    <div class="footer2">
-      <button class="itablinks" onClick="openInfTab('infugrades', this, 'darkgrey')">Upgrades</button>
-      <button class="itablinks" onClick="openInfTab('breakinfinity', this, 'darkgrey')">Break</button>
-      <button class="itablinks" onClick="openInfTab('infmice', this, 'darkgrey')">Infinimice</button>
+    <div class="footer2" style="display:none">
+      <button class="itablink" onClick="openInfTab('infugrades', this, 'darkgrey')">Upgrades</button>
+      <button class="itablink" onClick="openInfTab('breakinfinity', this, 'darkgrey')">Break</button>
+      <button class="itablink" onClick="openInfTab('infmice', this, 'darkgrey')">Infinimice</button>
       </div>
       <div id="infupgrades" class="intabcontent" style="diplay:none"> </div>
       <div id="breakinfinity" class="intabcontent" style="diplay:none"> </div>
@@ -69,6 +69,9 @@ function openTab(tab,elmnt,color) {
     tablinks[i].style.backgroundColor = "";
   }
   document.getElementById(tab).style.display = "block";
+       if (f.style.display === "block") {
+    f.style.display = "none";
+  } 
  
 
 }
