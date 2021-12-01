@@ -55,7 +55,6 @@
    
      
   <script>
-    var i, tabcontent, tablink;
    var tabcontent = document.getElementsByClassName("tabcontent");
     var infTabOpen = false;
     var f = document.getElementById("footer2")
@@ -78,13 +77,13 @@ function openTab(tab,elmnt,color) {
 
 }
 function openInfiniTab(itab,ielmnt,icolor) {
-  var i, tabcontent, tablink;
   if (infTabOpen == false) {
     infTabOpen = true;  
-    tabcontent[i].style.display = "none"
+    document.getElementsByClassName("tablink").style.display = "none"
   } else {
      infTabOpen = false;  
-     tabcontent[i].style.display = "shown"
+     document.getElementsByClassName("tablink").style.display = "shown"
+  
   }
          if (f.style.display === "none") {
     f.style.display = "block";
