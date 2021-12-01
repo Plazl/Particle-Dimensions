@@ -28,6 +28,8 @@
 
      var devMode = false;
 
+     var gameSave;
+
      var x = document.getElementById("infinity");
    
      var y = document.getElementById("clickmenu")
@@ -193,7 +195,7 @@ var convert = clicks => {
 
 
 function saveGame() {
-   var gameSave = {
+      gameSave = {
 	clicks: clicks,
 	clickers: clickers,
 	clickerCost: clickerCost,
