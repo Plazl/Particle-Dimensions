@@ -160,20 +160,10 @@ function clicker() {
 	}
 	     if (infinities >= 1) {
 	     document.getElementById("infbutton").style.display = "shown"
+	   } else {
+	     document.getElementById("infbutton").style.display = "none"	   
 	   }
-     isFinitee = isFinite(clicks);
-if (hasStarted == false) {
-            t =  1000;
-     clicks = 10;
-     clickerCost = 125;
-     clickers = 0;
-     multiplier = 1;
-     multiplierCost = 45;   	     
-     hasStarted = false;
-     canInfinity = false;
-     infiniclicks = 0;
-     icmultiplier = 1;
-     }	     
+     isFinitee = isFinite(clicks);    
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
