@@ -55,6 +55,7 @@
    
      
   <script>
+    var i, tabcontent, tablink;
    var tabcontent = document.getElementsByClassName("tabcontent");
     var infTabOpen = false;
     var f = document.getElementById("footer2")
@@ -77,6 +78,7 @@ function openTab(tab,elmnt,color) {
 
 }
 function openInfiniTab(itab,ielmnt,icolor) {
+  var i, tabcontent, tablink;
   if (infTabOpen == false) {
     infTabOpen = true;  
     tabcontent[i].style.display = "none"
