@@ -79,7 +79,9 @@ function openTab(tab,elmnt,color) {
 function openInfiniTab(itab,ielmnt,icolor) {
   if (infTabOpen == false) {
     infTabOpen = true;  
-    document.getElementsByClassName("tablink").style.display = "none"
+    tabcontent[0].style.display = "none"
+    tabcontent[1].style.display = "none"
+    tabcontent[2].style.display = "none"
   } else {
      infTabOpen = false;  
      document.getElementsByClassName("tablink").style.display = "shown"
