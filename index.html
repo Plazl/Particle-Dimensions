@@ -79,8 +79,10 @@ function openTab(tab,elmnt,color) {
 function openInfiniTab(itab,ielmnt,icolor) {
   if (infTabOpen == false) {
     infTabOpen = true;  
+    tabcontent[i].style.display = "none"
   } else {
      infTabOpen = false;  
+     tabcontent[i].style.display = "shown"
   }
          if (f.style.display === "none") {
     f.style.display = "block";
