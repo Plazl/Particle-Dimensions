@@ -39,7 +39,7 @@
  
  </div>
   <button class="tablink" onClick="openTab('achivements', this, 'darkgrey')">A</button>
-    <button class="itablink" onClick="openInfiniTab('infupgrades', this, 'darkgrey')" style="diplay:none" id="infbutton">I</button>
+    <button class="itablink" onClick="openMainInfTab('infupgrades', this, 'darkgrey')" style="diplay:none" id="infbutton">I</button>
   <button class="tablink" onClick="htp()">H</button>
   <div id="infinity" style="diplay:none" class="itabcontent">
     <div class="footer2" style="display:none" id="footer2">
@@ -76,12 +76,9 @@ function openTab(tab,elmnt,color) {
  
 
 }
-function openInfiniTab(itab,ielmnt,icolor) {
+function openMainInfTab(itab,ielmnt,icolor) {
   if (infTabOpen == false) {
     infTabOpen = true;  
-    tabcontent[0].style.display = "none"
-    tabcontent[1].style.display = "none"
-    tabcontent[2].style.display = "none"
   } else {
      infTabOpen = false;  
      document.getElementsByClassName("tablink").style.display = "shown"
@@ -115,7 +112,19 @@ function openInfiniTab(itab,ielmnt,icolor) {
 
 window.open("https://plazl.github.io/howtoplay.html");
    }
+ var interval = setInterval(updatee, framerate)
  
+ function updatee() {
+   if (infTabOpen == true) { 
+     tabcontent[0].style.display = "none", tabcontent[1].style.display = "none", tabcontent[2].style.display = "none" 
+ } else if (infTabOpen !== true) { 
+        document.getElementsByClassName("tablink").style.display = "shown"
+ }
+   
+         if (f.style.display === "none") {
+    f.style.display = "block";
+  } 
+ }
 
 
 </script>
