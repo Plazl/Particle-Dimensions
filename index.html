@@ -72,6 +72,8 @@ function openTab(tab,elmnt,color) {
   document.getElementById(tab).style.display = "block";
        if (f.style.display === "block") {
     f.style.display = "none";
+         infTabOpen = false;
+           document.getElementsByClassName("tablink").style.display = "shown"
   } 
  
 
@@ -79,9 +81,7 @@ function openTab(tab,elmnt,color) {
 function openMainInfTab(itab,ielmnt,icolor) {
   if (infTabOpen == false) {
     infTabOpen = true;  
-  } else {
-     infTabOpen = false;  
-     document.getElementsByClassName("tablink").style.display = "shown"
+  }
   
   }
          if (f.style.display === "none") {
@@ -116,14 +116,15 @@ window.open("https://plazl.github.io/howtoplay.html");
  
  function updatee() {
    if (infTabOpen == true) { 
-     tabcontent[0].style.display = "none", tabcontent[1].style.display = "none", tabcontent[2].style.display = "none" 
+     tabcontent[0].style.display = "none; tabcontent[1].style.display = "none"; tabcontent[2].style.display = "none" 
+        if (f.style.display === "none") {
+    f.style.display = "block";
+  } 
  } else if (infTabOpen !== true) { 
         document.getElementsByClassName("tablink").style.display = "shown"
  }
    
-         if (f.style.display === "none") {
-    f.style.display = "block";
-  } 
+      
  }
 
 
