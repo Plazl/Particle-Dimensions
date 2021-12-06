@@ -232,7 +232,7 @@ function clicker() {
 	} else {	     
      document.getElementById("clicks").innerHTML = (convert(clicks));
 	}
-	    if (clickers == 1) {
+	    if (clearIntervalId == 1) {
 	     clearIntervalId = setInterval(clicker, t);
 	  } else {
 	   clearIntervalId = 0;
