@@ -8,7 +8,7 @@
 #top-text {
 top: 0%;
 left: 0%;
-
+display: hidden;
 }
 .button1 {
                position: absolute;
@@ -321,4 +321,10 @@ position: absolute;
     max-width: 978px;
     display: block;
 }
-      
+  
+
+.loaded #top-text {
+top: 0%;
+left: 0%;
+display: block;
+}
