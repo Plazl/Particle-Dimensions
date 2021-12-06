@@ -38,6 +38,15 @@
       var tabcontent = document.getElementsByClassName("tabcontent");
     var infTabOpen = false;
     var f = document.getElementById("footer2")
+    
+    $(document).ready(function() {
+ 
+    setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 3000);
+ 
+});
+
  openTab('clickmenu');
 function openTab(tab,elmnt,color) {
   var i, tabcontent, tablinks;
