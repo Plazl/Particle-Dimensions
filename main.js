@@ -384,5 +384,5 @@ window.onLoad = loadSave();
 function clearSave() { 
 	gameSave = {}
 	localStorage.removeItem("gameSave")
-	location.reload
+	location.reload()
 }
