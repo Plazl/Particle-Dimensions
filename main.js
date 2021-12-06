@@ -374,4 +374,5 @@ function finiteCheck() {
 window.onLoad = loadSave();
 function clearSave() { 
 	gameSave = {}
+	localStorage.removeItem("gameSave")
 }
