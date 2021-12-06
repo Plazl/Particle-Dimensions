@@ -372,4 +372,6 @@ function finiteCheck() {
     
 
 window.onLoad = loadSave();
-function clearSave() { gameSave = {}
+function clearSave() { 
+	gameSave = {}
+}
