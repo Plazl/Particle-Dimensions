@@ -130,6 +130,7 @@ window.open("https://plazl.github.io/howtoplay.html");
 	       if (typeof game.clickerCost !== "undefined") {t = game.t};
 	       if (typeof game.clickerCost !== "undefined") {infinities = game.infinities};
 	       if (typeof game.clickerCost !== "undefined") {infinimult = game.infinimult};
+	       if (typeof game.clickerCost !== "undefined") {clearIntervalId = game.clearIntervalId};
         } 
 	       document.getElementById("mult").innerHTML = multiplier;
       document.getElementById("multPrice").innerHTML = Math.round(multiplierCost);
@@ -281,7 +282,8 @@ function saveGame() {
 	t: t,
         hasStarted: hasStarted,
 	infinities: infinities,
-	infinimult: infinimult   
+	infinimult: infinimult,
+	clearIntervalId: clearIntervalId
 	   
 	  }
 	localStorage.setItem("gameSave", JSON.stringify(gameSave));
@@ -381,6 +383,9 @@ function finiteCheck() {
     
 
 window.onLoad = loadSave();
+ if (clickers == 1 && clearIntervalId == 1) {
+	     clearIntervalId = setInterval(clicker, t);
+	  }
 function clearSave() { 
 	gameSave = {	clickers: 0,
 	clickerCost: 125,
@@ -389,7 +394,8 @@ function clearSave() {
 	t: 1000,
         hasStarted: false,
 	infinities: 0,
-	infinimult: 1    
+	infinimult: 1,
+        clearIntervalId: 0
 		   }
 	localStorage.removeItem("gameSave")
 	location.reload()
