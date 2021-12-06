@@ -382,7 +382,15 @@ function finiteCheck() {
 
 window.onLoad = loadSave();
 function clearSave() { 
-	gameSave = {}
+	gameSave = {	clickers: 0,
+	clickerCost: 125,
+	multiplier: 1,
+	multiplierCost: 45,
+	t: 1000,
+        hasStarted: false,
+	infinities: 0,
+	infinimult: 1    
+		   }
 	localStorage.removeItem("gameSave")
 	location.reload()
 }
