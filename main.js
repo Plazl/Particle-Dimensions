@@ -383,8 +383,8 @@ function finiteCheck() {
     
 
 window.onLoad = loadSave();
- if (clickers == 1 && clearIntervalId == 1) {
-	     clearIntervalId = setInterval(clicker, t);
+ if (clickers == 1) {
+	     clearIntervalId = 1
 	  }
 function clearSave() { 
 	gameSave = {	clickers: 0,
