@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="game.css">
 </head>
  <body onLoad="loadSave()">
+   <div id="loader-wrapper">
+    <div id="loader"></div>
+ 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+ 
+</div>
+   <div id="content">
     <div id="clickmenu" style="display:block" class="tabcontent">
         <p class="p p1">You have <span id="clicks">0</span> clicks.</p>
         <button class="button button1" onClick="addClicks()">Click Me!</button>
@@ -56,6 +64,7 @@
   </div>
    <button class="button button3"id="infinity" onClick="infinity()" style="display:none">Your PC has imploded due to the infinite amount of clicks you have reached.
      Infinity to continue</button>
+   </div>
    </body>
 <script src="main.js"></script>
 </html>
