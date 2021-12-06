@@ -5,7 +5,11 @@
     max-width: 978px;
     display: hidden;
 }
+#top-text {
+top: 0%;
+left: 0%;
 
+}
 .button1 {
                position: absolute;
    left: 49%;
