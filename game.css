@@ -3,7 +3,7 @@
     padding-bottom: 50px;
     width: 80%;
     max-width: 978px;
-    display: none;
+    display: hidden;
 }
 
 .button1 {
@@ -315,6 +315,6 @@ position: absolute;
      padding-bottom: 50px;
     width: 80%;
     max-width: 978px;
-    display: none;
+    display: block;
 }
       
