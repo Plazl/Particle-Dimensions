@@ -3,6 +3,7 @@
     padding-bottom: 50px;
     width: 80%;
     max-width: 978px;
+    display: none;
 }
 
 .button1 {
@@ -300,5 +301,20 @@ position: absolute;
 }
        .loaded #loader-wrapper {
     visibility: hidden;
+    -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+ 
+        -webkit-transition: all 0.3s 0.6s ease-out;
+                transition: all 0.3s 0.6s ease-out;
+}
+
+
+.loaded #content {
+    display: block;
+     padding-bottom: 50px;
+    width: 80%;
+    max-width: 978px;
+    display: none;
 }
       
