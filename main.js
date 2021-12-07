@@ -3,14 +3,12 @@
      var framerate = 100;
    
      var clicks = new Decimal ("0");
- 	
-	clicks.add("10")
     
      var clickerCost = 125;
     
      var clickers = 0;
     
-     var multiplier = 1;
+     var multiplier = new Decimal ("1");
     
      var multiplierCost = 45;   
 		     
@@ -48,6 +46,7 @@
     }, 3000);
  
 });
+clicks = clicks * multiplier;
 
  openTab('clickmenu');
 function openTab(tab,elmnt,color) {
