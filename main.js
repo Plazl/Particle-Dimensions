@@ -2,7 +2,9 @@
      
      var framerate = 100;
    
-     var clicks = 10;
+     var clicks = new Decimal ("0");
+ 	
+	clicks.add("10")
     
      var clickerCost = 125;
     
