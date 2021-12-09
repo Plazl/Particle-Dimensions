@@ -59,6 +59,14 @@ display: hidden;
          width: 100%;
          font-size: 30px;
       }
+
+.slidercontainer {
+   top: 25%;
+   left: 50%;
+   width: 100%;
+   height: 100%;
+
+}
    .slider {
   -webkit-appearance: none;
   width: 100%;
@@ -327,4 +335,29 @@ position: absolute;
 top: 0%;
 left: 0%;
 display: block;
+}
+
+
+
+
+
+
+.resetSave {
+       position: absolute;
+          left: 45%;
+          top: 25%;
+     width: 250px;
+       background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+    border-radius: 5px; 
+    cursor: pointer;
+
+
 }
