@@ -389,7 +389,8 @@ function clearSave() {
         hasStarted: false,
 	infinities: 0,
 	infinimult: 1,
-        clearIntervalId: 0
+        clearIntervalId: 0,
+        clicks: 10
 		   }
 	localStorage.removeItem("gameSave")
 	location.reload()
