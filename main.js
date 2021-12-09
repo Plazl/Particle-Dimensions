@@ -248,7 +248,7 @@ function clicker() {
 
   
 }
-     }
+     
 
 var convert = clicks => {
 	    if (clicks < 1e3) return clicks;
