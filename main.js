@@ -246,13 +246,6 @@ function clicker() {
 	   }
      isFinitee = isFinite(clicks);    
 
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-    framerate = this.value;
-  output.innerHTML = framerate;
   
 }
      }
