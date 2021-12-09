@@ -60,48 +60,7 @@ display: hidden;
          font-size: 30px;
       }
 
-.slidercontainer {
-   top: 25%;
-   left: 49%;
-   width: 100%;
-   height: 100%;
 
-}
-   .slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 15px;
-  border-radius: 5px;  
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-  top: 50%;
-  left: 90%;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%; 
-  background: #04AA6D;
-  cursor: pointer;
-  top: 50%;
-  left: 90%;
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #04AA6D;
-  cursor: pointer;
-  top: 50%;
-  left: 90%;
-}
  
   .multup {
        position: absolute;
@@ -344,7 +303,7 @@ display: block;
 
 .resetSave {
        position: absolute;
-          left: 49%;
+          left: 45%;
           top: 35%;
      width: 250px;
        background-color: #04AA6D;
@@ -365,8 +324,8 @@ display: block;
 
 .quicksave {
        position: absolute;
-          left: 49%;
-          top: 40%;
+          left: 45%;
+          top: 48%;
      width: 250px;
        background-color: #04AA6D;
   border: none;
