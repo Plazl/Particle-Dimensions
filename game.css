@@ -62,7 +62,7 @@ display: hidden;
 
 .slidercontainer {
    top: 25%;
-   left: 50%;
+   left: 49%;
    width: 100%;
    height: 100%;
 
@@ -344,8 +344,8 @@ display: block;
 
 .resetSave {
        position: absolute;
-          left: 45%;
-          top: 25%;
+          left: 49%;
+          top: 35%;
      width: 250px;
        background-color: #04AA6D;
   border: none;
@@ -365,8 +365,8 @@ display: block;
 
 .quicksave {
        position: absolute;
-          left: 45%;
-          top: 20%;
+          left: 49%;
+          top: 40%;
      width: 250px;
        background-color: #04AA6D;
   border: none;
