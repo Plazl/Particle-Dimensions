@@ -393,5 +393,6 @@ function clearSave() {
         clicks: 10
 		   }
 	localStorage.removeItem("gameSave")
+	localStorage.setItem("gameSave", JSON.stringify(gameSave));
 	location.reload()
 }
