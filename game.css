@@ -361,3 +361,24 @@ display: block;
 
 
 }
+
+
+.quicksave {
+       position: absolute;
+          left: 45%;
+          top: 20%;
+     width: 250px;
+       background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+    border-radius: 5px; 
+    cursor: pointer;
+
+
+}
