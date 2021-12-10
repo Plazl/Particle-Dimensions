@@ -250,7 +250,7 @@ position: absolute;
     top: 0;
     width: 51%;
     height: 100%;
-    background: #222222;
+    background-image: url('favicon.png');
     z-index: 1000;
 }
  
