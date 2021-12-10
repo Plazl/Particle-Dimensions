@@ -1,7 +1,7 @@
 #content {
     margin: 0 auto;
     padding-bottom: 50px;
-    width: 80%;
+    width: 100%;
     max-width: 978px;
     display: hidden;
 }
@@ -12,7 +12,7 @@ display: hidden;
 }
 .button1 {
                position: absolute;
-   left: 49%;
+   left: 50%;
    top: 50%; 
       background-color: #04AA6D;
   border: none;
@@ -32,7 +32,7 @@ display: hidden;
 
  .footer {
   position: fixed;
-  left: 23%;
+  left: 25%;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -64,7 +64,7 @@ display: hidden;
  
   .multup {
        position: absolute;
-          left: 45%;
+          left: 50%;
           top: 25%;
      width: 250px;
        background-color: #04AA6D;
@@ -85,7 +85,7 @@ display: hidden;
       .buyClicker {
         width: 250px;
        position: absolute;
-          left: 45%;
+          left: 50%;
           top: 50%;
        background-color: #04AA6D;
   border: none;
@@ -135,7 +135,7 @@ display: hidden;
 
 .button3 {
 position: absolute;
-   left: 45%;
+   left: 50%;
    top: 50%; 
   width: 250px;
   background-color: #04AA6D;
@@ -303,7 +303,7 @@ display: block;
 
 .resetSave {
        position: absolute;
-          left: 45%;
+          left: 50%;
           top: 35%;
      width: 250px;
        background-color: #04AA6D;
@@ -324,8 +324,8 @@ display: block;
 
 .quicksave {
        position: absolute;
-          left: 45%;
-          top: 48%;
+          left: 50%;
+          top: 50%;
      width: 250px;
        background-color: #04AA6D;
   border: none;
