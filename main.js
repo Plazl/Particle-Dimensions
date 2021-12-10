@@ -2,13 +2,13 @@
      
      var framerate = 100;
    
-     var clicks = new Decimal ("0");
+     var clicks = 10
     
      var clickerCost = 125;
     
      var clickers = 0;
     
-     var multiplier = new Decimal ("1");
+     var multiplier = 1
     
      var multiplierCost = 45;   
 		     
@@ -30,7 +30,9 @@
 
      var gameSave;
 
-     var x = document.getElementById("infinity");
+     var isFinitee = isFinite(clicks);
+
+     var x = document.getElementById("infinitybtn");
    
      var y = document.getElementById("clickmenu")
      
