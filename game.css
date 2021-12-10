@@ -1,5 +1,9 @@
 .body {
- overflow: hidden;
+ align-items: center;
+    background-color: grey;
+    overflow: hidden;
+    height: 100%;
+    justify-content: center;
 }
 
 #content {
@@ -36,7 +40,7 @@ display: hidden;
 
  .footer {
   position: fixed;
-  left: 25%;
+  left: 20%;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -56,7 +60,7 @@ display: hidden;
    .p1 {
                position: absolute;
          top: 25%;
-         left: 45%;
+         left: 44.8%;
          color: #F65E5E;
          font-family: Arial, Helvetica, sans-serif;
          height: 25px;
