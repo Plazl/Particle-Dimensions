@@ -1,1 +1,1 @@
-https://plazl.github.io/htp.html
+https://plazl.github.io/howtoplay.html
