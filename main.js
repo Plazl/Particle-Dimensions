@@ -109,8 +109,9 @@ window.open("https://plazl.github.io/howtoplay.html");
         if (f.style.display === "none") {
     f.style.display = "block";
   } 
- } else if (infTabOpen !== true) { 
+ } while (infTabOpen !== true) { 
         document.getElementsByClassName("tablink").style.display = "shown"
+	 break
  }
    
       
