@@ -110,7 +110,7 @@ window.open("https://plazl.github.io/howtoplay.html");
     f.style.display = "block";
   } 
  } 
- }
+ 
    
       
  }
