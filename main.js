@@ -33,6 +33,8 @@
      var isFinitee = isFinite(clicks);
 
      var x = document.getElementById("infinitybtn");
+
+     var footer = document.getElementsByClassName("footer")[0];
    
      var y = document.getElementById("clickmenu")
      
@@ -111,7 +113,11 @@ window.open("https://plazl.github.io/howtoplay.html");
   } 
  } 
  
-   
+   if (infinities >= 1) {
+	   footer.style.left = "15%"
+   } else {
+       footer.style.left = "20%"
+   }
       
  }
      
@@ -228,7 +234,7 @@ function clicker() {
 	}
   }
 }
-     setInterval(updater, framerate);
+     
      function updater() {
       if (clicks < 1000) {
 	document.getElementById("clicks").innerHTML = Math.round(clicks);
@@ -241,7 +247,9 @@ function clicker() {
 	   clearIntervalId = 0;
 	}
 	     if (infinities >= 1) {
+		     if (isFinitee == false) { 
 	     document.getElementById("infbutton").style.display = "shown"
+		     }
 	   } else {
 	     document.getElementById("infbutton").style.display = "none"	   
 	   }
