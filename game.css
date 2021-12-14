@@ -311,7 +311,7 @@ display: block;
 
 .resetSave {
        position: absolute;
-          left: 50%;
+          left: 45%;
           top: 35%;
      width: 250px;
        background-color: #04AA6D;
@@ -332,7 +332,7 @@ display: block;
 
 .quicksave {
        position: absolute;
-          left: 50%;
+          left: 45%;
           top: 50%;
      width: 250px;
        background-color: #04AA6D;
