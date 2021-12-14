@@ -3,7 +3,7 @@
     background-color: grey;
     overflow: hidden;
     height: 100%;
-    justify-content: center;
+    
 }
 
 #content {
@@ -39,7 +39,7 @@ display: hidden;
 }
 
  .footer {
-  position: fixed;
+  position: absolute;
   left: 20%;
   bottom: 0;
   width: 100%;
