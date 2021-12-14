@@ -115,10 +115,18 @@ window.open("https://plazl.github.io/howtoplay.html");
  
    if (infinities >= 1) {
 	   footer.style.left = "15%"
+           f.style.display = "shown"
+       	   r.style.display = "shown"
+   } else if (infinities < 1){
+           footer.style.left = "20%"
+	   f.style.display = "none"
+           r.style.display = "none"
    } else {
-       footer.style.left = "20%"
-   }
-      
+	   alert("Idk what you did but you broke something. Saves cannot be fixed at this point so you must reset. Sorry ¯\\_(ツ)_/¯")
+	     
+   }    
+  
+
  }
      
      
@@ -254,15 +262,7 @@ function clicker() {
 	     document.getElementById("infbutton").style.display = "none"	   
 	   }
      isFinitee = isFinite(clicks);    
-	     if (infinities < 1) {
-	        f.style.display = "none"
-		r.style.display = "none"
-	     } else if (infinities >= 1) {
-	         f.style.display = "shown"
-		 r.style.display = "shown"
-	     } else {
-	       alert("Idk what you did but you broke something. Saves cannot be fixed at this point so you must reset. Sorry ¯\\_(ツ)_/¯")
-	     }
+	     
 
   
 }
