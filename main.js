@@ -254,6 +254,15 @@ function clicker() {
 	     document.getElementById("infbutton").style.display = "none"	   
 	   }
      isFinitee = isFinite(clicks);    
+	     if (infinities < 1) {
+	        f.style.display = "none"
+		r.style.display = "none"
+	     } else if (infinities >= 1) {
+	         f.style.display = "shown"
+		 r.style.display = "shown"
+	     } else {
+	       alert("Idk what you did but you broke something. Saves cannot be fixed at this point so you must reset. Sorry ¯\\_(ツ)_/¯")
+	     }
 
   
 }
