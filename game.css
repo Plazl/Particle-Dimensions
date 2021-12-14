@@ -350,7 +350,7 @@ display: block;
 
  
 }
-.infmousebtn {
+#infmousebtn {
  position: absolute;
           left: 45%;
           top: 50%;
