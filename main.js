@@ -399,6 +399,9 @@ window.onLoad = loadSave();
 	     clearIntervalId = 1
 	  }
 function clearSave() { 
+	if (confirm("Are you sure you want to reset your save? This cannot be undone.") == true)
+	{
+	
 	gameSave = {	clickers: 0,
 	clickerCost: 125,
 	multiplier: 1,
@@ -413,4 +416,5 @@ function clearSave() {
 	localStorage.removeItem("gameSave")
 	localStorage.setItem("gameSave", JSON.stringify(gameSave));
 	location.reload()
+	} else {}
 }
