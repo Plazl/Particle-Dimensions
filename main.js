@@ -38,7 +38,7 @@
    
      var y = document.getElementById("clickmenu")
      
-     var r = document.getElementById("itablink")
+      var r = document.getElementsByClassName("itablink")[0]
       var tabcontent = document.getElementsByClassName("tabcontent");
     var infTabOpen = false;
     var f = document.getElementById("footer2")
