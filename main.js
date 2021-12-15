@@ -24,6 +24,10 @@
 
      var infinimult = 1;
 
+     var infmousecost = 150;
+
+     var infinimice = 0;
+
      var clearIntervalId;
 
      var devMode = false;
@@ -427,3 +431,18 @@ function clearSave() {
 	location.reload()
 	} else {}
 }
+
+
+function buyInfMouse() {
+   if (infiniclicks >= infmousecost) {
+     infiniclicks = infiniclicks - infmousecost 
+     infinimice = infinimice + 1
+	   if (infmousecost < 1e20) {
+     infmousecost = infmousecost * 2
+		   document.getElementById("infmousePrice").innerHTML = (infmousecost)
+	   } else {
+	      infmousecost = infmousecost * 5
+		   document.getElementById("infmousePrice").innerHTML = (infmousecost)
+	   }
+   } else {}
+} 
