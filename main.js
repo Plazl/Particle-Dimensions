@@ -115,6 +115,11 @@ window.open("https://plazl.github.io/howtoplay.html");
         if (f.style.display === "none") {
     f.style.display = "block";
   } 
+	     if (openInfTab == 'infmice') {
+	        document.getElementById("infmousebtn").style.display = "block"
+	     } else {
+	        document.getElementById("infmousebtn").style.display = "none"
+	     }
  } 
  
    if (infinities >= 1) {
@@ -266,11 +271,7 @@ function clicker() {
 	     document.getElementById("infbutton").style.display = "none"	   
 	   }
      isFinitee = isFinite(clicks);    
-	     if (openInfTab == 'infmice') {
-	        document.getElementById("infmousebtn").style.display = "block"
-	     } else {
-	        document.getElementById("infmousebtn").style.display = "none"
-	     }
+	   
 
   
 }
