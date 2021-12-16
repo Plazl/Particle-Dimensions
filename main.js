@@ -266,7 +266,11 @@ function clicker() {
 	     document.getElementById("infbutton").style.display = "none"	   
 	   }
      isFinitee = isFinite(clicks);    
-	     
+	     if (openInfTab == 'infmice') {
+	        document.getElementById("infmousebtn").style.display = "block"
+	     } else {
+	        document.getElementById("infmousebtn").style.display = "none"
+	     }
 
   
 }
@@ -439,10 +443,10 @@ function buyInfMouse() {
      infinimice = infinimice + 1
 	   if (infmousecost < 1e20) {
      infmousecost = infmousecost * 2
-		   document.getElementById("infmousePrice").innerHTML = (infmousecost)
+		   document.getElementById("infmousePrice").innerHTML = (infmousecost + "IC")
 	   } else {
 	      infmousecost = infmousecost * 5
-		   document.getElementById("infmousePrice").innerHTML = (infmousecost)
+		   document.getElementById("infmousePrice").innerHTML = (infmousecost + "IC")
 	   }
    } else {}
 } 
