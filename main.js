@@ -449,7 +449,7 @@ function buyInfMouse() {
 }
 var inerval2 = setInterval(showStupidButton, 50);
 function showStupidButton() {
-    if (openInfTab == 'infmice') {
+    if (openedInfTab == 'infmice') {
 	        document.getElementById("infmousebtn").style.display = "block"
 	     } else {
 	        document.getElementById("infmousebtn").style.display = "none"
