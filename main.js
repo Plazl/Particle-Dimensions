@@ -91,7 +91,7 @@ function openTab(tab,elmnt,color) {
     
     
     }
-}
+
 function openMainInfTab(itab,ielmnt,icolor) {
   if (infTabOpen == false) {
     infTabOpen = true;  
