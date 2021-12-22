@@ -34,6 +34,8 @@
 
      var gameSave;
 
+     var openedInfTab;
+
      var isFinitee = isFinite(clicks);
 
      var x = document.getElementById("infinitybtn");
@@ -75,6 +77,20 @@ function openTab(tab,elmnt,color) {
   } 
  
 
+    function openInfTab('infugrades', this, 'darkgrey') {
+      openedInfTab = 'infUpgrades';
+    }
+	
+	  function openInfTab('breakinfinity', this, 'darkgrey') {
+      openedInfTab = 'breakinfinity';
+    }
+	
+	  function openInfTab('infmice', this, 'darkgrey') {
+      openedInfTab = 'infmice';
+    }
+    
+    
+    }
 }
 function openMainInfTab(itab,ielmnt,icolor) {
   if (infTabOpen == false) {
