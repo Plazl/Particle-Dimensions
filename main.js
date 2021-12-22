@@ -77,15 +77,15 @@ function openTab(tab,elmnt,color) {
   } 
  
 
-    function openInfTab('infugrades', this, 'darkgrey') {
+    function smthn1() {
       openedInfTab = 'infUpgrades';
     }
 	
-	  function openInfTab('breakinfinity', this, 'darkgrey') {
+	  function smthn2() {
       openedInfTab = 'breakinfinity';
     }
 	
-	  function openInfTab('infmice', this, 'darkgrey') {
+	  function smhtn3() {
       openedInfTab = 'infmice';
     }
     
