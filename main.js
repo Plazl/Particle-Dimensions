@@ -85,7 +85,7 @@ function openTab(tab,elmnt,color) {
       openedInfTab = 'breakinfinity';
     }
 	
-	  function smhtn3() {
+	  function smthn3() {
       openedInfTab = 'infmice';
     }
     
@@ -112,6 +112,7 @@ function openMainInfTab(itab,ielmnt,icolor) {
     itablinks[e].style.backgroundColor = "";
   }
   document.getElementById(itab).style.display = "block";
+  document.getElementsByClassName()
         if (f.style.display === "none") {
     f.style.display = "block";
   } 
