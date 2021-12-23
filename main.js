@@ -36,6 +36,8 @@
 
      var gameSave;
 
+     var counter;
+
      var openedInfTab;
 
      var isFinitee = isFinite(clicks);
@@ -479,5 +481,14 @@ function showStupidButton() {
 	        document.getElementById("infmousebtn").style.display = "none"
 	     }
 }
+function loop() {
+if (counter < 10) {
+   console.clear()
+	counter = counter + 1;
+	loop();
+} else {
+  counter = 0
+}
 
- console.clear()
+}
+
