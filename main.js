@@ -87,7 +87,7 @@ function openTab(tab,elmnt,color) {
        if (f.style.display === "block") {
     f.style.display = "none";
          infTabOpen = false;
-           document.getElementsByClassName("tablink").style.display = "shown"
+          
   } 
  
 
