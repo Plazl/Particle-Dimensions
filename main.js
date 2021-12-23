@@ -32,6 +32,8 @@
 
      var devMode = false;
 
+     var intabcontent = document.getElementsByClassName('intabcontent');
+
      var gameSave;
 
      var openedInfTab;
@@ -48,6 +50,18 @@
       var tabcontent = document.getElementsByClassName("tabcontent");
     var infTabOpen = false;
     var f = document.getElementById("footer2")
+       function smthn1() {
+      openedInfTab = 'infUpgrades';
+	    
+    }
+	
+	  function smthn2() {
+      openedInfTab = 'breakinfinity';
+    }
+	
+	  function smthn3() {
+      openedInfTab = 'infmice';
+    }
     
     $(document).ready(function() {
  
@@ -77,18 +91,6 @@ function openTab(tab,elmnt,color) {
   } 
  
 
-    function smthn1() {
-      openedInfTab = 'infUpgrades';
-	    
-    }
-	
-	  function smthn2() {
-      openedInfTab = 'breakinfinity';
-    }
-	
-	  function smthn3() {
-      openedInfTab = 'infmice';
-    }
     
     
     }
