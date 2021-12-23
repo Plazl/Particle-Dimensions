@@ -79,6 +79,7 @@ function openTab(tab,elmnt,color) {
 
     function smthn1() {
       openedInfTab = 'infUpgrades';
+	    
     }
 	
 	  function smthn2() {
@@ -112,7 +113,6 @@ function openMainInfTab(itab,ielmnt,icolor) {
     itablinks[e].style.backgroundColor = "";
   }
   document.getElementById(itab).style.display = "block";
-  document.getElementsByClassName()
         if (f.style.display === "none") {
     f.style.display = "block";
   } 
