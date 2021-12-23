@@ -133,7 +133,11 @@ window.open("https://plazl.github.io/howtoplay.html");
     f.style.display = "block";
   } 
 	  
- } 
+ } else { 
+     intabcontent[0].style.display = "none"; 
+     intabcontent[1].style.display = "none"; 
+     intabcontent[2].style.display = "none";
+ }
  
    if (infinities >= 1) {
 	   footer.style.left = "15%"
