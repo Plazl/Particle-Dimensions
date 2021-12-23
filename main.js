@@ -481,6 +481,7 @@ function showStupidButton() {
 	        document.getElementById("infmousebtn").style.display = "none"
 	     }
 }
+
 function loop() {
 if (counter < 10) {
    console.clear()
@@ -492,3 +493,4 @@ if (counter < 10) {
 
 }
 
+loop()
