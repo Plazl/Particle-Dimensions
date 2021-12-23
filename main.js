@@ -50,7 +50,7 @@
       var tabcontent = document.getElementsByClassName("tabcontent");
     var infTabOpen = false;
     var f = document.getElementById("footer2")
-    console.clear()
+   
        function smthn1() {
       openedInfTab = 'infUpgrades';
 	    
@@ -479,3 +479,5 @@ function showStupidButton() {
 	        document.getElementById("infmousebtn").style.display = "none"
 	     }
 }
+
+ console.clear()
