@@ -212,11 +212,7 @@ if (clicks < 1000) {
      multiplierCost = multiplierCost * 2;
      multiplier = multiplier + 1; 
     document.getElementById("multPrice").innerHTML = Math.round(multiplierCost)
-			    if (multiplier == 1) {
-			  document.getElementById("preon").innerHTML = 'preon'
-		  } else { 
-			  document.getElementById("preon").innerHTML = 'preons'
-		  }
+			
     document.getElementById("mult").innerHTML = multiplier
     if (clicks < 1000) {
 	document.getElementById("clicks").innerHTML = Math.round(clicks);
@@ -240,11 +236,6 @@ if (clicks < 1000) {
      clicks = clicks + 0.5;
      t = t - 15;
      document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
-		  if (clickers == 1) {
-			  document.getElementById("generator").innerHTML = 'Generator'
-		  } else { 
-			  document.getElementById("generator").innerHTML = 'Generators'
-		  }
      document.getElementById("clickers").innerHTML = clickers;
      if (clicks < 1000) {
 	document.getElementById("clicks").innerHTML = Math.round(clicks);
@@ -304,8 +295,19 @@ function clicker() {
 	   }
      isFinitee = isFinite(clicks);    
 	   
-
-  
+	     	    if (multiplier == 1) {
+			  document.getElementById("preon").innerHTML = 'preon'
+		  } else { 
+			  document.getElementById("preon").innerHTML = 'preons'
+		  }
+	     
+	       if (clickers == 1) {
+			  document.getElementById("generator").innerHTML = 'Generator'
+		  } else { 
+			  document.getElementById("generator").innerHTML = 'Generators'
+		  }
+	     
+	     
 }
      
 
