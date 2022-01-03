@@ -510,3 +510,6 @@ if (counter < 10) {
 }
 
 loop()
+
+
+ clearIntervalId = setInterval(clicker, t);
