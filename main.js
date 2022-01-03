@@ -276,7 +276,11 @@ function clicker() {
 }
      setInterval(aaaa, 50)
 function aaaa() {
+	if (clicks < 1000) {
+		document.getElementById("clicks").innerHTML = Math.round(clicks)
+			   } else {
     document.getElementById("clicks").innerHTML = (convert(clicks));
+			   }
 }
      function updater() {
   
