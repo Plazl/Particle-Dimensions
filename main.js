@@ -276,10 +276,7 @@ function clicker() {
 }
      
      function updater() {
-      if (clicks < 1000) {
-	document.getElementById("clicks").innerHTML = Math.round(clicks);
-	} else {	     
-     document.getElementById("clicks").innerHTML = (convert(clicks));
+    document.getElementById("clicks").innerHTML = (convert(clicks));
 	}
 	    if (clearIntervalId == 1) {
 	     clearIntervalId = setInterval(clicker, t);
