@@ -274,10 +274,13 @@ function clicker() {
 	}
   }
 }
-     
-     function updater() {
+     setInterval(aaaa, 50)
+function aaaa() {
     document.getElementById("clicks").innerHTML = (convert(clicks));
-	}
+}
+     function updater() {
+  
+	
 	    if (clearIntervalId == 1) {
 	     clearIntervalId = setInterval(clicker, t);
 	  } else {
@@ -303,7 +306,7 @@ function clicker() {
 		  } else { 
 			  document.getElementById("generator").innerHTML = 'Generators'
 		  }
-	     
+     }
 	     
 
      
