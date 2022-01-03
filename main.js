@@ -1,4 +1,4 @@
-     var t =  1000;
+     var t =  10000;
      
      var framerate = 100;
    
@@ -52,6 +52,20 @@
       var tabcontent = document.getElementsByClassName("tabcontent");
     var infTabOpen = false;
     var f = document.getElementById("footer2")
+    
+    
+      if (multiplier == 1) {
+			  document.getElementById("preon").innerHTML = 'preon'
+		  } else { 
+			  document.getElementById("preon").innerHTML = 'preons'
+		  }
+
+
+     if (clickers == 1) {
+			  document.getElementById("generator").innerHTML = 'Generator'
+		  } else { 
+			  document.getElementById("generator").innerHTML = 'Generators'
+		  }
    
        function smthn1() {
       openedInfTab = 'infUpgrades';
@@ -234,7 +248,9 @@ if (clicks < 1000) {
      clickers = clickers + 1; 
      clearInterval(clearIntervalId);
      clicks = clicks + 0.5;
+ if (clickers > 1) {
      t = t - 15;
+ } 
      document.getElementById("clickerPrice").innerHTML = Math.round(clickerCost);
      document.getElementById("clickers").innerHTML = clickers;
      if (clicks < 1000) {
@@ -255,7 +271,9 @@ if (clicks < 1000) {
 	 setTimeout(wait, 500);
  
       function  wait() {
-		    clearIntervalId = setInterval(clicker, t);
+		    clearIntervalId = setInterval(function(){
+    clicker();
+},t);
 
      }
 }
