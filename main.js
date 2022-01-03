@@ -305,7 +305,7 @@ function clicker() {
 		  }
 	     
 	     
-}
+
      
 
 var convert = clicks => {
