@@ -1,4 +1,4 @@
-     var t =  10000;
+     var t =  1000;
      
      var framerate = 100;
    
@@ -272,7 +272,7 @@ if (clicks < 1000) {
  
       function  wait() {
 		    clearIntervalId = setInterval(function(){
-    clicker();
+    clicker;
 },t);
 
      }
