@@ -32,6 +32,10 @@
 
      var devMode = false;
 
+     var lstv1;
+  
+     var lstv2;
+
      var intabcontent = document.getElementsByClassName('intabcontent');
 
      var gameSave;
@@ -295,10 +299,31 @@ function clicker() {
      setInterval(aaaa, 50)
 function aaaa() {
 	if (clicks < 1000) {
-		document.getElementById("clicks").innerHTML = Math.round(clicks)
+		lstv1 = true
+		lstv2 = false
 			   } else {
-    document.getElementById("clicks").innerHTML = (convert(clicks));
+				   
+		lstv2 = true
+		lstv1 = false 
 			   }
+}
+
+ setInterval(caller, 100)
+
+function caller() {
+  lst1();
+  lst2();
+}
+function lst1() {
+   if (lstv1 == true && lstv2 == false) {
+    document.getElementById("clicks").innerHTML = Math.round(clicks)
+  }
+}
+
+function lst2() {
+   if (lstv2 == true && lstv1 == false) {
+    document.getElementById("clicks").innerHTML = (convert(clicks));
+  }
 }
      function updater() {
   
